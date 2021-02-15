@@ -11,6 +11,7 @@
 </div>
 <div class="col-12">
   @include("inc.lnews")
+    @include("inc.lnews")
 </div>
 </div>
 @endsection

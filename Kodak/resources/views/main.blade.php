@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section('title-block', 'Main')
+@section('title-block', 'Kodak - Главная страница')
 @section('title-page', 'Главная')
 
 @section('content')
@@ -11,7 +11,6 @@
 </div>
 <div class="col-12">
   @include("inc.lnews")
-    @include("inc.lnews")
 </div>
 </div>
 @endsection

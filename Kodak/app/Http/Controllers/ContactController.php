@@ -34,8 +34,7 @@ class ContactController extends Controller
 
     public function showmessage($id){
         $contact = new Contact();
-        return dd($contact->find($id));
-        //return view('one-message', ['data' => $contact->find($id)]);
+        return view('one-message', ['data' => $contact->find($id)]);
     }
 
     public function deleteMessage($id){

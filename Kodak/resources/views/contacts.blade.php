@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section('title-block','Контакты')
+@section('title-block','Kodak - Связь с нами')
 @section('title-page','Связь с нами')
 
 @section('content')

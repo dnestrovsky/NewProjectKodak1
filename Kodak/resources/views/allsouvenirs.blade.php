@@ -7,25 +7,24 @@
 
     <div class="row">
         <div class = "col">
-            <h2>Все товары</h2>
-            <a class="btn btn-outline-info mb-5" href = "{{route('souvenirs.create')}}" >Добавить новый товар</a>
-            @foreach($souvenirs as $souvenir)
-                <div class="alert alert-dark w-100" role="alert">
-                    <p class="lead">{{$souvenir->description}}</p>
-                    <hr class="my-4">
-                    <div class="row">
-                    <div class="col"><p>{{$souvenir->name}}</p></div>
-                    <div class="col"><p>Добавлено: {{$souvenir->created_at}}</p></div>
-                        <a class="btn btn-outline-info mb-5" href = "{{ route('souvenirs.show', $souvenir) }}" >Просмотреть</a>
-                        <a class="btn btn-outline-info mb-5" href = "{{ route('souvenirs.edit', $souvenir) }}" >Редактировать</a>
-                    </div>
-                </div>
-            @endforeach
+            <a class="btn btn-outline-info mb-5" href = "{{route('souvenirs.create')}}" > + Добавить новый товар</a>
+            <table>
+                <tr><th>ID</th><th>Название</th><th>Добавлено</th><th>Изменено</th><th>Подробнее</th><th>Изменить</th><th>Удалить</th></tr>
+                @foreach($souvenirs as $souvenir)
+                    <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
+                <tr><td>{{$souvenir->id}}</td><td>{{$souvenir->name}}</td><td>{{$souvenir->created_at}}</td><td>{{$souvenir->updated_at}}</td>
+
+                    <td><a class="btn btn-outline-info" href = "{{ route('souvenirs.show', $souvenir) }}" >Просмотреть</a></td>
+                    <td><a class="btn btn-outline-warning" href = "{{ route('souvenirs.edit', $souvenir) }}" >Редактировать</a></td>
+                    @csrf
+                    @method('DELETE')
+                    <td><input class="btn btn-outline-danger" type="submit" value="Удалить"></form></td>
+                </tr>
+
+                @endforeach
+            </table>
             <div class="w-100">{{$souvenirs->links()}}</div>
         </div>
 
-        <div class="col">
-            <h2>Подсказки</h2>
-        </div>
     </div>
 @endsection

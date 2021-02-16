@@ -1,19 +1,20 @@
 @extends('layouts.dashboard')
 
-
-@section('title-page', 'Создать категорию')
+@section('title-page', 'Редактировать категорию ' . $souvenir->name)
 
 
 @section('content')
-    <form action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data" class="decor">
+    <form action="{{ route('souvenirs.update', $souvenir) }}" method="post" enctype="multipart/form-data" class="decor">
+        @method('PUT')
         @csrf
         <div class="container">
             <div class="form-inner">
+                    <h1>Редактировать Категорию <b>{{ $souvenir->name }}</b></h1>
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Название" id="name" class="form-control">
+                    <input type="text" name="name" placeholder="{{ $souvenir->name }}" id="name" class="form-control">
                 </div>
                 <div class="form-group">
-                <textarea name="description" id="description" placeholder="Описание" class="form-control" rows="3"></textarea>
+                    <textarea name="description" id="description" placeholder="{{ $souvenir->description }}" class="form-control" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Картинка товара</label>

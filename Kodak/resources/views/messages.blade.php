@@ -1,4 +1,4 @@
-@extends('dashboard')
+@extends('layouts.dashboard')
 
 
 @section('title-block', 'Messages')
@@ -14,6 +14,6 @@
                 </p>
             </div>
         @endforeach
-    </div
-    {{$data->links()}}
+    </div>
+    <div class="w-100">{{$data->links()}}</div>
 @endsection

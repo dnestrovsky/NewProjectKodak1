@@ -4,14 +4,20 @@
 
 
 @section('content')
-        <div class = "col">
-                <div class="alert alert-dark w-100" role="alert">
-                    <p class="lead">{{ $souvenir->description }}</p>
-                    <hr class="my-4">
-                    <div class="row">
-                        <div class="col"><p>{{$souvenir->name}}</p></div>
-                        <div class="col"><p>Добавлено: {{$souvenir->created_at}}</p></div>
+        <div class="card mb-3" style="max-width: 900px;">
+            <div class="row g-0">
+                <div class="col">
+                    <img src="{{Storage::url($souvenir->image)}}"  alt="...">
+                </div>
+                <div class="col">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$souvenir->name}}</h5>
+                        <hr class="my-2">
+                        <p class="card-text">{{ $souvenir->description}}</p>
+                        <hr class="my-2">
+                        <p class="card-text"><small class="text-muted">Last updated {{ $souvenir->updated_at }}</small></p>
                     </div>
                 </div>
+            </div>
         </div>
 @endsection

@@ -21,3 +21,8 @@ td {
 tr:hover td {
     color: #6699ff;
 }
+
+.form-control-file{
+    position: absolute;
+    opacity: 0 !important;
+}

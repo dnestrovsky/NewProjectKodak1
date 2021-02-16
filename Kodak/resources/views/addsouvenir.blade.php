@@ -1,7 +1,7 @@
 @extends('layouts.dashboard')
 
 
-@section('title-page', 'Создать категорию')
+@section('title-page', 'Создать товар')
 
 
 @section('content')
@@ -18,10 +18,13 @@
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Картинка товара</label>
                     <input type="file" name="image" class="form-control-file" id="image">
+                    <p style="border: 1px solid #210101; text-align: center;">Перетащите файлы или кликните для поиска (Форматы: .jpg, .jpeg, .heif, .png, .bmp и .jpf)</p>
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-secondary btn-lg btn-block" style="background: #f69a73;">Добавить новый товар</button>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-outline-success">Добавить</button>
+            </div>
         </div>
     </form>
 @endsection

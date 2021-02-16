@@ -32,11 +32,11 @@ Route::get('/souvenirs-all', function () {
     return view('souvenirs');
 });
 
-Route::resource('souvenirs', SouvenirsController::class);
+Route::resource('souvenirs', SouvenirsController::class)->middleware(['auth']);
 
 Route::get('/messages/{id}/delete', [ContactController::class, 'deleteMessage']) -> name('delete-message');
-Route::get('/messages/{id}', [ContactController::class, 'showmessage']) -> name('messages-data-one');
-Route::get('/messages', [ContactController::class, 'allData']) -> name('messages-data');
+Route::get('/messages/{id}', [ContactController::class, 'showmessage'])->middleware(['auth']) -> name('messages-data-one');
+Route::get('/messages', [ContactController::class, 'allData'])->middleware(['auth']) -> name('messages-data');
 Route::get('/souvenirs-all', [SouvenirsController::class, 'allData']) -> name('souvenir-data');
 Route::get('/dashboard', [ContactController::class, 'messagesAdmin']) ->middleware(['auth']) -> name('messages-data-dashboard');
 Route::post('/contact/submit', [ContactController::class,'submit']) -> name('contact-form');

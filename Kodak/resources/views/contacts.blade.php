@@ -1,10 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.test')
 
 
 @section('title-block','Kodak - Связь с нами')
 @section('title-page','Связь с нами')
 
 @section('content')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+        </ol>
+    </nav>
   <form action="{{ route('contact-form') }}" method="post" class="decor">
     @csrf
 
@@ -19,8 +25,7 @@
       <input type="text" name="email" placeholder="Введите email" id="email" class="form-control">
       <textarea name="message" id="message" placeholder="Введите сообщение" class="form-control" rows="3"></textarea>
     </div>
-
-    <button type="submit" class="btn btn-secondary btn-lg btn-block" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: #f69a73;">Отправить</button>
+            <button type="submit" class="btn btn-primary btn-lg btn-block btn-warning" type="button">Отправить</button>
     </div>
   </form>
 

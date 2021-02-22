@@ -8,9 +8,10 @@
 
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
+<div class="rounded" style="background: #2EE59D; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
         <form method="POST" action="{{ route('login') }} " class="ui-form">
             @csrf
+            <img class="d-block w-100 rounded"  src="../img/palitra.jpg" alt="Первый слайд" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22) !important;">
             <h3>Войти на сайт</h3>
             <!-- Email Address -->
                 <div class="form-row">
@@ -43,4 +44,6 @@
                 <p><input type="submit" value="Войти"></p>
             </div>
         </form>
+
+</div>
 @endsection

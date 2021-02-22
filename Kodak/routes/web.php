@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('main');
 })->name('home');
 
+Route::get('/test/main', function () {
+    return view('main-test');
+})->name('mainhome');
+
 Route::get('/contact', function () {
     return view('contacts');
 });
@@ -30,6 +34,10 @@ Route::get('/orders', function () {
 
 Route::get('/souvenirs-all', function () {
     return view('souvenirs');
+});
+
+Route::get('/test', function () {
+    return view('test');
 });
 
 Route::resource('souvenirs', SouvenirsController::class)->middleware(['auth']);

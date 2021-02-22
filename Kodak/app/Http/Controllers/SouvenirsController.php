@@ -20,7 +20,7 @@ class SouvenirsController extends Controller
     }
 
     public function allData(){
-        return view('souvenirs', ['data' => Souvenirs::orderBy('created_at','desc') -> paginate(4)]);
+        return view('souvenirs', ['data' => Souvenirs::all()]);
     }
 
     /**

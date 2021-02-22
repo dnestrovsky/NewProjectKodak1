@@ -1,10 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.test')
 
 
 @section('title-block','Заказы')
 @section('title-page','Заказы')
 
 @section('content')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Заказы</li>
+        </ol>
+    </nav>
   <form action="{{ route('contact-form') }}" method="post" class="decor">
     @csrf
 
@@ -21,7 +27,7 @@
         <input type="file" class="upload" id="photo-upload" multiple=""/>
     </div>
 
-    <button type="submit" class="btn btn-secondary btn-lg btn-block" style="background: #f69a73;">Заказать</button>
+        <button type="submit" class="btn btn-primary btn-lg btn-block btn-warning" type="button">Заказать</button>
     </div>
   </form>
 @endsection

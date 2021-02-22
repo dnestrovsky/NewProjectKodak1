@@ -1,10 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.test')
 
 
 @section('title-block', 'Kodak - Сувениры')
 @section('title-page', 'Сувениры')
 
 @section('content')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Сувениры</li>
+        </ol>
+    </nav>
 <div class="row">
                 <div class="post-wrap">
                     @foreach($data as $souvenir)
@@ -20,9 +26,11 @@
                                 </div>
                             </a>
                         </div>
+                        <a href="/contact" class="btn btn-outline-info btn-lg btn-block mt-2">
+                            <strong>{{$souvenir->name }}</strong>
+                        </a>
                     </div>
                     @endforeach
             </div>
 </div>
-
 @endsection

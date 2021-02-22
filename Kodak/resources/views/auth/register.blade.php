@@ -3,10 +3,10 @@
 @section('content')
         <!-- Validation Errors -->
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
-
+        <div class="rounded" style="background: #2EE59D; box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
         <form method="POST" action="{{ route('register') }}" class="ui-form">
             @csrf
-
+            <img class="d-block w-100 rounded"  src="../img/palitra.jpg" alt="Лого" style="box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);">
             <h3>Регистрация</h3>
             <!-- Name -->
             <div class = "form-row">
@@ -35,10 +35,11 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
+                    {{ __('Уже зарегистрированы?') }}
                 </a>
 
                 <p><input type="submit" value="Регистрация"></p>
             </div>
         </form>
+        </div>
 @endsection

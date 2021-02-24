@@ -8,10 +8,6 @@ Route::get('/', function () {
     return view('main');
 })->name('home');
 
-Route::get('/test/main', function () {
-    return view('main-test');
-})->name('mainhome');
-
 Route::get('/contact', function () {
     return view('contacts');
 });

@@ -5,26 +5,27 @@
 
 
 @section('content')
-    <form action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data" class="decor">
-        @csrf
-        <div class="container">
-            <div class="form-inner">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Название" id="name" class="form-control">
-                </div>
-                <div class="form-group">
-                <textarea name="description" id="description" placeholder="Описание" class="form-control" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Картинка товара</label>
-                    <input type="file" name="image" class="form-control-file" id="image">
-                    <p style="border: 1px solid #210101; text-align: center;">Перетащите файлы или кликните для поиска (Форматы: .jpg, .jpeg, .heif, .png, .bmp и .jpf)</p>
-                </div>
-            </div>
 
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-outline-success">Добавить</button>
+    <!-- Home -->
+    <section id="home">
+        <div class="inner-width">
+            <div class="content">
+                <div class="contact-section">
+
+                    <h1>Добавить товар</h1>
+                    <div class="border"></div>
+                    <form class="contact-form" action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data">
+                        <input type="text" name="name" class="contact-form-text" id="name" placeholder="Название">
+                        <textarea class="contact-form-text" name="description" id="description" placeholder="Описание"></textarea>
+                        <label for="exampleFormControlFile1">Картинка товара</label>
+                        <input type="file" name="image" class="form-control-file" id="image">
+                        <p style="border: 1px solid #210101; text-align: center;">Перетащите файлы или кликните для поиска (Форматы: .jpg, .jpeg, .heif, .png, .bmp и .jpf)</p>
+                        <input type="submit" class="contact-form-btn" value="Добавить">
+                    </form>
+                </div>
+
+
             </div>
         </div>
-    </form>
+    </section>
 @endsection

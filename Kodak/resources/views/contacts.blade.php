@@ -5,28 +5,77 @@
 @section('title-page','Связь с нами')
 
 @section('content')
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Контакты</li>
-        </ol>
-    </nav>
-  <form action="{{ route('contact-form') }}" method="post" class="decor">
-    @csrf
+    <!-- Home -->
+    <section id="home">
+        <div class="inner-width">
+            <div class="content">
+                <div class="sm">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-viber"></a>
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                </div>
+                <!-- Contact -->
+                <h2 class="section-title">Наши контакты</h2>
+                <div class="contact-info">
+                    <div class="item">
+                        <i class="fas fa-mobile-alt"></i>
+                        Мобильный: +373 (67) 279199
+                    </div>
 
-    <div class="container">
-      <div class="form-left-decoration"></div>
-      <div class="form-right-decoration"></div>
-      <div class="circle"></div>
-      <div class="form-inner">
-      <h3>Задать вопрос</h3>
-      <input type="text" name="name" placeholder="Введите имя" id="name" class="form-control">
-      <input type="text" name="phone" placeholder="Введите номер телефона" id="phone" class="form-control">
-      <input type="text" name="email" placeholder="Введите email" id="email" class="form-control">
-      <textarea name="message" id="message" placeholder="Введите сообщение" class="form-control" rows="3"></textarea>
-    </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block btn-warning" type="button">Отправить</button>
-    </div>
-  </form>
+                    <div class="item">
+                        <i class="fas fa-envelope"></i>
+                        kodak.floresti@mail.ru
+                        kodak.floresti.kodak@gmail.ru
+                    </div>
+
+                    <div class="item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Флорешть, str. 31 august 1989 26/a
+                    </div>
+                </div>
+
+                <form action="{{ route('contact-form') }}" method="post" class="contact-form">
+                    @csrf
+
+                    <input type="text" name="name" class="nameZone" id="name" placeholder="Your Full Name">
+                    <input type="text" name="phone" class="emailZone" id="phone" placeholder="введите номер телефона">
+                    <input type="text" name="email" class="emailZone" id="email" placeholder="Your Email">
+                    <textarea name="message" id="message" class="messageZone" placeholder="Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home -->
+    <section id="about">
+        <div class="inner-width">
+            <h1 class="section-title">О Нас</h1>
+            <div class="about-content">
+                <img src="images/pic.png" alt="" class="about-pic">
+                <div class="about-text">
+                    <h2>Palitra Kodak</h2>
+                    <h3>
+                        <span>Фото на документы</span>
+                        <span>Альбомы и Фоторамки</span>
+                        <span>Ретушь фото</span>
+                    </h3>
+                    <p>
+                        Печать фотографий осуществляется в японской фотолаборатории Noritsu 2901QSS.
+
+                        Эта фотолаборатория позволяет печатать фотографии высочайшего качества.
+
+                        Фотографии печатаются в течении 24 часов с момента заказа.
+
+                        фотография сохраняет свой цвет в течении 100 лет.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 @endsection

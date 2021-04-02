@@ -12,6 +12,10 @@ Route::get('/contact', function () {
     return view('contacts');
 });
 
+Route::get('/services', function () {
+    return view('services');
+});
+
 Route::get('/dashboard/addsouvenir', function () {
     return view('addsouvenir');
 });

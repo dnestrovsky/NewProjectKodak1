@@ -58,7 +58,6 @@
             <li class="left-item"><a data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation" href="#">Контакты</a></li>
             <li class="right-item"><a href="">Язык</a></li>
         </ul>
-        <a class="navbar-logo" href=""><img src="../img/palitra.jpg"  class="rounded" style="width: 230px; height: 80px;" alt="..."></a>
     </nav>
 </header>
 

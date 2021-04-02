@@ -4,20 +4,41 @@
 
 
 @section('content')
-        <div class="card mb-3" style="max-width: 900px;">
-            <div class="row g-0">
-                <div class="col">
-                    <img src="{{Storage::url($souvenir->image)}}"  alt="...">
-                </div>
-                <div class="col">
-                    <div class="card-body">
-                        <h5 class="card-title">{{$souvenir->name}}</h5>
-                        <hr class="my-2">
-                        <p class="card-text">{{ $souvenir->description}}</p>
-                        <hr class="my-2">
-                        <p class="card-text"><small class="text-muted">Last updated {{ $souvenir->updated_at }}</small></p>
+
+    <section id="home">
+        <div class="inner-width">
+            <div class="content">
+                <h1>Добро пожаловать в админ панель</h1>
+
+                <div class="profile-card">
+                    <div class="card-header">
+                        <div class="pic">
+                            <img src="{{Storage::url($souvenir->image)}}" alt="">
+                        </div>
+                        <div class="name">{{$souvenir->name}}</div>
+                        <div class="desc">Сувенир</div>
+                        <div class="sm">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-github"></a>
+                            <a href="#" class="fab fa-youtube"></a>
+                        </div>
+                        <a href="#" class="contact-btn">{{ $souvenir->description}}</a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="numbers">
+                            <div class="border"></div>
+                            <div class="item">
+                                <span>{{ $souvenir->updated_at }}</span>
+                                Обновлено
+                            </div>
+                            <div class="border"></div>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
+    </section>
 @endsection

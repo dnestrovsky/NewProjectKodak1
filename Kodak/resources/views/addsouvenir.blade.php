@@ -15,6 +15,7 @@
                     <h1>Добавить товар</h1>
                     <div class="border"></div>
                     <form class="contact-form" action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data">
+                        @csrf
                         <input type="text" name="name" class="contact-form-text" id="name" placeholder="Название">
                         <textarea class="contact-form-text" name="description" id="description" placeholder="Описание"></textarea>
                         <label for="exampleFormControlFile1">Картинка товара</label>

@@ -731,6 +731,41 @@ footer{
     }
 }
 
+@media screen and (max-width: 400px){
+    .inner-width{
+        padding: 0 50px;
+    }
+
+    #home .content h1{
+        font-family: 'Rubik One', sans-serif;
+        font-size: 30px;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, rgb(225, 131, 25), rgb(238, 207, 89));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: #0B2349;
+        display: table;
+        margin: 20px auto;
+        text-shadow: -4px -4px 0px #D2EAD7;
+    }
+
+    .skill{
+        width: 100%;
+    }
+
+    .service{
+        width: 100%;
+    }
+
+    .work{
+        width: 100%;
+    }
+
+    .nameZone, .emailZone{
+        max-width: 100%;
+    }
+}
+
 .container{
     width: 100%;
     position: relative;

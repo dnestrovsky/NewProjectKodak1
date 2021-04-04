@@ -13,7 +13,13 @@
             <a href="/services">Услуги</a>
             <a href="/souvenirs-all">Сувениры</a>
             <a href="/contact">Контакты</a>
-            <a href="/login" class="sign">Войти ;)</a>
+            @if (Route::has('login'))
+                @auth
+                <a href="/dashboard" class="sign">Админ-Панель</a>
+            @else
+                <a href="/login" class="sign">Войти ;)</a>
+                @endauth
+                @endif
         </div>
     </div>
 </nav>

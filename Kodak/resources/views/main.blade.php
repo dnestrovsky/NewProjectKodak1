@@ -36,8 +36,8 @@
                 <h2>@lang('main.serv_main')</h2>
                 <h1> </h1>
                 <div class="sm">
-                    <a href="#" class="fab fa-viber"></a>
-                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-viber viber"></a>
+                    <a href="#" class="fab fa-whatsapp whatsapp"></a>
                     <a href="#" class="fas fa-envelope"></a>
                 </div>
                 <div class="buttons">

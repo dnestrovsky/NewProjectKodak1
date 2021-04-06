@@ -188,7 +188,21 @@ html{
 
 .sm a{
     color: gold;
-    font-size: 22px;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm .viber{
+    color: #8812b7;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm .whatsapp{
+    color: #137e16;
+    font-size: 30px;
     margin: 0 10px;
     transition: .2s linear;
 }
@@ -661,7 +675,7 @@ footer{
 
     .navbar-menu a{
         display: block;
-        font-size: 30px;
+        font-size: 20px;
         margin: 30px 0;
     }
 

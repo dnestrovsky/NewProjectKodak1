@@ -5,7 +5,7 @@
 
 @section('content')
     <!-- Services -->
-    <section id="services" class="dark">
+    <section id="services" class="dark1">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.servicii')</h1>
             <div class="services">
@@ -55,7 +55,7 @@
         <div class="inner-width">
             <h1 class="section-title">@lang('main.info')</h1>
             <div class="about-content">
-                <img src="images/pic.png" alt="" class="about-pic">
+                <img src="img/pic.png" alt="" class="about-pic">
                 <div class="about-text">
                     <h2>Palitra Kodak</h2>
                     <h3>
@@ -78,35 +78,64 @@
         </div>
     </section>
 
-
     <!-- Home -->
-    <section id="rest">
+    <section id="about">
         <div class="inner-width">
-            <h1 class="section-title">О Нас</h1>
-            <div class="about-content">
-                <img src="images/pic.png" alt="" class="about-pic">
-                <div class="about-text">
-                    <h2>Palitra Kodak</h2>
-                    <h3>
-                        <span>Фото на документы</span>
-                        <span>Альбомы и Фоторамки</span>
-                        <span>Ретушь фото</span>
-                    </h3>
-                    <div class="slider">
-                        <div class="original-image"></div>
-                        <input type="range" value="20" max="100">
-                    </div>
+            <h1 class="section-title">Реставрация фото</h1>
+            <div class="gallery-section">
+                <div class="inner-width">
+                    <h1>Примеры</h1>
+                    <div class="border"></div>
+                    <div class="gallery">
 
-                    <script>
-                        document.querySelector(".slider input").addEventListener("input", function(){
-                            document.querySelector(".original-image").style.width = this.value + "%";
-                        });
-                    </script>
+                        <a href="img/1.jpg" class="image">
+                            <img src="img/1.jpg" alt="">
+                        </a>
+
+                        <a href="img/2.jpg" class="image">
+                            <img src="img/2.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="border"></div>
+                    <div class="gallery">
+                    <a href="img/3.jpg" class="image">
+                        <img src="img/3.jpg" alt="">
+                    </a>
+
+                    <a href="img/4.jpg" class="image">
+                        <img src="img/4.jpg" alt="">
+                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Home -->
+    <section id="about">
+        <div class="inner-width">
+            <h1 class="section-title">Фото на документы</h1>
+            <div class="about-content">
+                <img src="img/pic.png" alt="" class="about-pic">
+                <div class="about-text">
+                    <p>
+                        В нашем магазине Вы можете сделать фото на документы любого размера. Наш коллектив сделает Вам качественный снимок нужного ракурса, который будет распечатан на профессиональной фотобумаге.
 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(".gallery").magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            gallery:{
+                enabled: true
+            }
+        });
+    </script>
 
 @endsection

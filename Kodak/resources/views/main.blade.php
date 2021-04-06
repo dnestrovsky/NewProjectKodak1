@@ -8,29 +8,24 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <div class="container">
-                    <h2>Ждем окончания разработки...</h2>
-
-                    <div class="count">
-                        <div class="countd">
-                            <span id="days">00</span>
-                            Дней
-                        </div>
-
-                        <div class="countd">
-                            <span id="hours">00</span>
-                            Часов
-                        </div>
-
-                        <div class="countd">
-                            <span id="minutes">00</span>
-                            Минут
-                        </div>
-
-                        <div class="countd">
-                            <span id="seconds">00</span>
-                            Секунд
-                        </div>
+                <div class="countdown-col col">
+                    <div class="time middle">
+          <span>
+            <div id="d">12</div>
+            Days
+          </span>
+                        <span>
+            <div id="h">06</div>
+            Hours
+          </span>
+                        <span>
+            <div id="m">35</div>
+            Minutes
+          </span>
+                        <span>
+            <div id="s">54</div>
+            Seconds
+          </span>
                     </div>
                 </div>
                 <h2>@lang('main.serv_main')</h2>
@@ -41,7 +36,7 @@
                     <a href="#" class="fas fa-envelope"></a>
                 </div>
                 <div class="buttons">
-                    <a href="#">@lang('main.cont')</a>
+                    <a href="/contact">@lang('main.cont')</a>
                 </div>
             </div>
         </div>
@@ -58,16 +53,10 @@
                     <h3>
                         <span>Фото на документы</span>
                         <span>Альбомы и Фоторамки</span>
-                        <span>Ретушь фото</span>
+                        <span>Реставрация фото</span>
                     </h3>
                     <p>
-                        Печать фотографий осуществляется в японской фотолаборатории Noritsu 2901QSS.
-
-                        Эта фотолаборатория позволяет печатать фотографии высочайшего качества.
-
-                        Фотографии печатаются в течении 24 часов с момента заказа.
-
-                        фотография сохраняет свой цвет в течении 100 лет.
+                        Печать фотографий
 
                     </p>
                 </div>
@@ -114,24 +103,34 @@
 
     <script type="text/javascript">
 
-        var count = new Date("apr 10,2021 00:01:00").getTime();
-        var x = setInterval(function() {
-            var now = new Date().getTime();
-            var d = count - now;
+        var comingdate = new Date("apr 10, 2021 00:00:00");
 
-            var days = Math.floor(d/(1000*60*60*24));
-            var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
-            var minutes = Math.floor((d%(1000*60*60))/(1000*60));
-            var seconds = Math.floor((d%(1000*60))/1000);
+        var d = document.getElementById('d');
+        var h = document.getElementById('h');
+        var m = document.getElementById('m');
+        var s = document.getElementById('s');
 
-            document.getElementById("days").innerHTML = days;
-            document.getElementById("hours").innerHTML = hours;
-            document.getElementById("minutes").innerHTML = minutes;
-            document.getElementById("seconds").innerHTML = seconds;
+        var x = setInterval(function(){
+            var now = new Date();
+            var des = comingdate.getTime() - now.getTime();
+            var days = Math.floor(des/(1000 * 60 * 60 * 24));
+            var hours = Math.floor(des%(1000 * 60 * 60 * 24) / (1000 * 60 *60));
+            var mins = Math.floor(des%(1000 * 60 * 60) / (1000 * 60));
+            var secs = Math.floor(des%(1000 * 60) / 1000);
 
-            if(d <= 0){
-                clearInterval(x);
-            }
+            d.innerHTML = getTrueNumber(days);
+            h.innerHTML = getTrueNumber(hours);
+            m.innerHTML = getTrueNumber(mins);
+            s.innerHTML = getTrueNumber(secs);
+
+            if(des <= 0) clearInterval(x);
+
         },1000);
+
+        function getTrueNumber(x) {
+            if (x<10) return '0'+x;
+            else return x;
+        }
+
     </script>
 @endsection

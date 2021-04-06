@@ -101,4 +101,5 @@ class SouvenirsController extends Controller
         Storage::delete($souvenir->image);
         return redirect()->route('souvenirs.index');
     }
+
 }

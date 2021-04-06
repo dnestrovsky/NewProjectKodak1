@@ -9,7 +9,7 @@
     <section id="works" class="dark1">
         <div class="inner-width">
             <!-- Contact -->
-            <h2 class="section-title">Наши контакты</h2>
+            <h2 class="section-title">@lang('main.cont')</h2>
             <div class="contact-info">
                 <div class="item">
                     <i class="fas fa-mobile-alt"></i>

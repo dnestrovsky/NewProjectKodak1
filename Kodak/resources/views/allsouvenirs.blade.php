@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title-page', 'Все сувениры')
+@section('title-block', 'Все сувениры')
 
 
 @section('content')
@@ -16,8 +16,8 @@
                         <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
                             <tr><td>{{$souvenir->id}}</td><td>{{$souvenir->name}}</td><td>{{$souvenir->created_at}}</td><td>{{$souvenir->updated_at}}</td>
 
-                                <td><a class="btn btn2" href = "{{ route('souvenirs.show', $souvenir) }}" >Просмотреть</a></td>
-                                <td><a class="btn btn3" href = "{{ route('souvenirs.edit', $souvenir) }}" >Редактировать</a></td>
+                                <td><a class="btn btn2" href = "{{ route('souvenirs.show', $souvenir) }}" ><i class="fas fa-eye"></i></a></td>
+                                <td><a class="btn btn3" href = "{{ route('souvenirs.edit', $souvenir) }}" ><i class="far fa-edit"></i></a></td>
                                 @csrf
                                 @method('DELETE')
                                 <td><input class="btn btn4" type="submit" value="Удалить"></form></td>

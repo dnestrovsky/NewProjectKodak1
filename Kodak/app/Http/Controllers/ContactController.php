@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Http\Requests\ContactRequest;
+use Illuminate\Support\Facades\App;
 
 class ContactController extends Controller
 {
@@ -41,4 +42,13 @@ class ContactController extends Controller
         Contact::find($id)->delete();
         return redirect()->route('messages-data')->with('success', 'Сообщение было удалено');
     }
+
+    public function changeLocale($locale){
+        session(['locale'=> $locale]);
+        App::setLocale($locale);
+        $currentLocale = App::getLocale();
+        return redirect() ->back();
+
+    }
+
 }

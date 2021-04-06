@@ -1,17 +1,16 @@
 @extends('layouts.app')
 
 
-@section('title-block','Kodak - Связь с нами')
-@section('title-page','Связь с нами')
+@section('title-block','Услуги')
 
 @section('content')
     <!-- Services -->
     <section id="services" class="dark">
         <div class="inner-width">
-            <h1 class="section-title">Услуги</h1>
+            <h1 class="section-title">@lang('main.servicii')</h1>
             <div class="services">
                 <div class="service">
-                    <a href="contact.html">
+                    <a href="#rest">
                         <i class="icon fas fa-paint-brush"></i>
                         <h4>Реставрация</h4>
                         <p>Реставрация фото</p>
@@ -54,7 +53,7 @@
     <!-- Home -->
     <section id="about">
         <div class="inner-width">
-            <h1 class="section-title">О Нас</h1>
+            <h1 class="section-title">@lang('main.info')</h1>
             <div class="about-content">
                 <img src="images/pic.png" alt="" class="about-pic">
                 <div class="about-text">
@@ -74,6 +73,35 @@
                         фотография сохраняет свой цвет в течении 100 лет.
 
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Home -->
+    <section id="rest">
+        <div class="inner-width">
+            <h1 class="section-title">О Нас</h1>
+            <div class="about-content">
+                <img src="images/pic.png" alt="" class="about-pic">
+                <div class="about-text">
+                    <h2>Palitra Kodak</h2>
+                    <h3>
+                        <span>Фото на документы</span>
+                        <span>Альбомы и Фоторамки</span>
+                        <span>Ретушь фото</span>
+                    </h3>
+                    <div class="slider">
+                        <div class="original-image"></div>
+                        <input type="range" value="20" max="100">
+                    </div>
+
+                    <script>
+                        document.querySelector(".slider input").addEventListener("input", function(){
+                            document.querySelector(".original-image").style.width = this.value + "%";
+                        });
+                    </script>
                 </div>
             </div>
         </div>

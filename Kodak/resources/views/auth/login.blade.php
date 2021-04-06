@@ -1,4 +1,5 @@
 @extends('layouts.guest')
+@section('title-block', 'Auth')
 
 
 @section('content')
@@ -10,7 +11,7 @@
         <x-auth-validation-errors class="mb-4" :errors="$errors" />
         <form method="POST" action="{{ route('login') }} " class="box">
             @csrf
-            <h1>Войти на сайт</h1>
+            <h1>Admin Panel</h1>
             <!-- Email Address -->
                 <input id="email" type="text" name="email" placeholder="Email" :value="old('email')" required autofocus />
             <!-- Password -->

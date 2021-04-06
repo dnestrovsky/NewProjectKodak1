@@ -4,17 +4,27 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SouvenirsController;
 
-Route::get('/', function () {
-    return view('main');
-})->name('home');
+Route::middleware(['set_locale']) -> group(function () {
+    Route::get('/', function () {
+        return view('main');
+    })->name('home');
 
-Route::get('/contact', function () {
-    return view('contacts');
+    Route::get('/contact', function () {
+        return view('contacts');
+    });
+
+    Route::get('/services', function () {
+        return view('services');
+    });
+
+    Route::get('/souvenirs-all', function () {
+        return view('souvenirs');
+    });
+
 });
 
-Route::get('/services', function () {
-    return view('services');
-});
+
+Route::get('locale/{locale}', [ContactController::class, 'changeLocale']) -> name('locale');
 
 Route::get('/dashboard/addsouvenir', function () {
     return view('addsouvenir');
@@ -30,10 +40,6 @@ Route::get('/map', function () {
 
 Route::get('/orders', function () {
     return view('orders');
-});
-
-Route::get('/souvenirs-all', function () {
-    return view('souvenirs');
 });
 
 Route::get('/test', function () {

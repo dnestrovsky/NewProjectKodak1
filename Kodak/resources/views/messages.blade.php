@@ -2,8 +2,7 @@
 
 
 
-@section('title-block', 'Messages')
-@section('title-page', 'Сообщения от пользователей')
+@section('title-block', 'Сообщения')
 
 @section('content')
 

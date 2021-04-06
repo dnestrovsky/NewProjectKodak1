@@ -147,27 +147,39 @@ html{
 
 #home .content h1::after{
     content: "Реставрация фото";
-    animation: textanim 10s linear infinite;
+    animation: textanim 20s linear infinite;
 }
 
 @keyframes textanim{
-    25%{
+    10%{
         content: "Фото на документы";
     }
-    50%{
+    20%{
         content: "Цифровая печать фото";
     }
-    75%{
+    30%{
         content: "Ретушь фото";
     }
-    90%{
+    40%{
         content: "Печать на кружках и тарелках";
     }
-    115%{
+    50%{
         content: "Пазлы";
     }
-    140%{
+    60%{
         content: "Печать на холсте";
+    }
+    70%{
+        content: "Photo pentru acte";
+    }
+    80%{
+        content: "Imprimare foto digitală";
+    }
+    90%{
+        content: "Imprimarea pe căni și farfurii";
+    }
+    100%{
+        content: "Restaurarea pozelor";
     }
 }
 
@@ -641,6 +653,7 @@ footer{
         max-width: 400px;
         padding: 80px 50px;
         transition: .3s linear;
+        overflow-y: scroll;
     }
 
     .navbar-menu a{
@@ -733,12 +746,12 @@ footer{
 
 @media screen and (max-width: 400px){
     .inner-width{
-        padding: 0 50px;
+        padding: 0 20px;
     }
 
     #home .content h1{
         font-family: 'Rubik One', sans-serif;
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
         background: linear-gradient(180deg, rgb(225, 131, 25), rgb(238, 207, 89));
         -webkit-background-clip: text;
@@ -746,7 +759,7 @@ footer{
         color: #0B2349;
         display: table;
         margin: 20px auto;
-        text-shadow: -4px -4px 0px #D2EAD7;
+        text-shadow: none;
     }
 
     .skill{
@@ -806,5 +819,42 @@ footer{
     font-size: 26px;
     margin-top: 14px;
 }
+
+
+.slider{
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    background: url(../img/2.jpg) no-repeat;
+    background-position: 0 center;
+    background-size: 200px;
+    position: relative;
+}
+
+.slider input{
+    -webkit-appearance: none;
+    width: 100%;
+    background: none;
+    z-index: 10;
+}
+
+.slider input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 10px;
+    height: 100vh;
+    background-color: #d71010;
+    cursor: pointer;
+}
+
+.original-image{
+    position: absolute;
+    left: 0;
+    width: 5%;
+    height: 100vh;
+    background: url(../img/1.jpg) no-repeat;
+    background-position: 0 center;
+    background-size: 200px;
+}
+
 
 

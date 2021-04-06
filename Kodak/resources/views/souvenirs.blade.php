@@ -1,14 +1,13 @@
 @extends('layouts.app')
 
 
-@section('title-block', 'Kodak - Сувениры')
-@section('title-page', 'Сувениры')
+@section('title-block', 'Сувениры')
 
 @section('content')
     <!-- Works -->
     <section id="works" class="dark1">
         <div class="inner-width">
-            <h1 class="section-title">Сувениры</h1>
+            <h1 class="section-title">@lang('main.suvenir')</h1>
             <div class="works">
                 @foreach($data as $souvenir)
                 <a href="{{Storage::url($souvenir->image)}}" class="work">

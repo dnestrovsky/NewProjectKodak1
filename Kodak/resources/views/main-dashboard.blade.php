@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title-page', 'Административная панель')
+@section('title-block', 'Административная панель')
 
 
 @section('content')
@@ -27,7 +27,6 @@
 
                 <div class="container">
                     <button class="btn btn1">Последние сообщения</button>
-                    <button class="btn btn1">Последние заказы</button>
                 </div>
             </div>
         </div>
@@ -48,62 +47,6 @@
                     </div>
                 </div>
             @endforeach
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="dark">
-        <div class="inner-width">
-            <h1 class="section-title">Последние заказы</h1>
-            <div class="services">
-                <div class="service">
-                    <a href="contact.html">
-                        <i class="icon fas fa-paint-brush"></i>
-                        <h4>Заказ N1</h4>
-                        <p>Реставрация фото</p>
-                    </a>
-                </div>
-
-                <div class="service">
-                    <a href="contact.html">
-                        <i class="icon fas fa-paint-brush"></i>
-                        <h4>Заказ N1</h4>
-                        <p>Реставрация фото</p>
-                    </a>
-                </div>
-
-                <div class="service">
-                    <a href="contact.html">
-                        <i class="icon fas fa-paint-brush"></i>
-                        <h4>Заказ N1</h4>
-                        <p>Реставрация фото</p>
-                    </a>
-                </div>
-
-                <div class="service">
-                    <a href="contact.html">
-                        <i class="icon fas fa-paint-brush"></i>
-                        <h4>Заказ N1</h4>
-                        <p>Реставрация фото</p>
-                    </a>
-                </div>
-
-                <div class="service">
-                    <a href="contact.html">
-                        <i class="icon fas fa-paint-brush"></i>
-                        <h4>Заказ N1</h4>
-                        <p>Реставрация фото</p>
-                    </a>
-                </div>
-
-                <div class="service">
-                    <a href="contact.html">
-                        <i class="icon fas fa-paint-brush"></i>
-                        <h4>Заказ N1</h4>
-                        <p>Реставрация фото</p>
-                    </a>
-                </div>
-            </div>
         </div>
     </section>
 

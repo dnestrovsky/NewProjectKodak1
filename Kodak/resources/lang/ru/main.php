@@ -7,7 +7,7 @@ return [
     'servicii' => 'Услуги',
     'suvenir' => 'Сувениры',
     'cont' => 'Контакты',
-    'auth' => 'Авторизация',
+    'auth' => 'Войти',
     'grafic' => 'График работы',
     'serv_main' => 'Что мы делаем?',
     'current_lang' => 'ru',

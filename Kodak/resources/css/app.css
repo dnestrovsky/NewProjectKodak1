@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik+One&subset=latin,cyrillic);
+
 *{
     margin: 0;
     padding: 0;
@@ -45,12 +47,6 @@ html{
     justify-content: space-between;
 }
 
-.logo{
-    width: 250px;
-    height: 90px;
-    background-image: url(../img/white-logo.png);
-    background-size: contain;
-}
 
 .menu-toggler{
     background: none;
@@ -74,12 +70,13 @@ html{
 
 .navbar-menu a{
     margin-left: 10px;
-    color: black;
+    color: #000000;
     text-transform: uppercase;
-    font-size: 14px;
-    padding: 12px 20px;
+    font-size: 15px;
+    padding: 15px 15px;
     border-radius: 4px;
     transition: .3s linear;
+    font-family: 'Rubik One', sans-serif;
 }
 
 .sign{
@@ -98,22 +95,20 @@ html{
     padding: 18px 0;
 }
 
-.sticky .logo{
-    background-image: url(../img/black-logo.png);
-}
+
 
 .sticky .navbar-menu a{
-    color: #111;
+    color: #090808;
 }
 
 .sticky .menu-toggler span{
-    background-color: #111;
+    background-color: #000000;
 }
 
 #home{
     height: 100vh;
     min-height: 500px;
-    background-image: linear-gradient(45deg, #f8a261, #6e9fc9), url(../img/bg.jpg);
+    background-image: linear-gradient(45deg, #f8a261, #6e9fc9);
     background-blend-mode: darken;
     background-size: 100% 100%, 4px 4px, cover;
     background-attachment: fixed;
@@ -147,33 +142,59 @@ html{
 
 #home .content h1::after{
     content: "Реставрация фото";
-    animation: textanim 10s linear infinite;
+    animation: textanim 20s linear infinite;
 }
 
 @keyframes textanim{
-    25%{
+    10%{
         content: "Фото на документы";
     }
-    50%{
+    20%{
         content: "Цифровая печать фото";
     }
-    75%{
+    30%{
         content: "Ретушь фото";
     }
-    90%{
+    40%{
         content: "Печать на кружках и тарелках";
     }
-    115%{
+    50%{
         content: "Пазлы";
     }
-    140%{
+    60%{
         content: "Печать на холсте";
+    }
+    70%{
+        content: "Photo pentru acte";
+    }
+    80%{
+        content: "Imprimare foto digitală";
+    }
+    90%{
+        content: "Imprimarea pe căni și farfurii";
+    }
+    100%{
+        content: "Restaurarea pozelor";
     }
 }
 
 .sm a{
     color: gold;
-    font-size: 22px;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm .viber{
+    color: #8812b7;
+    font-size: 30px;
+    margin: 0 10px;
+    transition: .2s linear;
+}
+
+.sm .whatsapp{
+    color: #137e16;
+    font-size: 30px;
     margin: 0 10px;
     transition: .2s linear;
 }
@@ -263,8 +284,28 @@ section{
     font-size: 16px;
 }
 
+.textr{
+    margin: 10px 0;
+    color: #444;
+    font-size: 25px;
+}
+
 .about-text h3 span:nth-child(1):after,
-.about-text h3 span:nth-child(2):after{
+.about-text h3 span:nth-child(2):after,
+.about-text h3 span:nth-child(3):after,
+.about-text h3 span:nth-child(4):after,
+.about-text h3 span:nth-child(5):after,
+.about-text h3 span:nth-child(6):after{
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 14px;
+}
+
+.about-text h3 span:nth-child(1):before{
     content: "";
     width: 6px;
     height: 6px;
@@ -288,6 +329,12 @@ section{
     flex-wrap: wrap;
 }
 
+.skillsh1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fdfcfc;
+}
+
 .skill{
     width: calc(50% - 20px);
     margin: 15px 0;
@@ -309,12 +356,12 @@ section{
     content: "";
     position: absolute;
     height: 6px;
-    background-color: #48dbfb;
+    background-color: #1bef03;
     bottom: 0;
 }
 
 .html:after{
-    width: 90%;
+    width: 50%;
 }
 
 .css:after{
@@ -340,7 +387,7 @@ section{
 section.dark1{
     height: 100%;
     min-height: 500px;
-    background-image: linear-gradient(45deg, #f8a261, #6e9fc9), url(../images/bg.jpg);
+    background-image: linear-gradient(45deg, #f8a261, #6e9fc9);
     background-blend-mode: darken;
     background-size: 100% 100%, 4px 4px, cover;
     background-attachment: fixed;
@@ -349,7 +396,7 @@ section.dark1{
 section.dark{
     height: 100vh;
     min-height: 500px;
-    background-image: linear-gradient(45deg, #f8a261, #6e9fc9), url(../images/bg.jpg);
+    background-image: linear-gradient(45deg, #f8a261, #6e9fc9);
     background-blend-mode: darken;
     background-size: 100% 100%, 4px 4px, cover;
     background-attachment: fixed;
@@ -364,6 +411,22 @@ section.dark .section-title::before{
 }
 
 section.dark .section-title::after{
+    border: 4px solid #353b48;
+}
+
+section.dark3{
+    background-color: #353b48;
+}
+
+section.dark3 .section-title{
+    color: #f1f1f1;
+}
+
+section.dark3 .section-title::before{
+    background-color: #f1f1f1;
+}
+
+section.dark3 .section-title::after{
     border: 4px solid #353b48;
 }
 
@@ -584,8 +647,6 @@ section.dark .section-title::after{
 
 footer{
     box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
-    background: url(../img/bg.jpg) no-repeat center;
-    background-size: cover;
     color: black;
     padding: 80px 0;
     text-align: left;
@@ -635,17 +696,18 @@ footer{
         position: fixed;
         height: 100vh;
         width: 100%;
-        background-color: #353b48;
+        background-color: #0f6e66;
         top: 0;
         right: -100%;
         max-width: 400px;
         padding: 80px 50px;
         transition: .3s linear;
+        overflow-y: scroll;
     }
 
     .navbar-menu a{
         display: block;
-        font-size: 30px;
+        font-size: 20px;
         margin: 30px 0;
     }
 
@@ -653,6 +715,7 @@ footer{
         display: block;
         font-size: 30px;
         margin: 30px 0;
+        text-align: center;
     }
 
     .sticky .navbar-menu{
@@ -733,7 +796,7 @@ footer{
 
 @media screen and (max-width: 400px){
     .inner-width{
-        padding: 0 50px;
+        padding: 0 20px;
     }
 
     #home .content h1{
@@ -746,7 +809,7 @@ footer{
         color: #0B2349;
         display: table;
         margin: 20px auto;
-        text-shadow: -4px -4px 0px #D2EAD7;
+        text-shadow: none;
     }
 
     .skill{
@@ -808,3 +871,80 @@ footer{
 }
 
 
+.gallery-section{
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+}
+
+.inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.gallery-section h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+}
+
+.gallery-section .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+}
+
+.gallery-section .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-section .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+
+.gallery-section .image:hover img{
+    transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width:960px) {
+    .gallery-section .image{
+        flex: 33.33%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gallery-section .image{
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section .image{
+        flex: 100%;
+    }
+}
+
+.striped-shadow {
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: -4px -4px 0px #e79201;
+    background: repeating-linear-gradient(45deg, #6EB495, #6EB495 1px, white 2px, white 3px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: table;
+    margin: 20px auto;
+}

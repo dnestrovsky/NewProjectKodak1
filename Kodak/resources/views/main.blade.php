@@ -31,9 +31,9 @@
                 <h2>@lang('main.serv_main')</h2>
                 <h1> </h1>
                 <div class="sm">
-                    <a href="#" class="fab fa-viber viber"></a>
-                    <a href="#" class="fab fa-whatsapp whatsapp"></a>
-                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="/contact" class="fab fa-viber viber"></a>
+                    <a href="/contact" class="fab fa-whatsapp whatsapp"></a>
+                    <a href="/contact" class="fas fa-envelope"></a>
                 </div>
                 <div class="buttons">
                     <a href="/contact">@lang('main.cont')</a>
@@ -42,26 +42,8 @@
         </div>
     </section>
 
-    <!-- Home -->
-    <section id="about">
-        <div class="inner-width">
-            <h1 class="section-title">@lang('main.info')</h1>
-            <div class="about-content">
-                <img src="img/pic.png" alt="" class="about-pic">
-                <div class="about-text">
-                    <h2>Palitra Kodak</h2>
-                    <h3>
-                        <span>Фото на документы</span>
-                        <span>Альбомы и Фоторамки</span>
-                        <span>Реставрация фото</span>
-                    </h3>
-                    <p>
-                        Печать фотографий
+ @include('inc.info')
 
-                    </p>
-                </div>
-            </div>
-        </div>
         <!-- Education -->
         <section id="education">
             <div class="inner-width">
@@ -69,32 +51,32 @@
                 <div class="time-line">
                     <div class="block">
                         <h4>8:00 - 16:00</h4>
-                        <h3>Вторник</h3>
+                        <h3>@lang('main.grafic_1')</h3>
                     </div>
 
                     <div class="block">
                         <h4>8:00 - 16:00</h4>
-                        <h3>Среда</h3>
+                        <h3>@lang('main.grafic_2')</h3>
                     </div>
 
                     <div class="block">
                         <h4>8:00 - 16:00</h4>
-                        <h3>Четверг</h3>
+                        <h3>@lang('main.grafic_3')</h3>
                     </div>
 
                     <div class="block">
                         <h4>8:00 - 16:00</h4>
-                        <h3>Пятница</h3>
+                        <h3>@lang('main.grafic_4')</h3>
                     </div>
 
                     <div class="block">
                         <h4>8:00 - 14:00</h4>
-                        <h3>Суббота</h3>
+                        <h3>@lang('main.grafic_5')</h3>
                     </div>
 
                     <div class="block">
                         <h4>8:00 - 14:00</h4>
-                        <h3>Воскресение</h3>
+                        <h3>@lang('main.grafic_6')</h3>
                     </div>
                 </div>
             </div>

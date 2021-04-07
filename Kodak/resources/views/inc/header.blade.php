@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar">
     <div class="inner-width">
-        <a href="/" class="logo"></a>
+        <a href="/" class="logo" style="background-image: url(../img/white-logo.png); background-size: contain;"></a>
         <button class="menu-toggler">
             <span></span>
             <span></span>

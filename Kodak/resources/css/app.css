@@ -35,6 +35,11 @@ html{
     transition: .3s linear;
 }
 
+.logo{
+    width: 250px;
+    height: 90px;
+}
+
 .inner-width{
     max-width: 1300px;
     margin: auto;

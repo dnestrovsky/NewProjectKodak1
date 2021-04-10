@@ -538,3 +538,96 @@ textarea.contact-form-text{
     background: #2980b9;
 }
 
+
+.col{
+    flex: 1;
+    height: 100px;
+    position: relative;
+}
+.countdown-col{
+    background: url(bg.png) no-repeat center;
+    background-size: cover;
+}
+.time{
+    color: #0b403e;
+    text-transform: uppercase;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.time span{
+    padding: 0 14px;
+    font-size: 20px;
+}
+.time span div{
+    font-size: 40px;
+}
+
+.blog-posts{
+    width: min(1200px, 100%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.post{
+    width: calc(33% - 10px);
+    overflow: hidden;
+}
+
+.post-img{
+    width: 75%;
+    border-radius: 6px;
+    transition: .3s linear;
+}
+
+.post-content{
+    background-color: #0c5d73;
+    margin: 0 20px;
+    padding: 30px;
+    border-radius: 6px;
+    transform: translateY(-60px);
+    transition: .3s linear;
+}
+
+.post-content h3{
+    color: #ef417b;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.date{
+    font-size: 15px;
+    font-style: italic;
+    color: #e77f67;
+}
+
+.buttonadmin{
+    margin-top: 20px;
+}
+
+.post:hover .post-img{
+    transform: translateY(20px);
+}
+
+.post:hover .post-content{
+    transform: translateY(-80px);
+}
+
+@media screen and (max-width: 1200px){
+    .blog-posts{
+        justify-content: center;
+    }
+    .post{
+        width: min(600px, 100%);
+    }
+}

@@ -16,7 +16,7 @@
             <a href="{{ route('locale', __('main.set_lang')) }}">@lang('main.set_lang')</a>
             @if (Route::has('login'))
                 @auth
-                <a href="/dashboard" class="sign">Админ-Панель</a>
+                <a href="/dashboard" class="sign">Админка</a>
             @else
                 <a href="/login" class="sign">@lang('main.auth')</a>
                 @endauth

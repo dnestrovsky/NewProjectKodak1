@@ -10,15 +10,19 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h1>Добро пожаловать в админ панель</h1>
-                <table>
-                    <tr><th>ID</th><th>Имя</th><th>Добавлено</th><th>Изменено</th><th>Подробнее</th></tr>
+                <div class="blog-posts">
                     @foreach($data as $el)
-                        <tr><td>{{$el->id}}</td><td>{{$el->name}}</td><td>{{$el->created_at}}</td><td>{{$el->updated_at}}</td>
-                            <td><a class="btn btn3"  href="{{ route('messages-data-one', $el->id) }}" >Просмотреть</a></td>
-                        </tr>
+                    <div class="post">
+                        <a  href="{{ route('messages-data-one', $el->id) }}">
+                        <img src="img/letter.png" alt="" class="post-img">
+                        <div class="post-content">
+                            <h3>{{$el->name}}</h3>
+                            <span class="date">Дата: {{$el->created_at}}</span>
+                        </div>
+                        </a>
+                    </div>
                     @endforeach
-                </table>
+                </div>
                 <div class="w-100">{{$data->links()}}</div>
             </div>
         </div>

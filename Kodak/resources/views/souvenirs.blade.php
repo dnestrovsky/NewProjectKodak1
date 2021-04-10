@@ -10,7 +10,7 @@
             <h1 class="section-title">@lang('main.suvenir')</h1>
             <div class="works">
                 @foreach($data as $souvenir)
-                <a href="{{Storage::url($souvenir->image)}}" class="work">
+                <a href="{{ route('souvenir-data1', $souvenir->id) }}" class="work">
                     <img src="{{Storage::url($souvenir->image)}}" alt="">
                     <div class="info">
                         <h3>{{$souvenir->name}}</h3>

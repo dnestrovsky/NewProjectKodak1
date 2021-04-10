@@ -11,22 +11,23 @@
             <div class="content">
                 <h1>Добро пожаловать в админ панель</h1>
 
-                <div class="container">
-                    <div class="count">
-                        <div class="countd">
-                            <span id="days">{{ DB::table('contacts')->count() }}</span>
+                <div class="countdown-col col">
+                    <div class="time middle">
+                        <span>
+                            <div id="d">{{ DB::table('contacts')->count() }}</div>
                             Сообщений
-                        </div>
-
-                        <div class="countd">
-                            <span id="hours">00</span>
-                            Заказов
-                        </div>
+                        </span>
+                            <span>
+                        <div id="h">{{ DB::table('souvenirs')->count() }}</div>
+                                Товаров
+                            </span>
                     </div>
                 </div>
 
                 <div class="container">
+                    <a href="#education">
                     <button class="btn btn1">Последние сообщения</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -42,7 +43,7 @@
                         <h4>{{$el->name}}</h4>
                         <h3>Дата: {{$el->created_at}}</h3>
                         <p class="lead">
-                            <a class="btn btn-outline-primary" href="{{ route('messages-data-one', $el->id) }}" role="button">Подробнее</a>
+                            <a class="btn btn2" href="{{ route('messages-data-one', $el->id) }}" role="button">Подробнее</a>
                         </p>
                     </div>
                 </div>

@@ -59,6 +59,11 @@ class SouvenirsController extends Controller
         return view('souvenir-show', compact('souvenir'));
     }
 
+    public function showprod($id){
+        $souvenir = new Souvenirs();
+        return view('souvenirpage', ['data' => $souvenir->find($id)]);
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

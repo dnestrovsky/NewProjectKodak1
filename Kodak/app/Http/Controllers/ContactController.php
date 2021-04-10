@@ -25,7 +25,7 @@ class ContactController extends Controller
 
     public function allData(){
         $contact = new Contact();
-        return view('messages', ['data' => Contact::orderBy('created_at','desc') -> paginate(4)]);
+        return view('messages', ['data' => Contact::orderBy('created_at','desc') -> paginate(6)]);
     }
 
     public function messagesAdmin(){

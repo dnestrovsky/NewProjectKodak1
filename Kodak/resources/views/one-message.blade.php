@@ -19,13 +19,9 @@
                         <div class="name">{{$data->name}}</div>
                         <div class="desc">Пользователь</div>
                         <div class="sm">
-                            <a href="#" class="fab fa-facebook-f"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-github"></a>
-                            <a href="#" class="fab fa-youtube"></a>
+                            <a href="{{ route('delete-message', $data->id) }}" class="fas fa-trash"></a>
                         </div>
                         <a href="#" class="contact-btn">{{$data->message}}</a>
-                        <a class="contact-btn" href="{{ route('delete-message', $data->id) }}" role="button">Удалить</a>
                     </div>
                     <div class="card-footer">
                         <div class="numbers">

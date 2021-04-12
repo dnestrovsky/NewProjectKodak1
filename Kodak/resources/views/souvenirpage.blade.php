@@ -8,12 +8,12 @@
     <section id="works" class="dark1">
         <div class="inner-width">
             <!-- Contact -->
-            <h2 class="section-title">{{$data->name}}</h2>
+            <h2 class="section-title">{{$data->__('name')}}</h2>
             <div class="about-content">
                 <img src="{{Storage::url($data->image)}}" alt="" class="about-pic">
                 <div class="about-text">
                     <h3>
-                        <span>{{ $data->description }}</span>
+                        <span>{{ $data->__('description') }}</span>
                     </h3>
                 </div>
             </div>

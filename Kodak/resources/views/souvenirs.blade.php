@@ -13,7 +13,7 @@
                 <a href="{{ route('souvenir-data1', $souvenir->id) }}" class="work">
                     <img src="{{Storage::url($souvenir->image)}}" alt="">
                     <div class="info">
-                        <h3>{{$souvenir->name}}</h3>
+                        <h3>{{$souvenir->__('name')}}</h3>
                         <div class="cat">Сувениры на память {{ $souvenir->updated_at }}</div>
                     </div>
                 </a>

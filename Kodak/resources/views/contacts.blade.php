@@ -33,7 +33,7 @@
 
                 <input type="text" name="name" class="nameZone" id="name" placeholder="@lang('main.cont_name')">
                 <input type="text" name="phone" class="emailZone" id="phone" placeholder="@lang('main.cont_number')">
-                <input type="text" name="email" class="emailZone" id="email" placeholder="@lang('main.cont_email')">
+                <input type="text" name="email" class="subjectZone" id="email" placeholder="@lang('main.cont_email')">
                 <textarea name="message" id="message" class="messageZone" placeholder="@lang('main.cont_message')"></textarea>
                 <input type="submit" value="@lang('main.cont_send')" class="btn">
             </form>

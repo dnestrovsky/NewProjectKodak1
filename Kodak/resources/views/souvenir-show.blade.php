@@ -8,7 +8,6 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h1>Добро пожаловать в админ панель</h1>
 
                 <div class="profile-card">
                     <div class="card-header">
@@ -16,6 +15,7 @@
                             <img src="{{Storage::url($souvenir->image)}}" alt="">
                         </div>
                         <div class="name">{{$souvenir->name}}</div>
+                        <div class="name">{{$souvenir->name_ro}}</div>
                         <div class="desc">Сувенир</div>
                         <div class="sm">
                             <a href="#" class="fab fa-facebook-f"></a>
@@ -24,6 +24,7 @@
                             <a href="#" class="fab fa-youtube"></a>
                         </div>
                         <a href="#" class="contact-btn">{{ $souvenir->description}}</a>
+                        <a href="#" class="contact-btn">{{ $souvenir->description_ro}}</a>
                     </div>
                     <div class="card-footer">
                         <div class="numbers">

@@ -23,7 +23,7 @@
                     </div>
                     @endforeach
                 </div>
-                <div class="w-100">{{$data->links()}}</div>
+                <div>{{$data->links('default')}}</div>
             </div>
         </div>
     </section>

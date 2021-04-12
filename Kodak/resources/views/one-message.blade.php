@@ -9,7 +9,6 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h1>Добро пожаловать в админ панель</h1>
 
                 <div class="profile-card">
                     <div class="card-header">

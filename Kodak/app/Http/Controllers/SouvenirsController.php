@@ -15,7 +15,7 @@ class SouvenirsController extends Controller
      */
     public function index()
     {
-        $souvenirs = Souvenirs::orderBy('created_at','desc')->paginate(4);
+        $souvenirs = Souvenirs::orderBy('created_at','desc')->Paginate(4);
         return view('allsouvenirs', compact('souvenirs'));
     }
 

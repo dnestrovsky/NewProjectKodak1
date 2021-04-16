@@ -17,12 +17,6 @@
                         <div class="name">{{$souvenir->name}}</div>
                         <div class="name">{{$souvenir->name_ro}}</div>
                         <div class="desc">Сувенир</div>
-                        <div class="sm">
-                            <a href="#" class="fab fa-facebook-f"></a>
-                            <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-github"></a>
-                            <a href="#" class="fab fa-youtube"></a>
-                        </div>
                         <a href="#" class="contact-btn">{{ $souvenir->description}}</a>
                         <a href="#" class="contact-btn">{{ $souvenir->description_ro}}</a>
                     </div>

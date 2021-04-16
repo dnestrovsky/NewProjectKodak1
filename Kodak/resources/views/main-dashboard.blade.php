@@ -26,7 +26,7 @@
 
                 <div class="container">
                     <a href="#education">
-                    <button class="btn btn1">Последние сообщения</button>
+                    <button class="btn btn2">Последние сообщения</button>
                     </a>
                 </div>
             </div>

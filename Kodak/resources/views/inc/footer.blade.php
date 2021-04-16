@@ -7,7 +7,7 @@
             <a href="/contact" class="fas fa-envelope"></a>
         </div>
         <div class="copyright">
-            &copy; 2021 | Created & Designed By <a href="#">Palitra-Kodak</a>
+            &copy; 2021 | Created & Designed By <a href="#">dnestrovsky</a>
         </div>
     </div>
 </footer>

@@ -11,7 +11,7 @@ Route::middleware(['set_locale']) -> group(function () {
 
     Route::get('/contact', function () {
         return view('contacts');
-    });
+    })->name('contact');
 
     Route::get('/services', function () {
         return view('services');

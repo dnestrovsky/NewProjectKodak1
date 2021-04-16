@@ -8,6 +8,7 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
+                @include('inc.messages')
                 <h2>@lang('main.serv_main')</h2>
                 <h1> </h1>
                 <div class="sm">

@@ -1,7 +1,7 @@
 @if ($errors->any())
     <div class="alert alert-dark" role="alert">
         <div class="font-medium text-red-600">
-            {{ __('Whoops! Something went wrong.') }}
+            {{ __('Ошибка') }}
         </div>
         <div>
             <ul class="mt-3 list-disc list-inside text-sm text-red-600">
@@ -14,7 +14,7 @@
 @endif
 
 @if(session('success'))
-<div class="alert alert-success">
+<div class="alert">
     {{ session('success')}}
 </div>
 @endif

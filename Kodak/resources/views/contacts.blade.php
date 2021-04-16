@@ -9,6 +9,7 @@
     <section id="works" class="dark1">
         <div class="inner-width">
             <!-- Contact -->
+            @include('inc.messages')
             <h2 class="section-title">@lang('main.cont')</h2>
             <div class="contact-info">
                 <div class="item">

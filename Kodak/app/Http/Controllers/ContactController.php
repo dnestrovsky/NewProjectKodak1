@@ -18,7 +18,7 @@ class ContactController extends Controller
 
         $contact->save();
 
-        return redirect()->route('home')->with('success', 'Сообщение отправлено');
+        return redirect()->route('contact')->with('success', 'Сообщение отправлено!');
 
 
     }

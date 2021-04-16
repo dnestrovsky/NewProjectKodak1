@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: linear-gradient(45deg, #f8a261, #6e9fc9);
+    background-blend-mode: darken;
+    background-size: 100% 100%, 4px 4px, cover;
+    background-attachment: fixed;
+}
+
 header{
     height: 90px;
     background: #2f3640;
@@ -129,12 +136,9 @@ section{
 
 
 #home{
-    height: 100vh;
+    height: 100%;
     min-height: 500px;
-    background-image: linear-gradient(45deg, #f8a261, #6e9fc9);
-    background-blend-mode: darken;
-    background-size: 100% 100%, 4px 4px, cover;
-    background-attachment: fixed;
+    background: inherit;
 }
 
 #home .inner-width{
@@ -211,7 +215,7 @@ section{
 .btn{
     border: none;
     margin: 20px;
-    padding: 5px;
+    padding: 10px;
     width: 220px;
     font-family: "montserrat",sans-serif;
     text-transform: uppercase;
@@ -234,9 +238,6 @@ section{
     background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
 }
 
-.btn4{
-    background-image: linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
-}
 
 .btn:hover{
     background-position: right;
@@ -335,31 +336,6 @@ section{
     color: #fff;
 }
 
-table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    font-size: 15px;
-    background: inherit;
-    width: 100%;
-    border-collapse: collapse;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-}
-th {
-    font-weight: normal;
-    color: #039;
-    border-bottom: 2px solid #6678b1;
-    padding: 10px 8px;
-}
-td {
-    color: #669;
-    padding: 9px 8px;
-    transition: .3s linear;
-}
-tr:hover td {
-    color: #6699ff;
-}
 
 .form-control-file{
     position: absolute;
@@ -638,6 +614,9 @@ textarea.contact-form-text{
     text-align: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 30%;
+    box-shadow: 0px -5px 5px -5px rgba(34, 60, 80, 0.6);
 }
 
 .pagination a{
@@ -708,7 +687,7 @@ textarea.contact-form-text{
 .pricing-list li{
     margin: 8px 0;
     font-size: 14px;
-    color: #344;
+    color: #25b0b0;
     text-align: center;
 }
 
@@ -806,4 +785,12 @@ textarea.contact-form-text{
     .pricing-table{
         flex: 100%;
     }
+
+    .pagination{
+        flex: 100%;
+    }
+}
+
+label {
+    color: white;
 }

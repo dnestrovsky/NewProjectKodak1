@@ -29,6 +29,8 @@
                 </div>
             </div>
 
+            <h2 class="section-title">Отправить нам сообщение</h2>
+
             <form action="{{ route('contact-form') }}" method="post" class="contact-form">
                 @csrf
 

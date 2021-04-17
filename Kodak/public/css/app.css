@@ -340,7 +340,7 @@ section{
 
 .about-pic{
   width: 200px;
-  border-radius: 50%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
   margin-right: 100px;
 }
 
@@ -386,10 +386,11 @@ section{
 }
 
 .about-text p{
-  font-size: 17px;
+  font-size: 20px;
   text-align: justify;
   line-height: 26px;
   margin-top: 20px;
+    font-family: "montserrat", sans-serif;
 }
 
 .skills{
@@ -522,15 +523,6 @@ section.dark5{
     justify-content: center;
 }
 
-section.dark5 video{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 
 .services{
   display: flex;
@@ -592,15 +584,6 @@ section.dark5 video{
   position: relative;
 }
 
-#holst video{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
 
 .block::before{
   content: "";

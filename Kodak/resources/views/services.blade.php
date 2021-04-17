@@ -137,7 +137,7 @@
 
                     </div>
                     <p>
-                        В нашем магазине Вы можете сделать фото на документы любового вида и любого размера.
+                        В нашем магазине Вы можете сделать фото на документы любового типа.
                     </p>
                 </div>
             </div>
@@ -152,24 +152,21 @@
                 <a href="img/collaj.jpg" class="work">
                     <img src="img/collaj.jpg" alt="">
                     <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
+                        <h3>Коллажи</h3>
                     </div>
                 </a>
 
                 <a href="img/collaj2.jpg" class="work">
                     <img src="img/collaj2.jpg" alt="">
                     <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
+                        <h3>Коллажи</h3>
                     </div>
                 </a>
 
                 <a href="img/collaj3.jpg" class="work">
                     <img src="img/collaj3.jpg" alt="">
                     <div class="info">
-                        <h3>Work Title</h3>
-                        <div class="cat">Music, Headset</div>
+                        <h3>Коллажи</h3>
                     </div>
                 </a>
 

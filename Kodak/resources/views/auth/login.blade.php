@@ -17,16 +17,12 @@
             <!-- Password -->
                 <input id="password" type="password" name="password" placeholder="Пароль" required autocomplete="current-password" />
             <!-- Remember Me -->
-                <label for="remember_me">
-                    <input id="remember_me" type="checkbox"  name="remember">
-                    <span {{ __('Запомнить меня') }}</span>
+            <div>
+                <label for="remember_me" >
+                    <input id="remember_me" type="checkbox" name="remember">
+                    <span class="text">{{ __('Запомнить меня') }}</span>
                 </label>
-
-                @if (Route::has('password.request'))
-                    <a  href="{{ route('password.request') }}">
-                        {{ __('Забыли пароль?') }}
-                    </a>
-                @endif
+            </div>
 
                 <p><input type="submit" value="Войти"></p>
         </form>

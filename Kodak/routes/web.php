@@ -35,17 +35,8 @@ Route::get('/dashboard/allsouvenirs', function () {
     return view('allsouvenirs');
 })->name('allsouvenirs');
 
-Route::get('/map', function () {
-    return view('map');
-});
 
-Route::get('/orders', function () {
-    return view('orders');
-});
 
-Route::get('/test', function () {
-    return view('test');
-});
 
 Route::resource('souvenirs', SouvenirsController::class)->middleware(['auth']);
 

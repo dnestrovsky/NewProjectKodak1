@@ -12,7 +12,7 @@
                 <a class="btn btn2" href = "{{route('souvenirs.create')}}" > + Добавить новый товар</a>
                 <div class="containersouv">
                     @foreach($souvenirs as $souvenir)
-                        <div class="pricing-table table1">
+                        <div class="pricing-table table3">
                             <div class="pricing-header">
                                 <div class="price">Сувенир</div>
                                 <div class="title">{{$souvenir->name}}</div>

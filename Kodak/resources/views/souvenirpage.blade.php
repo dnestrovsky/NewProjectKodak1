@@ -29,20 +29,20 @@
                     <div class="inner-width">
                         <div class="gallery">
 
-                            <a href="../img/2.jpg" class="image">
-                                <img src="../img/2.jpg" alt="">
+                            <a href="{{Storage::url($data->image)}}" class="image">
+                                <img src="{{Storage::url($data->image)}}" alt="">
                             </a>
 
-                            <a href="../img/1.jpg" class="image">
-                                <img src="../img/1.jpg" alt="">
+                            <a href="{{Storage::url($data->image)}}" class="image">
+                                <img src="{{Storage::url($data->image)}}" alt="">
                             </a>
 
-                            <a href="../img/2.jpg" class="image">
-                                <img src="../img/2.jpg" alt="">
+                            <a href="{{Storage::url($data->image)}}" class="image">
+                                <img src="{{Storage::url($data->image)}}" alt="">
                             </a>
 
-                            <a href="../img/1.jpg" class="image">
-                                <img src="../img/1.jpg" alt="">
+                            <a href="{{Storage::url($data->image)}}" class="image">
+                                <img src="{{Storage::url($data->image)}}" alt="">
                             </a>
 
                         </div>

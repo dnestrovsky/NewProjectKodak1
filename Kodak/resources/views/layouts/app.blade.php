@@ -20,9 +20,9 @@
 @include('inc.footer')
 
 <!-- Go Top BTN -->
-<div class="viberbutton fab fa-viber viber">
-    <a href="viber://chat?number=%2B37367279199"></a>
-</div>
+
+    <a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367279199"></a>
+
 
 
 <!-- Go Top BTN -->

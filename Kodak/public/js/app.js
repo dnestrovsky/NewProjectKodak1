@@ -12,9 +12,11 @@ $(document).ready(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
       $(".goTop").fadeIn();
+      $(".viberbutton").fadeIn();
     } else {
       $(".navbar").removeClass("sticky");
       $(".goTop").fadeOut();
+      $(".viberbutton").fadeOut();
     }
   });
   $(".goTop").click(function () {

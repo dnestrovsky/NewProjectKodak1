@@ -773,6 +773,23 @@ footer{
   display: none;
 }
 
+.viberbutton{
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    left: 40px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #9b0e99;
+    outline: none;
+    display: none;
+    font-size: 40px;
+    margin: 0 10px;
+}
+
 @media screen and (max-width: 980px){
   .menu-toggler{
     display: block;

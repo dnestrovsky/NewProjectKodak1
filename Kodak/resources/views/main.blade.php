@@ -13,7 +13,6 @@
                 <h1> </h1>
                 <div class="sm">
                     <a href="/contact" class="fab fa-viber viber"></a>
-                    <a href="/contact" class="fab fa-whatsapp whatsapp"></a>
                     <a href="/contact" class="fas fa-envelope"></a>
                 </div>
                 <div class="buttons">

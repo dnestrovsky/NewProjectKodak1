@@ -37,6 +37,7 @@ return [
     'cont_email' => 'E-mail',
     'cont_message' => 'Mesajul dvs',
     'cont_send' => 'Trimite',
-
-
+    'main_info4' => 'Imprimarea pe cani',
+    'main_info5' => 'Imprimarea pe plăci',
+    'main_info6' => 'Puzzle-uri',
 ];

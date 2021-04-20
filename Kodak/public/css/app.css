@@ -383,7 +383,10 @@ section{
 .about-text h3 span:nth-child(3):after,
 .about-text h3 span:nth-child(4):after,
 .about-text h3 span:nth-child(5):after,
-.about-text h3 span:nth-child(6):after{
+.about-text h3 span:nth-child(6):after,
+.about-text h3 span:nth-child(7):after,
+.about-text h3 span:nth-child(8):after,
+.about-text h3 span:nth-child(9):after{
   content: "";
   width: 6px;
   height: 6px;

@@ -4,50 +4,56 @@
 
 
 @section('content')
-
     <!-- Home -->
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h1>Добро пожаловать в админ панель</h1>
+                <h1>Админ-панель</h1>
+                <div class="services">
+                    <div class="service">
+                        <i class="icon fas fa-paint-brush"></i>
+                        <h4>{{ DB::table('contacts')->count() }} Сообщений</h4>
+                        <p>Общее количество сообщений</p>
+                    </div>
 
-                <div class="countdown-col col">
-                    <div class="time middle">
-                        <span>
-                            <div id="d">{{ DB::table('contacts')->count() }}</div>
-                            Сообщений
-                        </span>
-                            <span>
-                        <div id="h">{{ DB::table('souvenirs')->count() }}</div>
-                                Товаров
-                            </span>
+                    <div class="service">
+                        <i class="icon fas fa-pager"></i>
+                        <h4>{{ DB::table('souvenirs')->count() }} Товаров</h4>
+                        <p>Общее количество товаров</p>
                     </div>
                 </div>
 
-                <div class="container">
-                    <a href="#education">
-                    <button class="btn btn2">Последние сообщения</button>
-                    </a>
+                <div class="buttons">
+                    <a href="#education">Последние сообщения</a>
+                    @if (Route::has('login'))
+                        @auth
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">Выйти</a>
+                            </form>
+                        @endauth
+                    @endif
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Education -->
     <section id="education">
         <div class="inner-width">
             <h1 class="section-title">Последние сообщения</h1>
-            @foreach($data1 as $el)
-                <div class="time-line">
-
-                    <div class="block">
-                        <h4>{{$el->name}}</h4>
-                        <h3>Дата: {{$el->created_at}}</h3>
-                        <p class="lead">
-                            <a class="btn btn2" href="{{ route('messages-data-one', $el->id) }}" role="button">Подробнее</a>
-                        </p>
+            <div class="time-line">
+                @foreach($data1 as $el)
+                <div class="block">
+                    <h4>Дата: {{$el->created_at}}</h4>
+                    <h3>{{$el->message}}</h3>
+                    <div class="buttons">
+                        <a href="{{ route('messages-data-one', $el->id) }}" role="button">Подробнее</a>
                     </div>
                 </div>
-            @endforeach
+                @endforeach
+            </div>
         </div>
     </section>
 

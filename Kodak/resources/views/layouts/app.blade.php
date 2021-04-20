@@ -12,7 +12,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="../js/app.js?v<?php echo(mt_rand(200,1000)); ?>"></script>
 </head>
+
+
 <body>
+
 @include('inc.header')
 
 @yield('content')
@@ -20,14 +23,10 @@
 @include('inc.footer')
 
 <!-- Go Top BTN -->
-
-    <a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367279199"></a>
-
-
+<a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367279199"></a>
 
 <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>
-
 
 </body>
 </html>

@@ -9,7 +9,9 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <a class="btn btn2" href = "{{route('souvenirs.create')}}" > + Добавить новый товар</a>
+                <div class="buttons">
+                <a href = "{{route('souvenirs.create')}}" > + Добавить новый товар</a>
+            </div>
                 <div class="containersouv">
                     @foreach($souvenirs as $souvenir)
                         <div class="pricing-table table3">

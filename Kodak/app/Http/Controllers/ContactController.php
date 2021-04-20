@@ -30,7 +30,7 @@ class ContactController extends Controller
 
     public function messagesAdmin(){
         $contact = new Contact();
-        return view('main-dashboard', ['data1' => Contact::orderBy('created_at','desc') -> paginate(3)]);
+        return view('main-dashboard', ['data1' => Contact::orderBy('created_at','desc') -> paginate(4)]);
     }
 
     public function showmessage($id){

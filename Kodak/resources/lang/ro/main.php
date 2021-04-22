@@ -40,4 +40,8 @@ return [
     'main_info4' => 'Imprimarea pe cani',
     'main_info5' => 'Imprimarea pe plăci',
     'main_info6' => 'Puzzle-uri',
+    'serv_doc' => 'În magazinul nostru puteți face foto pentru documente de orice tip',
+    'serv_foto' => 'În magazinul nostru puteți face foto de orice mărime imprimată pe hârtie fotografică profesională',
+    'serv_holsts' => 'În magazinul nostru puteți face imprimarea pe pânză. Puteți propune mărimea individuală',
+    'serv_access' => 'În magazinul nostru  puteți alege și cumpăra diferite accesorii pentru fotografii. Avem la o mare alegere albume, rame foto și carduri de memorie de orice capacitate!',
 ];

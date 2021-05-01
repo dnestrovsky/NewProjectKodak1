@@ -22,6 +22,8 @@
 
 @include('inc.footer')
 
+<script src="//code.tidio.co/nekdv3kjblhff9vhxm8re80mpgxvwatn.js" async></script>
+
 <!-- Go Top BTN -->
 <a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367279199"></a>
 

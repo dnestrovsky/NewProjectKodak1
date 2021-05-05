@@ -207,7 +207,7 @@ html{
   }
 
   70%{
-    content: "Photo pentru acte";
+    content: "Foto pentru acte";
   }
 
   80%{
@@ -249,7 +249,7 @@ html{
   }
 
   70%{
-    content: "Photo pentru acte";
+    content: "Foto pentru acte";
   }
 
   80%{
@@ -761,7 +761,8 @@ section.dark5{
 }
 
 footer{
-  padding: 10px 0;
+  padding: 5px 0;
+  box-shadow:  5px -5px 10px #bebebe, -5px 5px 10px #ffffff;
 }
 
 .footer-container{

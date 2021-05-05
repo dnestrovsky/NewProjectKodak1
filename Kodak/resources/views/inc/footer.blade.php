@@ -15,7 +15,7 @@
             <h1>Palitra Kodak</h1>
             <div class="border"></div>
             <form action="" class="newsletter-form">
-                <input type="submit" class="btn" value="Контакты">
+                <input type="submit" class="btn" value="@lang('main.cont')">
             </form>
         </div>
     </div>

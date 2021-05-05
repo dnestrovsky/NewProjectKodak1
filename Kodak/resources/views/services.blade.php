@@ -65,10 +65,10 @@
     <!-- Home -->
     <section id="rest">
         <div class="inner-width">
-            <h1 class="section-title">Реставрация фото</h1>
+            <h1 class="section-title">@lang('main.main_info3')</h1>
             <div class="gallery-section">
                 <div class="inner-width">
-                    <h1>Примеры</h1>
+                    <h1>@lang('main.serv_exemplu')</h1>
                     <div class="border"></div>
                     <div class="gallery">
 
@@ -99,7 +99,7 @@
     <!-- Home -->
     <section id="acte">
         <div class="inner-width">
-            <h1 class="section-title">Фото на документы</h1>
+            <h1 class="section-title">@lang('main.main_info1')</h1>
             <div class="about-content">
                 <img src="img/documente.jpg" alt="" class="about-pic">
                 <div class="about-text">
@@ -147,23 +147,23 @@
     <!-- Works -->
     <section id="collaj" class="dark3">
         <div class="inner-width">
-            <h1 class="section-title">Коллажи</h1>
+            <h1 class="section-title">@lang('main.serv_collaj')</h1>
             <div class="works">
-                <a href="img/collaj.jpg" class="work">
+                <a href="#" class="work">
                     <img src="img/collaj.jpg" alt="">
                     <div class="info">
                         <h3>Коллажи</h3>
                     </div>
                 </a>
 
-                <a href="img/collaj2.jpg" class="work">
+                <a href="#" class="work">
                     <img src="img/collaj2.jpg" alt="">
                     <div class="info">
                         <h3>Коллажи</h3>
                     </div>
                 </a>
 
-                <a href="img/collaj3.jpg" class="work">
+                <a href="#" class="work">
                     <img src="img/collaj3.jpg" alt="">
                     <div class="info">
                         <h3>Коллажи</h3>
@@ -177,7 +177,7 @@
     <!-- Home -->
     <section id="photo">
         <div class="inner-width">
-            <h1 class="section-title">Цифровая печать фото</h1>
+            <h1 class="section-title">@lang('main.serv_photo_dig')</h1>
             <div class="about-content">
                 <img src="img/photo_dig.jpg" alt="" class="about-pic">
                 <div class="about-text">
@@ -234,7 +234,7 @@
     <!-- Home -->
     <section id="holst" class="dark3">
         <div class="inner-width">
-            <h1 class="section-title">Печать на холсте</h1>
+            <h1 class="section-title">@lang('main.serv_holst')</h1>
             <div class="about-content">
                 <img src="img/holst.jpg" alt="" class="about-pic">
                 <div class="about-text">
@@ -299,7 +299,7 @@
     <!-- Home -->
     <section id="album">
         <div class="inner-width">
-            <h1 class="section-title">Альбомы и фоторамки</h1>
+            <h1 class="section-title">@lang('main.main_info2')</h1>
             <div class="about-content">
                 <img src="img/album.jpg" alt="" class="about-pic">
                 <div class="about-text">

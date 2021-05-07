@@ -99,7 +99,7 @@ html{
 
 .sticky{
     background-color: #fff;
-    padding: 18px 0;
+    padding: 1px 0;
 }
 
 .sticky .navbar-menu a{
@@ -310,8 +310,16 @@ html{
 #home .buttons a:hover,
 #home .buttons a:nth-child(2)
 {
-    background-color: #F3A322;
-    color: white;
+    display: inline-block;
+    margin: 15px 30px;
+    color: #F3A322;
+    font-size: 20px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid white;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
 }
 
 section{
@@ -370,6 +378,10 @@ section{
     margin: 10px 0;
     color: #444;
     font-size: 16px;
+}
+
+.about-text h2{
+    text-align: left;
 }
 
 .textr{
@@ -1071,7 +1083,7 @@ footer{
 .gallery-section{
     width: 100%;
     padding: 60px 0;
-    background: #f1f1f1;
+    background: inherit;
 }
 
 .inner-width{
@@ -1084,7 +1096,7 @@ footer{
 .gallery-section h1{
     text-align: center;
     text-transform: uppercase;
-    color: #333;
+    color: #ffffff;
 }
 
 .border{
@@ -1139,3 +1151,94 @@ footer{
     text-align: center;
 }
 
+.span6,
+.span7,
+.span8,
+.span9,
+.span10,
+.span11,
+.span12 {
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+
+    .span1,
+    .span2,
+    .span3,
+    .span4,
+    .span5,
+    .span6,
+    .span7,
+    .span8,
+    .span9,
+    .span10,
+    .span11,
+    .span12 {
+        float: left;
+    }
+
+    .span12 {
+        width: 100%;
+    }
+
+    .span11 {
+        width: 91.66666667%;
+    }
+
+    .span10 {
+        width: 83.33333333%;
+    }
+
+    .span9 {
+        width: 75%;
+    }
+
+    .span8 {
+        width: 66.66666667%;
+    }
+
+    .span7 {
+        width: 58.33333333%;
+    }
+
+    .span6 {
+        width: 50%;
+    }
+
+    .span5 {
+        width: 41.66666667%;
+    }
+
+    .span4 {
+        width: 33.33333333%;
+    }
+
+    .span3 {
+        width: 25%;
+    }
+
+    .span2 {
+        width: 16.66666667%;
+    }
+
+    .span1 {
+        width: 8.33333333%;
+    }
+
+}
+
+.row {
+    position: relative;
+    margin-right: -15px;
+    text-align: left;
+}
+
+ul {
+    margin-bottom: 20px;
+}

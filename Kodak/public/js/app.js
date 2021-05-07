@@ -12,11 +12,9 @@ $(document).ready(function () {
     if (this.scrollY > 20) {
       $(".navbar").addClass("sticky");
       $(".goTop").fadeIn();
-      $(".viberbutton").fadeIn();
     } else {
       $(".navbar").removeClass("sticky");
       $(".goTop").fadeOut();
-      $(".viberbutton").fadeOut();
     }
   });
   $(".goTop").click(function () {
@@ -26,6 +24,10 @@ $(document).ready(function () {
     $(this).toggleClass("active");
     $(".navbar-menu").toggleClass("active");
   });
+});
+$(document).ready(function () {
+  var mobile = /iphone|ipod|android|blackberry|mini|windows\sce|palm/i.test(navigator.userAgent.toLowerCase());
+  if (mobile) $('.viberbutton').css('display', 'block');
 });
 
 /***/ }),

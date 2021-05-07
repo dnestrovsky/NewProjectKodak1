@@ -12,22 +12,19 @@
                 <div class="buttons">
                 <a href = "{{route('souvenirs.create')}}" > + Добавить новый товар</a>
             </div>
+
                 <div class="containersouv">
                     @foreach($souvenirs as $souvenir)
+
                         <div class="pricing-table table3">
                             <div class="pricing-header">
                                 <div class="price">Сувенир</div>
                                 <div class="title">{{$souvenir->name}}</div>
                             </div>
                             <ul class="pricing-list">
-                                <div class="border"></div>
-                                <li><strong>Создано</strong></li>
-                                <div class="border"></div>
-                                <li>{{$souvenir->created_at}}</li>
-                                <div class="border"></div>
                                 <li><strong>Обновлено</strong></li>
                                 <div class="border"></div>
-                                <li>{{$souvenir->updated_at}}</li>
+                                {{$souvenir->updated_at}}
                             </ul>
                             <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
                                 <a href="{{ route('souvenirs.show', $souvenir) }}">Просмотреть</a>
@@ -39,6 +36,8 @@
                     @endforeach
 
                 </div>
+
+
                 <div>{{$souvenirs->links('default')}}</div>
 
             </div>

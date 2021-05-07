@@ -44,8 +44,5 @@
     </section>
 
 
-    @include('inc.info')
-
-
 
 @endsection

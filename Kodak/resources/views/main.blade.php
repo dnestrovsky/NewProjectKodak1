@@ -17,6 +17,7 @@
                 </div>
                 <div class="buttons">
                     <a href="/contact">@lang('main.cont')</a>
+                    <a href="#about">@lang('main.info')</a>
                 </div>
             </div>
         </div>

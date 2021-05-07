@@ -9,7 +9,6 @@
         </button>
         <div class="navbar-menu">
             <a href="/">@lang('main.main')</a>
-            <a href="#about">@lang('main.info')</a>
             <a href="/services">@lang('main.servicii')</a>
             <a href="/souvenirs-all">@lang('main.suvenir')</a>
             <a href="/contact">@lang('main.cont')</a>

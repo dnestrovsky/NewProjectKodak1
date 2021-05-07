@@ -9,31 +9,28 @@
         <div class="inner-width">
             <div class="content">
 
-                <div class="profile-card">
-                    <div class="card-header">
-                        <div class="pic">
-                            <img src="{{Storage::url($souvenir->image)}}" alt="">
-                        </div>
-                        <div class="name">{{$souvenir->name}}</div>
-                        <div class="name">{{$souvenir->name_ro}}</div>
-                        <div class="desc">Сувенир</div>
-                        <a href="#" class="contact-btn">{{ $souvenir->description}}</a>
-                        <a href="#" class="contact-btn">{{ $souvenir->description_ro}}</a>
-                    </div>
-                    <div class="card-footer">
-                        <div class="numbers">
-                            <div class="border"></div>
-                            <div class="item">
-                                <span>{{ $souvenir->updated_at }}</span>
-                                Обновлено
-                            </div>
-                            <div class="border"></div>
+                <div class="about-section" style="background: url({{Storage::url($souvenir->image)}}) no-repeat left;">
+                    <div class="inner-container">
+                        <h3>{{$souvenir->name}}</h3>
+                        <h3>{{$souvenir->name_ro}}</h3>
+                        <p class="text">
+                            {{ $souvenir->description}}
+                        </p>
+
+                        <p class="text">
+                            {{ $souvenir->description_ro}}
+                        </p>
+                        <div class="skills">
+                            <span>{{ $souvenir->updated_at }}</span>
+                            <span>{{ $souvenir->created_at }}</span>
                         </div>
                     </div>
                 </div>
-
 
             </div>
         </div>
     </section>
 @endsection
+
+
+

@@ -60,10 +60,9 @@
         </div>
     </section>
 
-   @include('inc.info')
 
     <!-- Home -->
-    <section id="rest">
+    <section id="rest" class="dark3">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.main_info3')</h1>
             <div class="gallery-section">

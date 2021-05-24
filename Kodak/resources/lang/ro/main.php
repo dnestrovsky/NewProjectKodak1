@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'phone.numeric' => 'Romana',
     'main' => 'Principal',
     'info' => 'Despre noi',
     'servicii' => 'Servicii',

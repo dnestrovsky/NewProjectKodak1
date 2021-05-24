@@ -11,8 +11,8 @@
             <div class="content">
                 <div class="contact-section">
 
-                    <h1>Редактировать товар</h1>
-                    <h1><b>{{ $souvenir->name }}</b></h1>
+                    <h3>Редактировать товар</h3>
+                    <h3><b>{{ $souvenir->name }}</b></h3>
                     <div class="border"></div>
                     <form class="contact-form" action="{{ route('souvenirs.update', $souvenir) }}" method="post" enctype="multipart/form-data">
                         @method('PUT')

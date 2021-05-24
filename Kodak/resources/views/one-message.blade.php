@@ -7,43 +7,52 @@
 
     <!-- Home -->
     <section id="home">
-        <div class="inner-width">
-            <div class="content">
+                <div class="message-section">
+                    <div class="message-width">
+                        <h1>Сообщение</h1>
+                        <div class="border"></div>
+                        <div class="message-section-row">
+                            <div class="message-section-col">
+                                <div class="about">
+                                    <p>
+                                        {{$data->message}}
+                                    </p>
+                                    <a href="{{ route('delete-message', $data->id) }}" class="fas fa-trash"></a>
+                                </div>
+                            </div>
+                            <div class="message-section-col">
+                                <div class="skillsmessage">
+                                    <div class="skillm">
+                                        <div class="title">Имя: {{$data->name}}</div>
+                                        <div class="progress">
+                                            <div class="progress-bar p1"></div>
+                                        </div>
+                                    </div>
 
-                <div class="profile-card">
-                    <div class="card-header">
-                        <div class="pic">
-                            <img src="../img/pic.png" alt="">
-                        </div>
-                        <div class="name">{{$data->name}}</div>
-                        <div class="desc">Пользователь</div>
-                        <div class="sm">
-                            <a href="{{ route('delete-message', $data->id) }}" class="fas fa-trash"></a>
-                        </div>
-                        <a href="#" class="contact-btn">{{$data->message}}</a>
-                    </div>
-                    <div class="card-footer">
-                        <div class="numbers">
-                            <div class="item">
-                                <span>{{$data->phone}}</span>
-                                Телефон
-                            </div>
-                            <div class="border"></div>
-                            <div class="item">
-                                <span>{{$data->email}}</span>
-                                E-mail
-                            </div>
-                            <div class="border"></div>
-                            <div class="item">
-                                <span>{{$data->created_at}}</span>
-                                Отправлено
+                                    <div class="skillm">
+                                        <div class="title">email: {{$data->email}}</div>
+                                        <div class="progress">
+                                            <div class="progress-bar p2"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skillm">
+                                        <div class="title">Телефон: {{$data->phone}}</div>
+                                        <div class="progress">
+                                            <div class="progress-bar p3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skillm">
+                                        <div class="title">Дата: {{$data->created_at}}</div>
+                                        <div class="progress">
+                                            <div class="progress-bar p3"></div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
-            </div>
-        </div>
     </section>
 @endsection

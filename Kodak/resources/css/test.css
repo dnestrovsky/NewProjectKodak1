@@ -2,7 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: #032e45;
+    background: #f69a73;
 }
 
 .box{
@@ -12,14 +12,15 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(125deg,#2c3e50, #1b5134, #0b151c, #0a2432,#8e44ad);
+    background: white;
     text-align: center;
-    clip-path: circle(50% at 50% 50%);
+    border-radius: 30px;
 }
 .box h1{
-    color: white;
+    color: #fdfdfd;
     text-transform: uppercase;
     font-weight: 500;
+    background: #1eb0a3;
 }
 .box input[type = "text"],.box input[type = "password"]{
     border:0;
@@ -31,7 +32,7 @@ body{
     padding: 14px 10px;
     width: 200px;
     outline: none;
-    color: white;
+    color: #0e0e0e;
     border-radius: 24px;
     transition: 0.25s;
 }
@@ -48,7 +49,7 @@ body{
     border: 2px solid #2ecc71;
     padding: 14px 40px;
     outline: none;
-    color: white;
+    color: #090909;
     border-radius: 24px;
     transition: 0.25s;
     cursor: pointer;
@@ -67,4 +68,32 @@ body{
 .box .text{
     color: #08dbf3;
     text-decoration: none;
+}
+
+
+alert{
+    font-family: 'Rubik One', sans-serif;
+    color: #ffffff;
+    display: table;
+    margin: 20px auto;
+    font-size: 17px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.alert ul{
+    text-align: left;
+}
+
+.zebra {
+    list-style: none;
+    border-left: 10px solid #211e1e;
+    padding: 0;
+}
+.zebra li {padding: 10px;}
+
+.alert li{
+    margin: 5px;
 }

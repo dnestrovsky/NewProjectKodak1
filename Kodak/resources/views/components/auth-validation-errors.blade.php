@@ -1,17 +1,12 @@
-
-@props(['errors'])
-
-                @if ($errors->any())
-                    <div class="alert alert-dark" role="alert">
-                        <div class="font-medium text-red-600">
-                            {{ __('Whoops! Something went wrong.') }}
-                        </div>
-                    <div>
-                        <ul class="mt-3 list-disc list-inside text-sm text-red-600">
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                    </div>
-                @endif
+@if ($errors->any())
+    <div class="alert" role="alert">
+        <h3>Аккаунт не найден</h3>
+        <div>
+            <ul class="zebra">
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    </div>
+@endif

@@ -10,6 +10,10 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
+                <h2>Все сообщения</h2>
+                @if(count($data) === 0)
+                    <h3>Сообщений пока нет</h3>
+                @endif
                 <div class="blog-posts">
                     @foreach($data as $el)
                     <div class="post">

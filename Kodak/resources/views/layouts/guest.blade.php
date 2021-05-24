@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="/css/test.css">
 
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
     <body>
 

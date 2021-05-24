@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'phone.numeric' => 'Русский',
     'main' => 'Главная',
     'info' => 'О нас',
     'servicii' => 'Услуги',

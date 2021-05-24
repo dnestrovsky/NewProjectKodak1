@@ -17,7 +17,7 @@
                 @auth
                 <a href="/dashboard" class="sign">Админка</a>
             @else
-                <a href="/login" class="sign">@lang('main.auth')</a>
+                    <a href="/login" class="sign">@lang('main.auth')</a>
                 @endauth
                 @endif
         </div>

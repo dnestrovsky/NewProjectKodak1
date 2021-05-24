@@ -752,7 +752,7 @@ section.dark5{
 
 .messageZone{
   min-height: 200px;
-  resize: vertical;
+  resize: none;
 }
 
 .contact-form .btn{
@@ -1145,9 +1145,30 @@ footer{
 }
 
 .alert{
-  color: #5cf306;
-  font-size: 25px;
+  font-family: 'Rubik One', sans-serif;
+  color: #ffffff;
+  display: table;
+  margin: 20px auto;
+  font-size: 17px;
   text-align: center;
+}
+
+.alert ul{
+  text-align: left;
+}
+
+.zebra {
+  list-style: none;
+  border-left: 10px solid #211e1e;
+  padding: 0;
+}
+
+.zebra li {
+  padding: 10px;
+}
+
+.alert li{
+  margin: 5px;
 }
 
 .span6,

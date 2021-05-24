@@ -12,7 +12,7 @@
                 <h2>@lang('main.serv_main')</h2>
                 <h1> </h1>
                 <div class="sm">
-                    <a href="viber://chat?number=%2B37367279199" class="fab fa-viber viber"></a>
+                    <a href="/contact" class="fab fa-viber viber"></a>
                     <a href="/contact" class="fas fa-envelope"></a>
                 </div>
                 <div class="buttons">

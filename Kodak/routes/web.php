@@ -5,6 +5,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SouvenirsController;
 
 Route::middleware(['set_locale']) -> group(function () {
+
     Route::get('/', function () {
         return view('main');
     })->name('home');
@@ -19,6 +20,7 @@ Route::middleware(['set_locale']) -> group(function () {
 
     Route::get('/souvenirs-all', [SouvenirsController::class, 'allData']) -> name('souvenir-data');
     Route::get('/souvenirpage/{id}', [SouvenirsController::class, 'showprod']) -> name('souvenir-data1');
+    Route::post('/contact/submit', [ContactController::class,'submit']) -> name('contact-form');
 
 
 
@@ -44,7 +46,6 @@ Route::get('/messages/{id}/delete', [ContactController::class, 'deleteMessage'])
 Route::get('/messages/{id}', [ContactController::class, 'showmessage'])->middleware(['auth']) -> name('messages-data-one');
 Route::get('/messages', [ContactController::class, 'allData'])->middleware(['auth']) -> name('messages-data');
 Route::get('/dashboard', [ContactController::class, 'messagesAdmin']) ->middleware(['auth']) -> name('messages-data-dashboard');
-Route::post('/contact/submit', [ContactController::class,'submit']) -> name('contact-form');
 
 Route::get('/main-dashboard', function () {
     return view('main-dashboard');

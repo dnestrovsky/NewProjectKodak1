@@ -1,10 +1,8 @@
 @if ($errors->any())
-    <div class="alert alert-dark" role="alert">
-        <div class="font-medium text-red-600">
-            {{ __('Ошибка') }}
-        </div>
+    <div class="alert" role="alert">
+        <h3>Введенные данные некорректны</h3>
         <div>
-            <ul class="mt-3 list-disc list-inside text-sm text-red-600">
+            <ul class="zebra">
                 @foreach ($errors->all() as $error)
                     <li>{{ $error }}</li>
                 @endforeach

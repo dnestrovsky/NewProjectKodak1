@@ -43,6 +43,9 @@
     <section id="education">
         <div class="inner-width">
             <h1 class="section-title">Последние сообщения</h1>
+            @if(count($data1) === 0)
+                <h1 style="text-align: center">Сообщений пока нет</h1>
+            @endif
             <div class="time-line">
                 @foreach($data1 as $el)
                 <div class="block">

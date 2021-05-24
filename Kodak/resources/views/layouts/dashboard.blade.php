@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="/css/admin.css?v<?php echo(mt_rand(200,1000)); ?>">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="/js/app.js?v<?php echo(mt_rand(200,1000)); ?>"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script type='text/javascript' src="/js/app.js?v<?php echo(mt_rand(200,1000)); ?>"></script>
 </head>
 <body>
 
@@ -22,6 +22,14 @@
 
 <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>
+
+<script>
+    $(".menu-icon").click(function(){
+        $(this).toggleClass("active");
+        $(".navigation-menu").toggleClass("active");
+        $(".menu-icon i").toggleClass("fa-times");
+    });
+</script>
 
 </body>
 </html>

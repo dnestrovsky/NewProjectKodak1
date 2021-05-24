@@ -17,7 +17,6 @@ class ContactController extends Controller
         $contact->message = $req->input('message');
 
         $contact->save();
-
         return redirect()->route('contact')->with('success', 'Сообщение отправлено!');
 
 
@@ -25,7 +24,7 @@ class ContactController extends Controller
 
     public function allData(){
         $contact = new Contact();
-        return view('messages', ['data' => Contact::orderBy('created_at','desc') -> paginate(6)]);
+        return view('messages', ['data' => Contact::orderBy('created_at','desc') -> paginate(3)]);
     }
 
     public function messagesAdmin(){

@@ -615,8 +615,6 @@ section.dark5{
     margin: 10px 0;
     padding: 30px;
     position: relative;
-    overflow: hidden;
-    word-break: break-all;
 }
 
 .block::before{

@@ -4,9 +4,9 @@
         <div class="left-col">
             <img src="../img/pic.png" alt="" class="logofooter">
             <div class="social-media">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-viber"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
+                <a href="{{ route('contact') }}"><i class="fab fa-facebook-f"></i></a>
+                <a href="{{ route('contact') }}"><i class="fab fa-viber"></i></a>
+                <a href="{{ route('contact') }}"><i class="fas fa-envelope"></i></a>
             </div>
             <p class="rights-text">© 2021 Created & Designed By dnestrovsky</p>
         </div>

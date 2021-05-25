@@ -10,7 +10,10 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h2>Все сообщения</h2>
+                <ul class="breadcrumb">
+                    <li><a href="/dashboard">Главная</a></li>
+                    <li>Все сообщения</li>
+                </ul>
                 @if(count($data) === 0)
                     <h3>Сообщений пока нет</h3>
                 @endif

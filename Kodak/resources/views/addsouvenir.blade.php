@@ -10,9 +10,12 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
+                <ul class="breadcrumb">
+                    <li><a href="/dashboard">Главная</a></li>
+                    <li><a href="{{route('souvenirs.index')}}">Все сувениры</a></li>
+                    <li>Добавление сувенира</li>
+                </ul>
                 <div class="contact-section">
-
-                    <h1>Добавить товар</h1>
                     <div class="border"></div>
                     <form class="contact-form" action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data">
                         @csrf

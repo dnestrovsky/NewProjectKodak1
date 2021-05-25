@@ -9,14 +9,19 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h2>Все сувениры</h2>
+                <ul class="breadcrumb">
+                    <li><a href="/dashboard">Главная</a></li>
+                    <li>Все сувениры</li>
+                </ul>
+                <div class="buttons">
+                    <a href = "{{route('souvenirs.create')}}" > <i class="fas fa-plus"></i> Добавить</a>
+                </div>
 
                 <div class="containersouv">
                     @foreach($souvenirs as $souvenir)
 
                         <div class="pricing-table table3">
                             <div class="pricing-header">
-                                <div class="price">Сувенир</div>
                                 <div class="titlesouv">{{$souvenir->name}}</div>
                             </div>
                             <ul class="pricing-list">
@@ -37,9 +42,6 @@
 
 
                 <div>{{$souvenirs->links('default')}}</div>
-                <div class="buttons">
-                    <a href = "{{route('souvenirs.create')}}" > <i class="fas fa-plus"></i> Добавить</a>
-                </div>
             </div>
         </div>
     </section>

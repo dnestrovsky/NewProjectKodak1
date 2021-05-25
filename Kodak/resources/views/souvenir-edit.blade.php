@@ -1,6 +1,6 @@
 @extends('layouts.dashboard')
 
-@section('title-block', 'Редактировать товар ' . $souvenir->name)
+@section('title-block', 'Редактирование')
 
 
 @section('content')
@@ -10,8 +10,11 @@
         <div class="inner-width">
             <div class="content">
                 <div class="contact-section">
-
-                    <h3>Редактировать товар</h3>
+                    <ul class="breadcrumb">
+                        <li><a href="/dashboard">Главная</a></li>
+                        <li><a href="{{route('souvenirs.index')}}">Все сувениры</a></li>
+                        <li>Редактирование</li>
+                    </ul>
                     <h3><b>{{ $souvenir->name }}</b></h3>
                     <div class="border"></div>
                     <form class="contact-form" action="{{ route('souvenirs.update', $souvenir) }}" method="post" enctype="multipart/form-data">

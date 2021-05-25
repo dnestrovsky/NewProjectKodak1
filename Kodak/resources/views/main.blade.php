@@ -12,11 +12,11 @@
                 <h2>@lang('main.serv_main')</h2>
                 <h1> </h1>
                 <div class="sm">
-                    <a href="/contact" class="fab fa-viber viber"></a>
-                    <a href="/contact" class="fas fa-envelope"></a>
+                    <a href="{{ route('contact') }}" class="fab fa-viber viber"></a>
+                    <a href="{{ route('contact') }}" class="fas fa-envelope"></a>
                 </div>
                 <div class="buttons">
-                    <a href="/contact">@lang('main.cont')</a>
+                    <a href="{{ route('contact') }}">@lang('main.cont')</a>
                     <a href="#about">@lang('main.info')</a>
                 </div>
             </div>

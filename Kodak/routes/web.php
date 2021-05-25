@@ -16,7 +16,7 @@ Route::middleware(['set_locale']) -> group(function () {
 
     Route::get('/services', function () {
         return view('services');
-    });
+    })->name('services');
 
     Route::get('/souvenirs-all', [SouvenirsController::class, 'allData']) -> name('souvenir-data');
     Route::get('/souvenirpage/{id}', [SouvenirsController::class, 'showprod']) -> name('souvenir-data1');

@@ -9,7 +9,11 @@
     <section id="home">
                 <div class="message-section">
                     <div class="message-width">
-                        <h1>Сообщение</h1>
+                        <ul class="breadcrumb">
+                            <li><a href="/dashboard">Главная</a></li>
+                            <li><a href="{{ route('messages-data') }}">Все сообщения</a></li>
+                            <li>Сообщение</li>
+                        </ul>
                         <div class="border"></div>
                         <div class="message-section-row">
                             <div class="message-section-col">
@@ -43,7 +47,7 @@
                                         </div>
                                     </div>
                                     <div class="skillm">
-                                        <div class="title">Дата: {{$data->created_at}}</div>
+                                        <div class="title"><em>Дата: {{$data->created_at}}</em></div>
                                         <div class="progress">
                                             <div class="progress-bar p3"></div>
                                         </div>

@@ -8,7 +8,11 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-
+                <ul class="breadcrumb">
+                    <li><a href="/dashboard">Главная</a></li>
+                    <li><a href="{{route('souvenirs.index')}}">Все сувениры</a></li>
+                    <li>Просмотр</li>
+                </ul>
                 <div class="about-section" style="background: url({{Storage::url($souvenir->image)}}) no-repeat left;">
                     <div class="inner-container">
                         <h3>{{$souvenir->name}}</h3>

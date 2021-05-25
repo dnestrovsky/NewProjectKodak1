@@ -8,7 +8,7 @@
     <section id="home">
         <div class="inner-width">
             <div class="content">
-                <h1>Админ-панель</h1>
+                <h2>Приветствую вас, {{ Auth::user()->name }}</h2>
                 <div class="services">
                     <div class="service">
                         <i class="icon fas fa-paint-brush"></i>

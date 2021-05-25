@@ -288,7 +288,6 @@ section.dark .section-title::after{
     margin: 10px 0;
     padding: 30px;
     position: relative;
-    overflow: hidden;
     word-break: break-all;
 }
 
@@ -950,6 +949,8 @@ footer{
 }
 .message-section-col{
     flex: 50%;
+    overflow: hidden;
+    word-break: break-all;
 }
 .about{
     padding-right: 30px;

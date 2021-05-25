@@ -12,14 +12,19 @@
                 <div class="services">
                     <div class="service">
                         <i class="icon fas fa-paint-brush"></i>
-                        <h4>{{ DB::table('contacts')->count() }} Сообщений</h4>
-                        <p>Общее количество сообщений</p>
+                        <h2>{{ DB::table('contacts')->count() }}</h2>
+                        <p><em>Общее количество сообщений</em></p>
                     </div>
 
                     <div class="service">
+                        <i class="icon fas fa-users"></i>
+                        <h2>{{ DB::table('users')->count() }}</h2>
+                        <p><em>Общее количество админов</em></p>
+                    </div>
+                    <div class="service">
                         <i class="icon fas fa-pager"></i>
-                        <h4>{{ DB::table('souvenirs')->count() }} Товаров</h4>
-                        <p>Общее количество товаров</p>
+                        <h2>{{ DB::table('souvenirs')->count() }}</h2>
+                        <p><em>Общее количество товаров</em></p>
                     </div>
                 </div>
 
@@ -50,7 +55,7 @@
                 @foreach($data1 as $el)
                 <div class="block">
                     <h4>Дата: {{$el->created_at}}</h4>
-                    <h3>{{$el->message}}</h3>
+                    <h5>{{$el->message}}</h5>
                     <div class="buttons">
                         <a href="{{ route('messages-data-one', $el->id) }}" role="button">Подробнее</a>
                     </div>

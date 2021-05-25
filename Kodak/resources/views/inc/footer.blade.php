@@ -8,11 +8,11 @@
                 <a href="{{ route('contact') }}"><i class="fab fa-viber"></i></a>
                 <a href="{{ route('contact') }}"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="rights-text">© 2021 Created & Designed By dnestrovsky</p>
+            <p class="rights-text">Created & Designed By <strong>@dnestrovsky</strong></p>
         </div>
 
         <div class="right-col">
-            <h1>Palitra Kodak</h1>
+            <h1>© Palitra Kodak</h1>
             <div class="border"></div>
             <form action="" class="newsletter-form">
                 <input type="submit" class="btn" value="@lang('main.cont')">

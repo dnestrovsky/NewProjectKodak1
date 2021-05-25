@@ -15,22 +15,23 @@
                     <li>Все сообщения</li>
                 </ul>
                 @if(count($data) === 0)
-                    <h3>Сообщений пока нет</h3>
-                @endif
-                <div class="blog-posts">
-                    @foreach($data as $el)
-                    <div class="post">
-                        <a  href="{{ route('messages-data-one', $el->id) }}">
-                        <img src="img/letter.png" alt="" class="post-img">
-                        <div class="post-content">
-                            <h3>{{$el->name}}</h3>
-                            <span class="date">Дата: {{$el->created_at}}</span>
-                        </div>
-                        </a>
+                    <h3 style="padding: 15%;">Сообщений пока нет</h3>
+                @else
+                    <div class="blog-posts">
+                        @foreach($data as $el)
+                            <div class="post">
+                                <a  href="{{ route('messages-data-one', $el->id) }}">
+                                    <img src="img/letter.png" alt="" class="post-img">
+                                    <div class="post-content">
+                                        <h3>{{$el->name}}</h3>
+                                        <span class="date">Дата: {{$el->created_at}}</span>
+                                    </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
-                    @endforeach
-                </div>
-                <div>{{$data->links('default')}}</div>
+                    <div>{{$data->links('default')}}</div>
+                @endif
             </div>
         </div>
     </section>

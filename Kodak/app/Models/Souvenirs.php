@@ -10,6 +10,8 @@ class Souvenirs extends Model
 {
     use HasFactory, Translatable;
 
+    protected $table = 'souvenirs';
+
     protected $fillable = [
         'name',
         'description',
@@ -17,4 +19,5 @@ class Souvenirs extends Model
         'name_ro',
         'description_ro',
         ];
+
 }

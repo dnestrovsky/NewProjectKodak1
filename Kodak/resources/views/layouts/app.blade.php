@@ -8,18 +8,22 @@
     <meta name="author" content="Palitra-Kodak">
     <meta name="copyright" content="Palitra-Kodak">
     <title>@yield('title-block')</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <link rel="stylesheet" href="../css/app.css?v<?php echo(mt_rand(3000,5000)); ?>">
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    <link rel="stylesheet" href="../css/glide.core.min.css">
+    <link rel="stylesheet" href="../css/glide.theme.min.css">
     <link rel="shortcut icon" href="https://palitra-kodak.site/favicon.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="../js/app.js?v<?php echo(mt_rand(3000,5000)); ?>"></script>
+    <script src="{{ mix('/js/app.js') }}"></script>
+    <script src="../js/glide.min.js" charset="utf-8"></script>
 </head>
 
 
 <body>
+
 
 @include('inc.header')
 
@@ -34,6 +38,25 @@
 
 <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>
+
+<script>
+    new Glide(".images",{
+        type: 'carousel',
+        perView: 5,
+        focusAt: 'center',
+        gap: 40,
+        breakpoints: {
+            1200:{
+                perView: 3
+            },
+            800:{
+                perView: 2
+            }
+        }
+    }).mount();
+</script>
+
+
 
 </body>
 </html>

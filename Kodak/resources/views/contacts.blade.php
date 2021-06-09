@@ -14,7 +14,7 @@
             <div class="contact-info">
                 <div class="item">
                     <i class="fas fa-mobile-alt"></i>
-                    @lang('main.cont_tel'): +373 (67) 279199
+                    @lang('main.cont_tel'): +373 (67) 358811
                 </div>
 
                 <div class="item">

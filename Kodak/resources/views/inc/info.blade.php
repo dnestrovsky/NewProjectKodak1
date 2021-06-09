@@ -32,6 +32,39 @@
                     </div>
                 </h3>
             </div>
+            <div class="images glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/Photo6.jpg" alt="">
+                        </li>
+
+                        <li class="glide__slide">
+                            <img src="img/Photo2.jpg" alt="">
+                        </li>
+
+                        <li class="glide__slide">
+                            <img src="img/Photo3.jpg" alt="">
+                        </li>
+
+                        <li class="glide__slide">
+                            <img src="img/Photo4.jpg" alt="">
+                        </li>
+
+                        <li class="glide__slide">
+                            <img src="img/Photo5.jpg" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/Photo7.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
         </div>
     </div>
 </section>

@@ -169,6 +169,27 @@
                     </div>
                 </a>
 
+                <a href="#" class="work">
+                    <img src="img/collaj4.jpg" alt="">
+                    <div class="info">
+                        <h3>Коллажи</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="work">
+                    <img src="img/collaj5.jpg" alt="">
+                    <div class="info">
+                        <h3>Коллажи</h3>
+                    </div>
+                </a>
+
+                <a href="#" class="work">
+                    <img src="img/collaj6.jpg" alt="">
+                    <div class="info">
+                        <h3>Коллажи</h3>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>

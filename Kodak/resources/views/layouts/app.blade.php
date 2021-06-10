@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Palitra-Kodak - магазин, который предоставляет фотоуслуги в городе Floresti">
-    <meta name="keywords" content="Paltra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги">
+    <meta name="keywords" content="Palitra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги">
     <meta name="author" content="Palitra-Kodak">
     <meta name="copyright" content="Palitra-Kodak">
     <title>@yield('title-block')</title>
@@ -16,7 +16,12 @@
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link rel="stylesheet" href="../css/glide.core.min.css">
     <link rel="stylesheet" href="../css/glide.theme.min.css">
-    <link rel="shortcut icon" href="https://palitra-kodak.site/favicon.ico">
+    <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
+    <link type="image/png" sizes="16x16" rel="icon" href="/favicon-16x16.png">
+    <link type="image/png" sizes="32x32" rel="icon" href="/favicon-32x32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="/favicon-96x96.png">
+    <link type="image/png" sizes="120x120" rel="icon" href="/favicon-120x120.png">
+    <link type="image/png" sizes="192x192" rel="icon" href="/favicon-192x192.png">
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="../js/glide.min.js" charset="utf-8"></script>
 </head>
@@ -34,7 +39,7 @@
 <script src="//code.tidio.co/nekdv3kjblhff9vhxm8re80mpgxvwatn.js" async></script>
 
 <!-- Go Top BTN -->
-<a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367279199"></a>
+<a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367358811"></a>
 
 <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>

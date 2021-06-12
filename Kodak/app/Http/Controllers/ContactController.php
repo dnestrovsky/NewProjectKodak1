@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\FeedbackMail;
 use Illuminate\Http\Request;
 use App\Models\Contact;
 use App\Http\Requests\ContactRequest;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -15,6 +17,9 @@ class ContactController extends Controller
         $contact->phone = $req->input('phone');
         $contact->email = $req->input('email');
         $contact->message = $req->input('message');
+        $comment = 'Вам пришло сообщение от ' .$contact->name. '. Зайдите на сайт palitra-kodak.site, чтобы просмотреть его';
+        $toEmail = "liudmila.kurtis@mail.ru";
+        Mail::to($toEmail)->send(new FeedbackMail($comment));
 
         $contact->save();
         return redirect()->route('contact')->with('success', 'Сообщение отправлено!');

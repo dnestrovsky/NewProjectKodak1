@@ -6,7 +6,7 @@
             <img src="img/pic.png" alt="" class="about-pic">
             <div class="about-text">
                 <h2>Palitra Kodak</h2>
-                <p>Наш магазин предоставляет фотоуслуги в городе Флорешть</p>
+                <p>@lang('main.info_')</p>
                 <h3>
                     <div class="row">
                     <div class="span6">
@@ -67,4 +67,6 @@
             </div>
         </div>
     </div>
+
+
 </section>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SouvenirsController;
@@ -23,10 +24,7 @@ Route::middleware(['set_locale']) -> group(function () {
     Route::post('/contact/submit', [ContactController::class,'submit']) -> name('contact-form');
 
 
-
 });
-
-
 Route::get('locale/{locale}', [ContactController::class, 'changeLocale']) -> name('locale');
 
 Route::get('/dashboard/addsouvenir', function () {

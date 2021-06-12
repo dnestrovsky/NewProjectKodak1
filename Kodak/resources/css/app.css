@@ -114,7 +114,6 @@ html{
     height: 100vh;
     min-height: 500px;
     background-image: linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
-    background-blend-mode: darken;
     background-size: 400% 400%;
     background-attachment: fixed;
     -webkit-animation: bganimation 15s infinite;
@@ -1260,4 +1259,26 @@ ul {
 
 .row li{
     padding: 5px;
+}
+
+
+.glide__slide img{
+    width: 100%;
+    height: 100%;
+}
+
+.glide__slide{
+    filter: blur(6px);
+    opacity: .7;
+    transition: .3s linear;
+}
+
+.glide__slide--active{
+    opacity: 1;
+    filter: none;
+    transform: scale(1.1);
+}
+
+.glide__slides{
+    overflow: visible;
 }

@@ -14,7 +14,7 @@
                     <img src="{{Storage::url($souvenir->image)}}" alt="">
                     <div class="info">
                         <h3>{{$souvenir->__('name')}}</h3>
-                        <div class="cat">Сувениры на память</div>
+                        <div class="cat">@lang('main.souv_info')</div>
                     </div>
                 </a>
                 @endforeach

@@ -46,5 +46,6 @@ return [
     'serv_holsts' => 'În magazinul nostru puteți face imprimarea pe pânză. Puteți propune mărimea individuală',
     'serv_access' => 'În magazinul nostru  puteți alege și cumpăra diferite accesorii pentru fotografii. Avem la o mare alegere albume, rame foto și carduri de memorie de orice capacitate!',
     'info_' => 'Magazinul nostru oferă servicii de fotografie în orașul Florești ',
+    'souv_info' => 'Suveniruri pentru memorie ',
 
 ];

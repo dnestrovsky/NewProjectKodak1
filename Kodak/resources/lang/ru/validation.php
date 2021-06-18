@@ -75,7 +75,7 @@ return [
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => ':attribute должен содержать не менее :min символов.',
+        'string' => ':attribute должно содержать не менее :min символов.',
         'array' => 'The :attribute must have at least :min items.',
     ],
     'multiple_of' => 'The :attribute must be a multiple of :value.',
@@ -135,6 +135,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'Почтовый адрес',
+        'message' => 'Сообщение',
+        'phone' => 'телефон',
+        'name' => 'Имя',
+    ],
 
 ];

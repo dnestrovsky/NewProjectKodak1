@@ -10,8 +10,12 @@
             <!-- Contact -->
             <h2 class="section-title">{{$data->__('name')}}</h2>
             <div class="about-content">
-                <img src="{{Storage::url($data->image)}}" alt="" class="about-pic">
-                <div class="about-text">
+                <div class="dbl-border">
+                    <div class="image-wrapper">
+                <img src="{{Storage::url($data->image)}}" alt="">
+                    </div>
+                </div>
+                <div class="about-textsouv">
 
                 <p class="descrip">{{ $data->__('description') }}</p>
 
@@ -23,43 +27,53 @@
     <!-- Home -->
     <section id="about">
         <div class="inner-width">
-            <h1 class="section-title">Примеры</h1>
+            <h1 class="section-title">@lang('main.serv_exemplu')</h1>
             <div class="about-content">
-                <div class="gallery-section">
-                    <div class="inner-width">
-                        <div class="gallery">
-
-                            <a href="{{Storage::url($data->image)}}" class="image">
-                                <img src="{{Storage::url($data->image)}}" alt="">
-                            </a>
-
-                            <a href="{{Storage::url($data->image)}}" class="image">
-                                <img src="{{Storage::url($data->image)}}" alt="">
-                            </a>
-
-                            <a href="{{Storage::url($data->image)}}" class="image">
-                                <img src="{{Storage::url($data->image)}}" alt="">
-                            </a>
-
-                            <a href="{{Storage::url($data->image)}}" class="image">
-                                <img src="{{Storage::url($data->image)}}" alt="">
-                            </a>
-
+                <div class="works">
+                    <a href="#" class="work">
+                        <img src="../img/Photo6.jpg" alt="">
+                        <div class="info">
+                            <h3>@lang('main.serv_exemplu')</h3>
                         </div>
-                    </div>
+                    </a>
+
+                    <a href="#" class="work">
+                        <img src="../img/Photo2.jpg" alt="">
+                        <div class="info">
+                            <h3>@lang('main.serv_exemplu')</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="work">
+                        <img src="../img/Photo3.jpg" alt="">
+                        <div class="info">
+                            <h3>@lang('main.serv_exemplu')</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="work">
+                        <img src="../img/Photo4.jpg" alt="">
+                        <div class="info">
+                            <h3>@lang('main.serv_exemplu')</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="work">
+                        <img src="../img/Photo5.jpg" alt="">
+                        <div class="info">
+                            <h3>@lang('main.serv_exemplu')</h3>
+                        </div>
+                    </a>
+
+                    <a href="#" class="work">
+                        <img src="../img/Photo7.jpg" alt="">
+                        <div class="info">
+                            <h3>@lang('main.serv_exemplu')</h3>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>
     </section>
-
-
-    <script>
-        $(".gallery").magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery:{
-                enabled: true
-            }
-        });
-    </script>
 @endsection

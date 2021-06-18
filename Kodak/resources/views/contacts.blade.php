@@ -33,8 +33,11 @@
                 @csrf
 
                 <input type="text" name="name" class="nameZone" id="name" placeholder="@lang('main.cont_name')" value="{{ old('name') }}">
+
                 <input type="text" name="phone" class="emailZone" id="phone" placeholder="@lang('main.cont_number')" value="{{ old('phone') }}">
+
                 <input type="text" name="email" class="subjectZone" id="email" placeholder="@lang('main.cont_email')" value="{{ old('email') }}">
+
                 <textarea name="message" id="message" class="messageZone" placeholder="@lang('main.cont_message')">{{ old('message') }}</textarea>
                 <input type="submit" value="@lang('main.cont_send')" class="btn">
             </form>

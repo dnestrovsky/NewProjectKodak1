@@ -147,6 +147,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'email' => 'E-mail',
+        'message' => 'Mesaj',
+        'phone' => 'telefon',
+        'name' => 'Nume',
+    ],
 
 ];

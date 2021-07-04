@@ -17,23 +17,21 @@ class ContactController extends Controller
         $contact->phone = $req->input('phone');
         $contact->email = $req->input('email');
         $contact->message = $req->input('message');
+
+
         $comment = 'Вам пришло сообщение от ' .$contact->name. '. Зайдите на сайт palitra-kodak.site, чтобы просмотреть его';
-        $toEmail = "liudmila.kurtis@mail.ru";
+        $toEmail = "sergey.dnestryanskiy@mail.ru";
         Mail::to($toEmail)->send(new FeedbackMail($comment));
 
         $contact->save();
         return redirect()->route('contact')->with('success', 'Сообщение отправлено!');
-
-
     }
 
     public function allData(){
-        $contact = new Contact();
         return view('messages', ['data' => Contact::orderBy('created_at','desc') -> paginate(3)]);
     }
 
     public function messagesAdmin(){
-        $contact = new Contact();
         return view('main-dashboard', ['data1' => Contact::orderBy('created_at','desc') -> paginate(4)]);
     }
 
@@ -50,7 +48,6 @@ class ContactController extends Controller
     public function changeLocale($locale){
         session(['locale'=> $locale]);
         App::setLocale($locale);
-        $currentLocale = App::getLocale();
         return redirect() ->back();
 
     }

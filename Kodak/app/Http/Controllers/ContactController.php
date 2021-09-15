@@ -19,9 +19,9 @@ class ContactController extends Controller
         $contact->message = $req->input('message');
 
 
-        $comment = 'Вам пришло сообщение от ' .$contact->name. '. Зайдите на сайт palitra-kodak.site, чтобы просмотреть его';
-        $toEmail = "sergey.dnestryanskiy@mail.ru";
-        Mail::to($toEmail)->send(new FeedbackMail($comment));
+        $toEmail = "kodak.floresti@mail.ru"; //почта для получения всех писем
+        Mail::to($toEmail)->send(new FeedbackMail($contact));
+//        Mail::to($data->email)->send(new FeedbackMail($data));
 
         $contact->save();
         return redirect()->route('contact')->with('success', 'Сообщение отправлено!');

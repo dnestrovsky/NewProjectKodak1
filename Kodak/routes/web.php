@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\FeedbackController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SouvenirsController;
@@ -21,6 +20,7 @@ Route::middleware(['set_locale']) -> group(function () {
 
     Route::get('/souvenirs-all', [SouvenirsController::class, 'allData']) -> name('souvenir-data');
     Route::get('/souvenirpage/{id}', [SouvenirsController::class, 'showprod']) -> name('souvenir-data1');
+//    Route::get('/test/{id}', [SouvenirsController::class, 'showphotos']) -> name('souvenir-data2');
     Route::post('/contact/submit', [ContactController::class,'submit']) -> name('contact-form');
 
 

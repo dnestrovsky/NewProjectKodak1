@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Souvenirs;
+use App\Models\SouvenirsPhoto;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
@@ -39,12 +40,19 @@ class SouvenirsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Souvenirs $obj)
     {
         $path = $request->file('image')->store('souvenirs');
         $params = $request->all();
         $params['image'] = $path;
-        Souvenirs::create($params);
+        $lastInsertedId = $obj->create($params)->id;
+//        foreach ($request->photos as $photo) {
+//            $filename = $photo->store('photos');
+//            SouvenirsPhoto::create([
+//                'souvenir_id' => $lastInsertedId,
+//                'filename' => $filename
+//            ]);
+//        }
         return redirect()->route('souvenirs.index');
     }
 
@@ -63,6 +71,12 @@ class SouvenirsController extends Controller
         $souvenir = new Souvenirs();
         return view('souvenirpage', ['data' => $souvenir->find($id)]);
     }
+
+//    public function showphotos($id){
+//        $data = SouvenirsPhoto::with('Souvenirs')->find($id);
+//        return dd($data);
+//
+//    }
 
     /**
      * Show the form for editing the specified resource.

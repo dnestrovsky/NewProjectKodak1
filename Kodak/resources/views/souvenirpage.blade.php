@@ -23,7 +23,6 @@
             </div>
         </div>
     </section>
-
     <!-- Home -->
     <section id="about">
         <div class="inner-width">

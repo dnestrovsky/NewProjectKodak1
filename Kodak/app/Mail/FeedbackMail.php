@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Contact;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -10,16 +11,16 @@ use Illuminate\Queue\SerializesModels;
 class FeedbackMail extends Mailable
 {
     use Queueable, SerializesModels;
-    public $feedback;
+    private Contact $contact;
 
     /**
      * Create a new message instance.
      *
-     * @return void
+     * @param Contact $contact
      */
-    public function __construct($feedback)
+    public function __construct(Contact $contact)
     {
-        $this->feedback = $feedback;
+        $this->contact = $contact;
     }
 
     /**
@@ -29,6 +30,6 @@ class FeedbackMail extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.feedback');
+        return $this->subject('Новое сообщение ')->view('emails.feedback', ['data' => $this->contact]);
     }
 }

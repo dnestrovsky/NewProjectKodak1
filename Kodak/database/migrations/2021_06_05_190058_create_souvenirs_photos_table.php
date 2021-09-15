@@ -14,8 +14,8 @@ class CreateSouvenirsPhotosTable extends Migration
     public function up()
     {
         Schema::create('souvenirs_photos', function (Blueprint $table) {
-            $table->id();
-            $table->unsignedBigInteger('souvenir_id')->nullable();
+            $table->increments('id');
+            $table->integer('souvenir_id')->unsigned();
             $table->foreign('souvenir_id')->references('id')->on('souvenirs');
             $table->string('filename');
             $table->timestamps();

@@ -14,7 +14,7 @@ class CreateSouvenirsTable extends Migration
     public function up()
     {
         Schema::create('souvenirs', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('name')->nullable();
             $table->text('description')->nullable();
             $table->string('image')->nullable();

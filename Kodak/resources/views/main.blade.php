@@ -30,6 +30,11 @@
             <div class="inner-width">
                 <h1 class="section-title">@lang('main.grafic')</h1>
                 <div class="time-line">
+                <div class="block">
+                        <h4>Выходной</h4>
+                        <h3>@lang('main.grafic_1')</h3>
+                    </div>
+
                     <div class="block">
                         <h4>8:00 - 16:00</h4>
                         <h3>@lang('main.grafic_1')</h3>

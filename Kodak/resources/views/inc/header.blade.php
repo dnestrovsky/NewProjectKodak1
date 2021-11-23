@@ -13,13 +13,6 @@
             <a href="{{ route('souvenir-data') }}">@lang('main.suvenir')</a>
             <a href="{{ route('contact') }}">@lang('main.cont')</a>
             <a href="{{ route('locale', __('main.set_lang')) }}">@lang('main.set_lang')</a>
-            @if (Route::has('login'))
-                @auth
-                <a href="/dashboard" class="sign">Админка</a>
-            @else
-                    <a href="{{ route('login') }}" class="sign">@lang('main.auth')</a>
-                @endauth
-                @endif
         </div>
     </div>
 </nav>

@@ -22,7 +22,7 @@ class SouvenirController extends Controller
     }
 
     public function allData(){
-        $data = Souvenir::orderBy('created_at', 'desc');
+        $data = Souvenir::orderBy('created_at', 'desc')->get();
         
         return view('souvenirs', compact('data'));
     }

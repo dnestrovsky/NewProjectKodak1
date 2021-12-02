@@ -17,7 +17,7 @@
     <section id="about">
         <div class="gallery-sectionex">
             <div class="inner-width">
-              <h1>My Gallery</h1>
+              <h1>@lang('main.serv_exemplu')</h1>
               <div class="border"></div>
               <div class="gallery">
 

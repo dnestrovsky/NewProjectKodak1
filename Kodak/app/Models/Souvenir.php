@@ -2,14 +2,13 @@
 
 namespace App\Models;
 
-use App\Models\Traits\Translatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Traits\Translatable;
 
-class Souvenirs extends Model
+class Souvenir extends Model
 {
     use HasFactory, Translatable;
-    protected $primaryKey = 'id';
 
     protected $table = 'souvenirs';
 
@@ -21,4 +20,7 @@ class Souvenirs extends Model
         'description_ro',
         ];
 
+    public function Photos(){
+        return $this->hasMany(Image::class);
+    }
 }

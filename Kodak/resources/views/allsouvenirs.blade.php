@@ -31,6 +31,7 @@
                             </ul>
                             <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
                                 <a href="{{ route('souvenirs.show', $souvenir) }}"><i class="far fa-eye"></i>Просмотреть</a>
+                                <a href="{{ route('images.create', $souvenir) }}"><i class="far fa-eye"></i>Добавить пример</a>
                                 <a href="{{ route('souvenirs.edit', $souvenir) }}"><i class="fas fa-pen"></i>Редактировать</a>
                                 @csrf
                                 @method('DELETE')

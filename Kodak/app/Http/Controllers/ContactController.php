@@ -21,7 +21,6 @@ class ContactController extends Controller
 
         $toEmail = "kodak.floresti@mail.ru"; //почта для получения всех писем
         Mail::to($toEmail)->send(new FeedbackMail($contact));
-//        Mail::to($data->email)->send(new FeedbackMail($data));
 
         $contact->save();
         return redirect()->route('contact')->with('success', 'Сообщение отправлено!');

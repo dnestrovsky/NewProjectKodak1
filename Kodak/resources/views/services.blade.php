@@ -102,6 +102,9 @@
             <div class="about-content">
                 <img src="img/documente.jpg" alt="" class="about-pic">
                 <div class="about-text">
+                    <p>
+                        Возможные размеры
+                    </p>
                     <div class="skills">
                         <div class="skill">
                             <div class="skill-info">

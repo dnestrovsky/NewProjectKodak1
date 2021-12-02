@@ -9,15 +9,15 @@
         <div class="inner-width">
             <div class="content">
                 @include('inc.messages')
-                <h2>@lang('main.serv_main')</h2>
                 <h1> </h1>
                 <div class="sm">
-                    <a href="{{ route('contact') }}" class="fab fa-viber viber"></a>
-                    <a href="{{ route('contact') }}" class="fas fa-envelope"></a>
+                    <a href="viber://chat?number=%2B37367358811" class="fab fa-viber viber"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=37367358811" class="fab fa-whatsapp whatsapp"></a>
                 </div>
                 <div class="buttons">
                     <a href="{{ route('contact') }}">@lang('main.cont')</a>
                     <a href="#about">@lang('main.info')</a>
+                    <a href="#orele">@lang('main.grafic')</a>
                 </div>
             </div>
         </div>
@@ -26,13 +26,13 @@
  @include('inc.info')
 
         <!-- Education -->
-        <section id="education">
+        <section id="orele">
             <div class="inner-width">
                 <h1 class="section-title">@lang('main.grafic')</h1>
                 <div class="time-line">
                 <div class="block">
-                        <h4>Выходной</h4>
-                        <h3>@lang('main.grafic_1')</h3>
+                        <h4>@lang('main.liber')</h4>
+                        <h3>@lang('main.grafic_0')</h3>
                     </div>
 
                     <div class="block">

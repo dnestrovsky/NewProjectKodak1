@@ -33,24 +33,6 @@
                 </h3>
             </div>
 
-            <div class="slider">
-                <div class="slider__item filter">
-                    <img src="img/Photo1.jpg" alt="">
-                </div>
-                <div class="slider__item">
-                    <img src="img/Photo2.jpg" alt="">
-                </div>
-                <div class="slider__item filter">
-                    <img src="img/Photo3.jpg" alt="">
-                </div>
-                <div class="slider__item">
-                    <img src="img/Photo4.jpg" alt="">
-                </div>
-                <div class="slider__item">
-                    <img src="img/Photo5.jpg" alt="">
-                </div>
-            </div>
-
         </div>
     </div>
 

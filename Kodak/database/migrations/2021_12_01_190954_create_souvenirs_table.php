@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSouvenirsPhotosTable extends Migration
+class CreateSouvenirsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateSouvenirsPhotosTable extends Migration
      */
     public function up()
     {
-        Schema::create('souvenirs_photos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->integer('souvenir_id')->unsigned();
-            $table->foreign('souvenir_id')->references('id')->on('souvenirs');
-            $table->string('filename');
+        Schema::create('souvenirs', function (Blueprint $table) {
+            $table->increments('id')->unsigned();
+            $table->string('name')->nullable();
+            $table->text('description')->nullable();
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateSouvenirsPhotosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('souvenirs_photos');
+        Schema::dropIfExists('souvenirs');
     }
 }

@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\SouvenirsController;
+use App\Http\Controllers\SouvenirController;
+use App\Http\Controllers\ImageController;
 
 Route::middleware(['set_locale']) -> group(function () {
 
@@ -18,9 +19,8 @@ Route::middleware(['set_locale']) -> group(function () {
         return view('services');
     })->name('services');
 
-    Route::get('/souvenirs-all', [SouvenirsController::class, 'allData']) -> name('souvenir-data');
-    Route::get('/souvenirpage/{id}', [SouvenirsController::class, 'showprod']) -> name('souvenir-data1');
-//    Route::get('/test/{id}', [SouvenirsController::class, 'showphotos']) -> name('souvenir-data2');
+    Route::get('/souvenirs-all', [SouvenirController::class, 'allData']) -> name('souvenir-data');
+    Route::get('/souvenirpage/{id}', [SouvenirController::class, 'showMain']) -> name('souvenir-data1');
     Route::post('/contact/submit', [ContactController::class,'submit']) -> name('contact-form');
 
 
@@ -36,9 +36,12 @@ Route::get('/dashboard/allsouvenirs', function () {
 })->name('allsouvenirs');
 
 
+Route::get('/addimage/{id}', [ImageController::class, 'create']) -> name('images.create');
+
+Route::post('/addimage', [ImageController::class, 'store']) -> name('images.store');
 
 
-Route::resource('souvenirs', SouvenirsController::class)->middleware(['auth']);
+Route::resource('souvenirs', SouvenirController::class)->middleware(['auth']);
 
 Route::get('/messages/{id}/delete', [ContactController::class, 'deleteMessage']) -> name('delete-message');
 Route::get('/messages/{id}', [ContactController::class, 'showmessage'])->middleware(['auth']) -> name('messages-data-one');

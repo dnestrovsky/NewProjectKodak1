@@ -174,6 +174,7 @@ html{
     text-shadow: -4px -4px 0px #D2EAD7;
 }
 
+
 #home .content h1::after{
     content: "Реставрация фото";
     -webkit-animation: textanim 20s linear infinite;
@@ -273,14 +274,14 @@ html{
 
 .sm .viber{
     color: #8812b7;
-    font-size: 30px;
+    font-size: 40px;
     margin: 0 10px;
     transition: .2s linear;
 }
 
 .sm .whatsapp{
     color: #137e16;
-    font-size: 30px;
+    font-size: 40px;
     margin: 0 10px;
     transition: .2s linear;
 }
@@ -642,6 +643,12 @@ section.dark5{
 .block h3{
     font-size: 16px;
     margin: 10px 0;
+}
+
+.block h4{
+    font-size: 16px;
+    margin: 10px 0;
+    color:#0f6e66;
 }
 
 .block p{
@@ -1054,7 +1061,7 @@ footer{
         font-family: 'Rubik One', sans-serif;
         font-size: 30px;
         text-transform: uppercase;
-        background: linear-gradient(180deg, rgb(225, 131, 25), rgb(238, 207, 89));
+        background: linear-gradient(180deg, rgb(235, 232, 229), rgb(236, 191, 41));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         color: #0B2349;
@@ -1265,99 +1272,7 @@ ul {
 }
 
 
-/* Основные стили */
 
-/* Слайдер */
-.slick-slider{
-    min-width: 0;
-}
-/* Ограничивающая оболочка */
-.slick-list {
-    overflow: hidden;
-}
-/* Лента слайдов */
-.slick-track{
-    display: flex;
-    align-items: flex-start;
-}
-
-/* Слайд */
-.slick-slide{}
-/* Слайд активный */
-.slick-slide.slick-active{}
-/* Слайд основной */
-.slick-slide.slick-current{}
-/* Слайд по центру */
-.slick-slide.slick-center{}
-
-/* Стрелка */
-.slick-arrow{}
-/* Стрелка влево */
-.slick-arrow.slick-prev{}
-/* Стрелка вправо */
-.slick-arrow.slick-next{}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled{}
-
-/* Точки */
-.slick-dots{}
-.slick-dots li{}
-.slick-dots button{}
-
-/* Конкретный слайдер */
-.slider {
-    position: relative;
-    padding: 0px 60px;
-}
-
-@media (max-width:767px){
-    .slider {
-        padding: 0px 40px;
-    }
-}
-
-.slider .slick-arrow{
-    position: absolute;
-    top: 50%;
-    margin: -30px 0px 0px 0px;
-    z-index: 10;
-    font-size: 0;
-    width: 30px;
-    height: 60px;
-}
-
-
-.slider .slick-dots{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slider .slick-dots li{
-    list-style: none;
-    margin: 0px 10px;
-}
-.slider .slick-dots button{
-    font-size: 0;
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-}
-
-.slider .slick-dots li.slick-active button{
-    background-color: transparent;
-    border: 1px solid #fff;
-}
-
-.slider__item {
-    padding: 0px 15px;
-}
-.slider__item img{
-    max-width: 100%;
-}
-.slider__item.slick-center{
-
-}
 
 
 .transform-border {
@@ -1436,3 +1351,70 @@ ul {
     margin: 20px;
     float: left;
 }
+
+.gallery-sectionex{
+    width: 100%;
+    padding: 60px 0;
+    background: #f1f1f1;
+  }
+  
+  .inner-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .gallery-sectionex h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(19, 17, 17);
+  }
+  
+  .border{
+    width: 180px;
+    height: 4px;
+    background: #333;
+    margin: 60px auto;
+  }
+  
+  .gallery-sectionex .gallery{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  
+  .gallery-sectionex .image{
+    flex: 25%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .gallery-sectionex .image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+  }
+  
+  .gallery-sectionex .image:hover img{
+    transform: scale(1.4);
+  }
+  
+  @media screen and (max-width:960px) {
+    .gallery-sectionex .image{
+      flex: 33.33%;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    .gallery-sectionex .image{
+      flex: 50%;
+    }
+  }
+  
+  @media screen and (max-width:480px) {
+    .gallery-sectionex .image{
+      flex: 100%;
+    }
+  }
+  

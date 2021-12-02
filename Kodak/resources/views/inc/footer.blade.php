@@ -6,6 +6,7 @@
             <div class="social-media">
                 <a href="{{ route('contact') }}"><i class="fab fa-facebook-f"></i></a>
                 <a href="{{ route('contact') }}"><i class="fab fa-viber"></i></a>
+                <a href="{{ route('contact') }}"><i class="fab fa-whatsapp"></i></a>
                 <a href="{{ route('contact') }}"><i class="fas fa-envelope"></i></a>
             </div>
             <p class="rights-text">Created & Designed By <strong>@dnestrovsky</strong></p>

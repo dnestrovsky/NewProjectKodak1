@@ -25,8 +25,6 @@
                         <textarea class="contact-form-text" name="description_ro" id="description_ro" placeholder="Описание на румынском"></textarea>
                         <label for="custom-file-input">Картинка товара</label>
                         <input type="file" name="image" class="contact-form-text" id="image">
-{{--                        <label for="custom-file-input">Примеры</label>--}}
-{{--                        <input type="file" name="photos[]" class="contact-form-text" id="image" multiple>--}}
                         <input type="submit" class="contact-form-btn" value="Добавить">
                     </form>
                 </div>

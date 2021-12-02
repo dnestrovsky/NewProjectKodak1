@@ -31,6 +31,20 @@
                     </div>
                 </div>
 
+                <div class="row">
+                    @foreach($souvenir->Photos as $photo)
+                      <div class="col-lg-3">
+                        <div class="thumbnail" style="max-height: 350px;min-height: 350px;">
+                          <img alt="{{$souvenir->name}}" src="{{ Storage::url($photo->image) }}">
+                          <div class="caption">
+                            <p>{{$photo->description}}</p>
+                            <p><p>Created date:  {{ date("d F Y",strtotime($photo->created_at)) }} at {{ date("g:ha",strtotime($photo->created_at)) }}</p></p>
+                          </div>
+                        </div>
+                      </div>
+                    @endforeach
+                  </div>
+
             </div>
         </div>
     </section>

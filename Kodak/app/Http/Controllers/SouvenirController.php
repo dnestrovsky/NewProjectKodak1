@@ -16,13 +16,13 @@ class SouvenirController extends Controller
      */
     public function index()
     {
-        $souvenirs = Souvenir::orderBy('created_at', 'desc');
+        $souvenirs = Souvenir::orderBy('created_at', 'desc')->Paginate(3);
         
         return view('allsouvenirs', compact('souvenirs'));
     }
 
     public function allData(){
-        $data = Souvenir::orderBy('created_at', 'desc')->Paginate(3);
+        $data = Souvenir::orderBy('created_at', 'desc');
         
         return view('souvenirs', compact('data'));
     }

@@ -607,6 +607,7 @@ section.dark5{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
 }
 
 .block{
@@ -1418,3 +1419,41 @@ ul {
     }
   }
   
+
+.grafik-test{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.grafik-test div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 80px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 10px !important;
+    box-shadow: 0px 0px 10px #bebebe;
+}
+
+.grafik-test h3{
+    font-size: 16px;
+    margin: 8px ;
+}
+
+.grafik-test h4{
+    font-size: 16px;
+    margin: 5px;
+    color:#0f6e66;
+}
+
+.grafik-test div span{
+    margin: 10px;
+}
+
+.grafik-test div.today{
+	background: #ef7f11;
+    color: #fff;
+}

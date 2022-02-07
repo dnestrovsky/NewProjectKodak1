@@ -10,7 +10,7 @@
         <div class="navbar-menu">
             <a href="/dashboard">Главная</a>
             <a href="{{route('souvenirs.index')}}">Сувениры</a>
-            <a href="{{ route('home') }}">тестики</a>
+            <a href="{{ route('home') }}">Вернуться на сайт</a>
         </div>
     </div>
 </nav>

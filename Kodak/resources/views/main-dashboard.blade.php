@@ -29,7 +29,6 @@
                 </div>
 
                 <div class="buttons">
-                    <a href="#education">Последние сообщения</a>
                     @if (Route::has('login'))
                         @auth
                             <form method="POST" action="{{ route('logout') }}">
@@ -39,28 +38,6 @@
                         @endauth
                     @endif
                 </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Education -->
-    <section id="education">
-        <div class="inner-width">
-            <h1 class="section-title">Последние сообщения</h1>
-            @if(count($data1) === 0)
-                <h1 style="text-align: center">Сообщений пока нет</h1>
-            @endif
-            <div class="time-line">
-                @foreach($data1 as $el)
-                <div class="block">
-                    <h4>Дата: {{$el->created_at}}</h4>
-                    <h5>{{$el->message}}</h5>
-                    <div class="buttons">
-                        <a href="{{ route('messages-data-one', $el->id) }}" role="button">Подробнее</a>
-                    </div>
-                </div>
-                @endforeach
             </div>
         </div>
     </section>

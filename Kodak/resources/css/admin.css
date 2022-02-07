@@ -97,7 +97,7 @@ html{
 
 #home{
     min-height: calc(100vh - 60px);
-    background: #696464;
+    background: #1A1A1D;
     background-blend-mode: darken;
     background-size: 400% 400%;
     background-attachment: fixed;

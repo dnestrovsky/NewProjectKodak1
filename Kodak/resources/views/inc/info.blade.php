@@ -7,31 +7,60 @@
             <div class="about-text">
                 <h2>Palitra Kodak</h2>
                 <p>@lang('main.info_')</p>
-                <h3>
-                    <div class="row">
-                    <div class="span6">
-
-                        <ul class="check">
-                            <li>@lang('main.main_info1')</li>
-                            <li>@lang('main.main_info2')</li>
-                            <li>@lang('main.main_info3')</li>
-                            <li>@lang('main.serv_holst')</li>
-                        </ul>
-
-                    </div><!-- end .span6 -->
-                    <div class="span6">
-
-                        <ul class="check">
-                            <li>@lang('main.serv_photo_dig')</li>
-                            <li>@lang('main.main_info4')</li>
-                            <li>@lang('main.main_info5')</li>
-                            <li>@lang('main.main_info6')</li>
-                        </ul>
-
-                    </div><!-- end .span6 -->
-                    </div>
-                </h3>
             </div>
+
+    <div class="inner-width">
+      <div class="time-line">
+        <div class="block">
+          <h4>@lang('main.serv_collaj1')</h4>
+          <h3><i class="icon fas fa-images"></i></h3>
+          
+        </div>
+
+        <div class="block">
+          <h4>@lang('main.serv_photo_dig')</h4>
+          <h3><i class="icon fas fa-images"></i></h3>
+          
+        </div>
+
+        <div class="block">
+          <h4>@lang('main.serv_photo_dig1')</h4>
+          <h3><i class="icon fas fa-images"></i></h3>
+          
+        </div>
+
+        <div class="block">
+          <h4>@lang('main.serv_holst')</h4>
+          <h3><i class="icon fas fa-images"></i></h3>
+          
+        </div>
+
+        <div class="block">
+          <h4>@lang('main.main_info4')</label></h4>
+          <h3><i class="icon fas fa-images"></i></h3>
+          
+        </div>
+
+        <div class="block">
+          <h4>@lang('main.main_info5')</h4>
+          <h3><i class="icon fas fa-images"></i></h3>
+          
+        </div>
+
+        <div class="block">
+            <h4>@lang('main.main_info1')</h4>
+            <h3><i class="icon fas fa-images"></i></h3>
+            
+        </div>
+
+        <div class="block">
+            <h4>@lang('main.main_info3')</h4>
+            <h3><i class="icon fas fa-images"></i></h3>
+           
+        </div>
+
+      </div>
+    </div>
 
         </div>
     </div>

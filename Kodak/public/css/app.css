@@ -339,6 +339,7 @@ section{
 }
 .about-text h2{
     text-align: left;
+    font-size: 40px;
 }
 .textr{
     margin: 10px 0;
@@ -372,11 +373,9 @@ section{
     margin: 0 14px;
 }
 .about-text p{
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
-    line-height: 26px;
     margin-top: 20px;
-    font-family: "montserrat", sans-serif;
 }
 .skills{
     margin-top: 40px;
@@ -537,33 +536,21 @@ section.dark5{
     margin: 10px 0;
     padding: 30px;
     position: relative;
+    box-shadow: 0px 0px 10px #bebebe;
+    border-radius: 15px;
 }
-.block::before{
-    content: "";
-    position: absolute;
-    width: 1px;
-    height: 120%;
-    background-color: #ddd;
-    left: -20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.block::after{
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: #e9ce1a;
-    left: -28px;
-    top: 30px;
-    border-radius: 50%;
+.block .icon{
+    color: rgb(3, 187, 73);
+    font-size: 40px;
+    margin-bottom: 20px;
+    transition: .3s linear;
 }
 .block h3{
-    font-size: 16px;
+    font-size: 18px;
     margin: 10px 0;
 }
 .block h4{
-    font-size: 16px;
+    font-size: 25px;
     margin: 10px 0;
     color:#0f6e66;
 }
@@ -889,6 +876,25 @@ footer{
         flex: 100%;
         text-align: center;
     }
+
+    .about-text h2{
+        font-size: 45px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .about-text p{
+        font-size: 25px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    .about-text p{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
     .about-textsouv{
         flex: 100%;
         text-align: center;
@@ -899,7 +905,7 @@ footer{
     }
 
     .block{
-        width: calc(100% - 20px);
+        width: calc(100% - 0px);
         margin-left: auto;
     }
 
@@ -1236,11 +1242,10 @@ ul {
   }
 .gallery-sectionex .image img{
     width: 100%;
-    height: 100%;
     transition: 0.4s;
   }
 .gallery-sectionex .image:hover img{
-    transform: scale(1.4);
+    transform: scale(0.9);
   }
 @media screen and (max-width:960px) {
     .gallery-sectionex .image{

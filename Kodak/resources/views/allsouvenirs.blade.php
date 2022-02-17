@@ -22,7 +22,7 @@
 
                         <div class="pricing-table table3">
                             <div class="pricing-header">
-                                <div class="titlesouv">{{$souvenir->name}} id = {{$souvenir->id}}</div>
+                                <div class="titlesouv">{{$souvenir->name}}</div>
                             </div>
                             <ul class="pricing-list">
                                 <strong>Обновлено</strong>

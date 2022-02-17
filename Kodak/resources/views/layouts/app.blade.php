@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Palitra-Kodak - магазин, который предоставляет фотоуслуги в городе Floresti">
-    <meta name="keywords" content="Palitra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги">
+    <meta name="description" content="Palitra-Kodak - предоставляем фотоуслуги в городе Floresti уже на протяжении больше 10-ти лет">
+    <meta name="keywords" content="Palitra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги, город флорешть, печать фото, фото, фото на документы">
     <meta name="author" content="Palitra-Kodak">
     <meta name="copyright" content="Palitra-Kodak">
     <title>@yield('title-block')</title>
@@ -32,7 +32,7 @@
 
 <script src="//code.tidio.co/nekdv3kjblhff9vhxm8re80mpgxvwatn.js" async></script>
 
-<!-- Go Top BTN -->
+<!-- Viber BTN -->
 <a class="viberbutton fab fa-viber viber" href="viber://chat?number=%2B37367358811"></a>
 
 <!-- Go Top BTN -->

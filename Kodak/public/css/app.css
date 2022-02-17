@@ -1242,6 +1242,7 @@ ul {
   }
 .gallery-sectionex .image img{
     width: 100%;
+    height: 100%;
     transition: 0.4s;
   }
 .gallery-sectionex .image:hover img{

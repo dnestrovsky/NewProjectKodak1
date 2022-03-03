@@ -4,37 +4,36 @@
 
 
 @section('content')
+    <div class="container">
+        <div class="title">Редактирование {{ $souvenir->name }}</div>
+        <div class="content">
+            <form action="{{ route('souvenirs.update', $souvenir) }}" method="post" enctype="multipart/form-data">
 
-    <!-- Home -->
-    <section id="home">
-        <div class="inner-width">
-            <div class="content">
-                <div class="contact-section">
-                    <ul class="breadcrumb">
-                        <li><a href="/dashboard">Главная</a></li>
-                        <li><a href="{{route('souvenirs.index')}}">Все сувениры</a></li>
-                        <li>Редактирование</li>
-                    </ul>
-                    <h3><b>{{ $souvenir->name }}</b></h3>
-                    <div class="border"></div>
-                    <form class="contact-form" action="{{ route('souvenirs.update', $souvenir) }}" method="post" enctype="multipart/form-data">
-                        @method('PUT')
-                        @csrf
-                        <label for="name">Название товара</label>
-                        <input type="text" name="name" class="contact-form-text" id="name" value="{{ $souvenir->name }}">
-                        <label for="name_ro">Название на румынском</label>
-                        <input type="text" name="name_ro" class="contact-form-text" id="name_ro" value="{{ $souvenir->name_ro }}">
-                        <label for="description">Описание</label>
-                        <textarea class="contact-form-text" name="description" id="description">{{ $souvenir->description }}</textarea>
-                        <label for="description_ro">Описание на румынском</label>
-                        <textarea class="contact-form-text" name="description_ro" id="description_ro">{{ $souvenir->description_ro }}</textarea>
-                        <label for="custom-file-input">Картинка товара</label>
-                        <input type="file" name="image" class="contact-form-text" id="image">
-                        <input type="submit" class="contact-form-btn" value="Применить изменения">
-                    </form>
+                @method('PUT')
+                @csrf
+
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Название товара</span>
+                        <input name="name" id="name" type="text" placeholder="Описание" value="{{ $souvenir->name }}"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Название на румынском</span>
+                        <input name="name_ro" id="name_ro" type="text" placeholder="Описание"
+                            value="{{ $souvenir->name_ro }}" required>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Картинка товара</span>
+                        <input type="file" name="image" id="image">
+                    </div>
                 </div>
-
-            </div>
+                <div class="button">
+                    <input type="submit" value="Применить изменения">
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
 @endsection

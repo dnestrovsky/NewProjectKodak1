@@ -4,10 +4,8 @@
 
 
 @section('content')
-    <!-- Home -->
-    <section id="home">
-        <div class="inner-width">
-            <div class="content">
+
+            <div class="container">
                 <h2>Приветствую вас, {{ Auth::user()->name }}</h2>
                 <div class="services">
                     <div class="service">
@@ -27,19 +25,7 @@
                         <p><em>Общее количество товаров</em></p>
                     </div>
                 </div>
-
-                <div class="buttons">
-                    @if (Route::has('login'))
-                        @auth
-                            <form method="POST" action="{{ route('logout') }}">
-                                @csrf
-                                <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">Выйти</a>
-                            </form>
-                        @endauth
-                    @endif
-                </div>
             </div>
-        </div>
-    </section>
+
 
 @endsection

@@ -8,27 +8,58 @@
     <section id="works" class="dark1">
         <div class="inner-width">
             <!-- Name -->
-            <h2 class="section-title">{{$souvenir->__('name')}}</h2>
+            <h2 class="section-title">{{ $souvenir->__('name') }}</h2>
 
-            </div>
+        </div>
         </div>
     </section>
-    <!-- Examples -->
-    <section id="about">
-        <div class="gallery-sectionex">
-            <div class="inner-width">
-              <h1>@lang('main.serv_exemplu')</h1>
-              <div class="border"></div>
-              <div class="gallery">
 
-                @foreach($souvenir->Photos as $photo)
-                <a href="{{ Storage::url($photo->image) }}" class="image">
-                    <img alt="{{$souvenir->name}}" src="{{ Storage::url($photo->image) }}">
-                </a>
-                @endforeach
-
-              </div>
+    <div class="sectionim">
+        <div class="lightBox">
+            <div class="lightBox_content">
+                <i class="fas fa-times close"></i>
+                <div class="logo_icons">
+                    <a href="#">
+                        <img class="logoImg" src="/img/logo.png" alt="">
+                        <div class="text_content">
+                            <span class="name">Palitra-Kodak</span>
+                            <span class="followers">Фотосалон Флорешть</span>
+                        </div>
+                    </a>
+                    <div class="icons">
+                        <i class="fas fa-arrow-down"></i>
+                    </div>
+                </div>
+                <div class="showImg">
+                    <div class="image">
+                        <img src="images/img1.jpg" alt="">
+                    </div>
+                </div>
             </div>
-          </div>
-    </section>
+        </div>
+
+        <div class="image-gallery">
+            <header>Галлерея</header>
+            <div class="image-container">
+                @foreach ($souvenir->Photos as $photo)
+                    <div class="image-box">
+                        <img class="gImg" src="{{ Storage::url($photo->image) }}" alt="">
+                        <div class="logo_icons">
+                            <a href="#">
+                                <img class="logoImg" src="/img/logo.png" alt="">
+                                <div class="text_content">
+                                    <span class="name">Palitra-Kodak</span>
+                                    <span class="followers">Фотосалон Флорешть</span>
+                                </div>
+                            </a>
+                            <div class="icons">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+
 @endsection

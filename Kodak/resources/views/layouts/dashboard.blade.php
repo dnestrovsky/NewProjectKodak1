@@ -8,20 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="{{ mix('/css/admin.css') }}">
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script type='text/javascript' src="{{ mix('/js/app.js') }}"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-@include('inc.header-admin')
+@include('inc.sidebar')
 
-@yield('content')
+<section class="home">
 
-@include('inc.footer-admin')
+    @yield('content')
+
+</section>
 
 <!-- Go Top BTN -->
 <button class="goTop fas fa-arrow-up"></button>
+
+
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script type='text/javascript' src="{{ mix('/js/admin.js') }}"></script>
 
 </body>
 </html>

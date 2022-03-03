@@ -4,22 +4,13 @@
 
 
 @section('content')
-
-    <!-- Home -->
-    <section id="home">
-        <div class="inner-width">
-            <div class="content">
-                <ul class="breadcrumb">
-                    <li><a href="/dashboard">Главная</a></li>
-                    <li>Все сувениры</li>
-                </ul>
-                <div class="buttons">
-                    <a href = "{{route('souvenirs.create')}}" > <i class="fas fa-plus"></i> Добавить</a>
+            <div class="container">
+                  <div class="buttons">
+                    <a href = "{{route('souvenirs.create')}}" > Добавить</a>
                 </div>
 
                 <div class="containersouv">
                     @foreach($souvenirs as $souvenir)
-
                         <div class="pricing-table table3">
                             <div class="pricing-header">
                                 <div class="titlesouv">{{$souvenir->name}}</div>
@@ -38,13 +29,9 @@
                                 <input type="submit" value="Удалить"></form>
                         </div>
                     @endforeach
-
                 </div>
 
 
                 <div>{{$souvenirs->links('default')}}</div>
             </div>
-        </div>
-    </section>
-
 @endsection

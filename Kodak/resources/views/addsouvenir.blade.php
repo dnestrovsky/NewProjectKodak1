@@ -5,32 +5,30 @@
 
 
 @section('content')
+    <div class="container">
+        <div class="title">Добавление сувенира</div>
+        <div class="content">
+            <form action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data">
 
-    <!-- Home -->
-    <section id="home">
-        <div class="inner-width">
-            <div class="content">
-                <ul class="breadcrumb">
-                    <li><a href="/dashboard">Главная</a></li>
-                    <li><a href="{{route('souvenirs.index')}}">Все сувениры</a></li>
-                    <li>Добавление сувенира</li>
-                </ul>
-                <div class="contact-section">
-                    <div class="border"></div>
-                    <form class="contact-form" action="{{ route('souvenirs.store') }}" method="post" enctype="multipart/form-data">
-                        @csrf
-                        <input type="text" name="name" class="contact-form-text" id="name" placeholder="Название">
-                        <input type="text" name="name_ro" class="contact-form-text" id="name_ro" placeholder="Название на румынском">
-                        <textarea class="contact-form-text" name="description" id="description" placeholder="Описание"></textarea>
-                        <textarea class="contact-form-text" name="description_ro" id="description_ro" placeholder="Описание на румынском"></textarea>
-                        <label for="custom-file-input">Картинка товара</label>
-                        <input type="file" name="image" class="contact-form-text" id="image">
-                        <input type="submit" class="contact-form-btn" value="Добавить">
-                    </form>
+                @csrf
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Название</span>
+                        <input name="name" id="name" type="text" placeholder="Название" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Название на румынском</span>
+                        <input name="name_ro" id="name_ro" type="text" placeholder="Название на румынском" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Картинка товара</span>
+                        <input type="file" name="image" id="image">
+                    </div>
                 </div>
-
-
-            </div>
+                <div class="button">
+                    <input type="submit" value="Добавить">
+                </div>
+            </form>
         </div>
-    </section>
+    </div>
 @endsection

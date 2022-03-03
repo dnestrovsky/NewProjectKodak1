@@ -16,7 +16,7 @@ class SouvenirController extends Controller
      */
     public function index()
     {
-        $souvenirs = Souvenir::orderBy('created_at', 'desc')->Paginate(3);
+        $souvenirs = Souvenir::orderBy('created_at', 'desc')->Paginate(1);
         
         return view('allsouvenirs', compact('souvenirs'));
     }
@@ -85,7 +85,7 @@ class SouvenirController extends Controller
      */
     public function edit(Souvenir $souvenir)
     {
-        //
+        return view('souvenir-edit', compact('souvenir'));
     }
 
     /**
@@ -97,7 +97,14 @@ class SouvenirController extends Controller
      */
     public function update(Request $request, Souvenir $souvenir)
     {
-        //
+        $params = $request->all();
+        unset($params['image']);
+        if ($request->has('image')) {
+            Storage::delete($souvenir->image);
+            $params['image'] = $request->file('image')->store('albums');
+        }
+        $souvenir->update($params);
+        return redirect()->route('souvenirs.index');
     }
 
     /**

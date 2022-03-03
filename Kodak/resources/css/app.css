@@ -879,6 +879,7 @@ footer {
     margin-left: 20px;
     cursor: pointer;
     transition: opacity 0.3s linear;
+    text-align: center;
 }
 
 .btn:hover {

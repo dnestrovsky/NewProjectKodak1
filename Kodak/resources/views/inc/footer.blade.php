@@ -16,7 +16,7 @@
             <h1>© Palitra Kodak</h1>
             <div class="border"></div>
             <form action="" class="newsletter-form">
-                <input type="submit" class="btn" value="@lang('main.cont')">
+                <a href="{{ route('contact') }}" class="btn">@lang('main.cont')</a>
             </form>
         </div>
     </div>

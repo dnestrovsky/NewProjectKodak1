@@ -23,7 +23,7 @@
 
 <main class="scene">
     <h1 class="text intro" data-splitting>Милый суровый котенок по имени Луиза</h1>
-    <p class="text outro" data-splitting>Поздравляю тебя с професcиональным праздником. Люблю тебя...</p>
+    <p class="text outro" data-splitting>Поздравляю тебя с профессиональным праздником. Люблю тебя...</p>
   
     <div class="majesty"></div>
   

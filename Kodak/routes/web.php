@@ -52,4 +52,8 @@ Route::get('/main-dashboard', function () {
     return view('main-dashboard');
 })->middleware(['auth'])->name('dashboard');
 
+Route::get('/liubimoi-Luize', function () {
+    return view('Luiza');
+})->name('Luiza');
+
 require __DIR__.'/auth.php';

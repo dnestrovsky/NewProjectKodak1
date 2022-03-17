@@ -48,6 +48,7 @@ Route::get('/messages/{id}', [ContactController::class, 'showmessage'])->middlew
 Route::get('/messages', [ContactController::class, 'allData'])->middleware(['auth']) -> name('messages-data');
 Route::get('/dashboard', [ContactController::class, 'messagesAdmin']) ->middleware(['auth']) -> name('messages-data-dashboard');
 
+
 Route::get('/main-dashboard', function () {
     return view('main-dashboard');
 })->middleware(['auth'])->name('dashboard');

@@ -104,6 +104,7 @@ html {
         #8e44ad
     );
     background-size: 400% 400%;
+    background-position: cover;
     background-attachment: fixed;
     -webkit-animation: bganimation 15s infinite;
     animation: bganimation 15s infinite;
@@ -244,22 +245,13 @@ html {
         content: "Restaurarea pozelor";
     }
 }
+.sm {
+    margin: 20px 0;
+}
 .sm a {
-    color: gold;
+    color: rgb(29, 29, 29);
     font-size: 30px;
-    margin: 0 10px;
-    transition: 0.2s linear;
-}
-.sm .viber {
-    color: #8812b7;
-    font-size: 40px;
-    margin: 0 10px;
-    transition: 0.2s linear;
-}
-.sm .whatsapp {
-    color: #137e16;
-    font-size: 40px;
-    margin: 0 10px;
+    margin: 0 20px;
     transition: 0.2s linear;
 }
 .sm a:hover {
@@ -369,32 +361,6 @@ section {
     margin: 10px 0;
     color: #444;
     font-size: 25px;
-}
-.about-text h3 span:nth-child(1):after,
-.about-text h3 span:nth-child(2):after,
-.about-text h3 span:nth-child(3):after,
-.about-text h3 span:nth-child(4):after,
-.about-text h3 span:nth-child(5):after,
-.about-text h3 span:nth-child(6):after,
-.about-text h3 span:nth-child(7):after,
-.about-text h3 span:nth-child(8):after,
-.about-text h3 span:nth-child(9):after {
-    content: "";
-    width: 6px;
-    height: 6px;
-    background-color: #444;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 14px;
-}
-.about-text h3 span:nth-child(1):before {
-    content: "";
-    width: 6px;
-    height: 6px;
-    background-color: #444;
-    display: inline-block;
-    border-radius: 50%;
-    margin: 0 14px;
 }
 .about-text p {
     font-size: 25px;
@@ -709,19 +675,6 @@ footer {
 .logofooter {
     width: 180px;
 }
-.social-media {
-    margin: 20px 0;
-}
-.social-media a {
-    color: #001a21;
-    margin-right: 25px;
-    font-size: 22px;
-    text-decoration: none;
-    transition: 0.3s linear;
-}
-.social-media a:hover {
-    color: #fc5c65;
-}
 .right-col h1 {
     font-family: "Rubik One", sans-serif;
     font-size: 40px;
@@ -732,7 +685,7 @@ footer {
     color: #0b2349;
     display: table;
     margin: 20px auto;
-    text-shadow: -4px -4px 0px yellow;
+    text-shadow: -4px -4px 0px rgb(158, 17, 17);
 }
 .border {
     width: 100%;
@@ -788,6 +741,7 @@ footer {
     }
 
     .right-col {
+        text-align: center;
         width: 100%;
         margin-bottom: 60px;
     }
@@ -807,34 +761,71 @@ footer {
 .goTop {
     position: fixed;
     z-index: 999;
-    top: 90%;
-    right: 0;
-    left: 0;
+    top: 89%;
+    bottom: 40px;
+    left: 10px;
     margin: auto;
     width: 60px;
-    height: 30px;
+    height: 60px;
     background-color: #48dbfb;
     border: none;
-    border-radius: 6px;
+    border-radius: 50%;
     cursor: pointer;
     color: #fff;
     outline: none;
     display: none;
 }
-.viberbutton {
-    position: fixed;
-    z-index: 999;
-    bottom: 40px;
-    left: 20px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    color: #6814ab;
-    outline: none;
-    display: none;
-    font-size: 40px;
+.icons a {
+    background: #ecf0f3;
+    position: relative;
+    height: 60px;
+    width: 60px;
     margin: 0 10px;
+    display: inline-flex;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+    box-shadow: 7px 7px 21px -2px rgba(33, 30, 30, 0.75);
+    -webkit-box-shadow: 7px 7px 21px -2px rgba(33, 30, 30, 0.75);
+    -moz-box-shadow: 7px 7px 21px -2px rgba(33, 30, 30, 0.75);
+}
+.icons a:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    background: #ecf0f3;
+    box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
+}
+.icons a i {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    line-height: 60px;
+}
+.icons a:hover i {
+    transform: scale(0.9);
+}
+.icons a.viber i {
+    color: #9522c2;
+}
+.icons a.whatsapp i {
+    color: #0eb145;
+}
+.icons a.telegram i {
+    color: #27b2e9;
+}
+.icons a.git i {
+    color: #333;
+}
+.icons a.yt i {
+    color: #ff0000;
 }
 @media screen and (max-width: 980px) {
     .menu-toggler {
@@ -847,6 +838,28 @@ footer {
 
     section.dark {
         height: 100%;
+    }
+
+    .icons a {
+        background: #ecf0f3;
+        position: relative;
+        height: 40px;
+        width: 40px;
+        margin: 0 10px;
+        display: inline-flex;
+        text-decoration: none;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+
+    .icons a i {
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        line-height: 40px;
     }
 
     .navbar-menu {
@@ -1087,93 +1100,6 @@ footer {
 }
 .alert li {
     margin: 5px;
-}
-.span6,
-.span7,
-.span8,
-.span9,
-.span10,
-.span11,
-.span12 {
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    box-sizing: border-box;
-}
-@media (min-width: 768px) {
-    .span1,
-    .span2,
-    .span3,
-    .span4,
-    .span5,
-    .span6,
-    .span7,
-    .span8,
-    .span9,
-    .span10,
-    .span11,
-    .span12 {
-        float: left;
-    }
-
-    .span12 {
-        width: 100%;
-    }
-
-    .span11 {
-        width: 91.66666667%;
-    }
-
-    .span10 {
-        width: 83.33333333%;
-    }
-
-    .span9 {
-        width: 75%;
-    }
-
-    .span8 {
-        width: 66.66666667%;
-    }
-
-    .span7 {
-        width: 58.33333333%;
-    }
-
-    .span6 {
-        width: 50%;
-    }
-
-    .span5 {
-        width: 41.66666667%;
-    }
-
-    .span4 {
-        width: 33.33333333%;
-    }
-
-    .span3 {
-        width: 25%;
-    }
-
-    .span2 {
-        width: 16.66666667%;
-    }
-
-    .span1 {
-        width: 8.33333333%;
-    }
-}
-.row {
-    position: relative;
-    margin-right: -15px;
-    text-align: left;
-}
-ul {
-    margin-bottom: 20px;
-}
-.row li {
-    padding: 5px;
 }
 .transform-border {
     position: relative;

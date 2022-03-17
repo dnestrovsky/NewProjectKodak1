@@ -10,10 +10,14 @@
             <div class="content">
                 @include('inc.messages')
                 <h1> </h1>
-                <div class="sm">
-                    <a href="viber://chat?number=%2B37367358811" class="fab fa-viber viber"></a>
-                    <a href="https://api.whatsapp.com/send/?phone=37367358811" class="fab fa-whatsapp whatsapp"></a>
+
+                <div class="icons">
+                    <a href="#" class="viber"><i class="fab fa-viber"></i></a>
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="telegram"><i class="fab fa-telegram"></i></a>
+                    {{-- https://telegram.me/логинкомпании --}}
                 </div>
+
                 <div class="buttons">
                     <a href="{{ route('contact') }}">@lang('main.cont')</a>
                     <a href="#about">@lang('main.info')</a>
@@ -23,22 +27,50 @@
         </div>
     </section>
 
- @include('inc.info')
+    @include('inc.info')
 
-        <!-- Education -->
-        <section id="orele">
-            <div class="inner-width">
-                <h1 class="section-title">@lang('main.grafic')</h1>
-                <div class="grafik-test">
-                    <div data-day="1"><h3>@lang('main.grafic_0')</h3><span><h4>@lang('main.liber')</h4></span></div>
-                    <div data-day="2"><h3>@lang('main.grafic_1')</h3><span><h4>8:00 – 16:00</h4></span></div>
-                    <div data-day="3"><h3>@lang('main.grafic_2')</h3><span><h4>8:00 – 16:00</h4></span></div>
-                    <div data-day="4"><h3>@lang('main.grafic_3')</h3><span><h4>8:00 – 16:00</h4></span></div>
-                    <div data-day="5"><h3>@lang('main.grafic_4')</h3><span><h4>8:00 – 16:00</h4></span></div>
-                    <div data-day="6"><h3>@lang('main.grafic_5')</h3><span><h4>8:00 – 14:00</h4></span></div>
-                    <div data-day="7"><h3>@lang('main.grafic_6')</h3><span><h4>8:00 – 14:00</h4></span></div>
+    <!-- Education -->
+    <section id="orele">
+        <div class="inner-width">
+            <h1 class="section-title">@lang('main.grafic')</h1>
+            <div class="grafik-test">
+                <div data-day="1">
+                    <h3>@lang('main.grafic_0')</h3><span>
+                        <h4>@lang('main.liber')</h4>
+                    </span>
+                </div>
+                <div data-day="2">
+                    <h3>@lang('main.grafic_1')</h3><span>
+                        <h4>8:00 – 16:00</h4>
+                    </span>
+                </div>
+                <div data-day="3">
+                    <h3>@lang('main.grafic_2')</h3><span>
+                        <h4>8:00 – 16:00</h4>
+                    </span>
+                </div>
+                <div data-day="4">
+                    <h3>@lang('main.grafic_3')</h3><span>
+                        <h4>8:00 – 16:00</h4>
+                    </span>
+                </div>
+                <div data-day="5">
+                    <h3>@lang('main.grafic_4')</h3><span>
+                        <h4>8:00 – 16:00</h4>
+                    </span>
+                </div>
+                <div data-day="6">
+                    <h3>@lang('main.grafic_5')</h3><span>
+                        <h4>8:00 – 14:00</h4>
+                    </span>
+                </div>
+                <div data-day="7">
+                    <h3>@lang('main.grafic_6')</h3><span>
+                        <h4>8:00 – 14:00</h4>
+                    </span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     </section>
 @endsection

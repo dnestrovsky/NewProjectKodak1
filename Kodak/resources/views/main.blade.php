@@ -12,8 +12,8 @@
                 <h1> </h1>
 
                 <div class="icons">
-                    <a href="#" class="viber"><i class="fab fa-viber"></i></a>
-                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="viber://chat?number=37367358811" class="viber"><i class="fab fa-viber"></i></a>
+                    <a href="whatsapp://send?phone=37367358811" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
                     <a href="#" class="telegram"><i class="fab fa-telegram"></i></a>
                     {{-- https://telegram.me/логинкомпании --}}
                 </div>

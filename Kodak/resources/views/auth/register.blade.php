@@ -1,36 +1,47 @@
 @extends('layouts.guest')
-@section('title-block', 'Auth')
+@section('title-block', 'Регистрация')
 
 @section('content')
-        <!-- Validation Errors -->
-        <x-auth-validation-errors class="mb-4" :errors="$errors" />
-        <form method="POST" action="{{ route('register') }}" class="box">
-            @csrf
-            <h1>Регистрация</h1>
-            <!-- Name -->
+    <!-- Validation Errors -->
+    <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-                <input id="name"  type="text" placeholder="Имя" name="name" :value="old('name')" required autofocus />
+    <div class="container">
+        <div class="forms">
 
-            <!-- Email Address -->
-                <input id="email"  type="text" placeholder="Email" name="email" :value="old('email')" required />
+            <!-- Registration Form -->
+            <div class="form login">
+                <span class="title">Регистрация</span>
 
+                <form method="POST" action="{{ route('register') }}">
 
-            <!-- Password -->
-                <input id="password"  placeholder="Пароль"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" />
+                    @csrf
+                    <div class="input-field">
+                        <input id="name" type="text" name="name" :value="old('name')" placeholder="Введите ваше имя"
+                            required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input id="email" type="text" name="email" :value="old('email')" placeholder="Введите email"
+                            required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input id="password" type="password" name="password" class="password"
+                            placeholder="Создайте пароль" required autocomplete="new-password">
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input id="password_confirmation" type="password" name="password_confirmation"
+                            class="password" placeholder="Подтвердите пароль" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
 
-            <!-- Confirm Password -->
-                <input id="password_confirmation"  placeholder="Повтор пароля"
-                                type="password"
-                                name="password_confirmation" required />
-
-
-                <a  href="{{ route('login') }}">
-                    {{ __('Уже зарегистрированы?') }}
-                </a>
-
-                <p><input type="submit" value="Регистрация"></p>
-        </form>
+                    <div class="input-field button">
+                        <input type="submit" value="Зарегистрироваться">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 @endsection

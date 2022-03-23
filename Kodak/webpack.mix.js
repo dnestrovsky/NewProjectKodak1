@@ -31,3 +31,5 @@ mix.postCss("resources/css/test.css", "public/css", [
 mix.js("resources/js/admin.js", "public/js").version();
 
 mix.js("resources/js/gallery.js", "public/js").version();
+
+mix.js("resources/js/script.js", "public/js").version();

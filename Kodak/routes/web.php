@@ -49,6 +49,7 @@ Route::get('/messages', [ContactController::class, 'allData'])->middleware(['aut
 Route::get('/dashboard', [ContactController::class, 'messagesAdmin']) ->middleware(['auth']) -> name('messages-data-dashboard');
 
 
+
 Route::get('/main-dashboard', function () {
     return view('main-dashboard');
 })->middleware(['auth'])->name('dashboard');

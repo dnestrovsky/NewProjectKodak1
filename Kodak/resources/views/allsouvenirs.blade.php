@@ -16,14 +16,14 @@
                                 <div class="titlesouv">{{$souvenir->name}}</div>
                             </div>
                             <ul class="pricing-list">
-                                <strong>Обновлено</strong>
+                                <li><strong>Обновлено</strong></li>
                                 <div class="border"></div>
-                                {{$souvenir->updated_at}}
+                                <li>{{$souvenir->updated_at}}</li>
                             </ul>
                             <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
-                                <a href="{{ route('souvenirs.show', $souvenir) }}"><i class="far fa-eye"></i>Просмотреть</a>
-                                <a href="{{ route('images.create', $souvenir) }}"><i class="far fa-eye"></i>Добавить пример</a>
-                                <a href="{{ route('souvenirs.edit', $souvenir) }}"><i class="fas fa-pen"></i>Редактировать</a>
+                                <a href="{{ route('souvenirs.show', $souvenir) }}">Просмотреть</a>
+                                <a href="{{ route('images.create', $souvenir) }}">Добавить пример</a>
+                                <a href="{{ route('souvenirs.edit', $souvenir) }}">Редактировать</a>
                                 @csrf
                                 @method('DELETE')
                                 <input type="submit" value="Удалить"></form>

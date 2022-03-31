@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section('title-block','Услуги')
+@section('title-block', 'Услуги')
 
 @section('content')
     <!-- Services -->
@@ -19,77 +19,42 @@
 
                 <div class="service">
                     <a href="#acte">
-                    <i class="icon fas fa-images"></i>
-                    <h4>@lang('main.main_info1')</h4>
-                    <p>@lang('main.serv_photo_acte1')</p>
+                        <i class="icon fas fa-images"></i>
+                        <h4>@lang('main.main_info1')</h4>
+                        <p>@lang('main.serv_photo_acte1')</p>
                     </a>
                 </div>
 
                 <div class="service">
                     <a href="#collaj">
-                    <i class="icon fas fa-photo-video"></i>
-                    <h4>@lang('main.serv_collaj')</h4>
-                    <p>@lang('main.serv_collaj1')</p>
+                        <i class="icon fas fa-photo-video"></i>
+                        <h4>@lang('main.serv_collaj')</h4>
+                        <p>@lang('main.serv_collaj1')</p>
                     </a>
                 </div>
 
                 <div class="service">
                     <a href="#photo">
-                    <i class="icon fas fa-images"></i>
-                    <h4>@lang('main.serv_photo_dig')</h4>
-                    <p>@lang('main.serv_photo_dig1')</p>
+                        <i class="icon fas fa-images"></i>
+                        <h4>@lang('main.serv_photo_dig')</h4>
+                        <p>@lang('main.serv_photo_dig1')</p>
                     </a>
                 </div>
 
                 <div class="service">
                     <a href="#holst">
-                    <i class="icon far fa-file-image"></i>
-                    <h4>@lang('main.serv_holst')</h4>
-                    <p>@lang('main.serv_holst1')</p>
+                        <i class="icon far fa-file-image"></i>
+                        <h4>@lang('main.serv_holst')</h4>
+                        <p>@lang('main.serv_holst1')</p>
                     </a>
                 </div>
 
                 <div class="service">
                     <a href="#album">
-                    <i class="icon fas fa-camera-retro"></i>
-                    <h4>@lang('main.serv_acces')</h4>
-                    <p>@lang('main.serv_acces1')</p>
+                        <i class="icon fas fa-camera-retro"></i>
+                        <h4>@lang('main.serv_acces')</h4>
+                        <p>@lang('main.serv_acces1')</p>
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Home -->
-    <section id="rest" class="dark3">
-        <div class="inner-width">
-            <h1 class="section-title">@lang('main.main_info3')</h1>
-            <div class="gallery-section">
-                <div class="inner-width">
-                    <h1>@lang('main.serv_exemplu')</h1>
-                    <div class="border"></div>
-                    <div class="gallery">
-
-                        <a href="img/2.jpg" class="image">
-                            <img src="img/2.jpg" alt="">
-                        </a>
-
-                        <a href="img/1.jpg" class="image">
-                            <img src="img/1.jpg" alt="">
-                        </a>
-
-                    </div>
-                    <div class="border"></div>
-                    <div class="gallery">
-                    <a href="img/3.jpg" class="image">
-                        <img src="img/3.jpg" alt="">
-                    </a>
-
-                    <a href="img/4.jpg" class="image">
-                        <img src="img/4.jpg" alt="">
-                    </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -100,7 +65,7 @@
         <div class="inner-width">
             <h1 class="section-title">@lang('main.main_info1')</h1>
             <div class="about-content">
-                <img src="img/documente.jpg" alt="" class="about-pic">
+                <img src="img/documente.jpg" alt="" class="about-pic-serv">
                 <div class="about-text">
                     <p>
                         Возможные размеры
@@ -146,63 +111,49 @@
         </div>
     </section>
 
-    <!-- Works -->
-    <section id="collaj" class="dark3">
+
+    <!-- Rest -->
+    <section id="rest" class="dark3">
         <div class="inner-width">
-            <h1 class="section-title">@lang('main.serv_collaj')</h1>
-            <div class="works">
-                <a href="#" class="work">
-                    <img src="img/collaj.jpg" alt="">
-                    <div class="info">
-                        <h3>Коллажи</h3>
-                    </div>
-                </a>
+            <h1 class="section-title">@lang('main.main_info3')</h1>
+            <div class="gallery-section">
+                <div class="inner-width">
+                    <h1>@lang('main.serv_exemplu')</h1>
+                    <div class="border"></div>
+                    <div class="gallery">
 
-                <a href="#" class="work">
-                    <img src="img/collaj2.jpg" alt="">
-                    <div class="info">
-                        <h3>Коллажи</h3>
-                    </div>
-                </a>
+                        <div class="image">
+                            <img src="img/2.jpg" alt="">
+                        </div>
 
-                <a href="#" class="work">
-                    <img src="img/collaj3.jpg" alt="">
-                    <div class="info">
-                        <h3>Коллажи</h3>
-                    </div>
-                </a>
+                        <div class="image">
+                            <img src="img/1.jpg" alt="">
+                        </div>
 
-                <a href="#" class="work">
-                    <img src="img/collaj4.jpg" alt="">
-                    <div class="info">
-                        <h3>Коллажи</h3>
                     </div>
-                </a>
+                    <div class="border"></div>
+                    <div class="gallery">
 
-                <a href="#" class="work">
-                    <img src="img/collaj5.jpg" alt="">
-                    <div class="info">
-                        <h3>Коллажи</h3>
+                        <div class="image">
+                            <img src="img/3.jpg" alt="">
+                        </div>
+
+                        <div class="image">
+                            <img src="img/4.jpg" alt="">
+                        </div>
                     </div>
-                </a>
-
-                <a href="#" class="work">
-                    <img src="img/collaj6.jpg" alt="">
-                    <div class="info">
-                        <h3>Коллажи</h3>
-                    </div>
-                </a>
-
+                </div>
             </div>
         </div>
     </section>
+    {{-- end Rest section --}}
 
     <!-- Home -->
     <section id="photo">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.serv_photo_dig')</h1>
             <div class="about-content">
-                <img src="img/photo_dig.jpg" alt="" class="about-pic">
+                <img src="img/photo_dig.jpg" alt="" class="about-pic-serv">
                 <div class="about-text">
                     <div class="skills">
                         <div class="skill">
@@ -259,7 +210,6 @@
         <div class="inner-width">
             <h1 class="section-title">@lang('main.serv_holst')</h1>
             <div class="about-content">
-                <img src="img/holst.jpg" alt="" class="about-pic">
                 <div class="about-text">
                     <h1 class="skillsh1">С подрамником</h1>
                     <div class="skills">
@@ -286,7 +236,7 @@
                         </div>
                     </div>
                     <h1 class="skillsh1">Без подрамника</h1>
-                        <div class="skills">
+                    <div class="skills">
                         <div class="skill">
                             <div class="skill-info">
                                 <span>30 x 40</span>
@@ -314,17 +264,99 @@
                     <p>
                         @lang('main.serv_holsts')
                     </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <section class="gallery_section layout_padding-top">
+            <div class="gallery_container">
+                <div class="container">
+                    <div class="gallery_box">
+                        <div class="box b1">
+                            <div class="img-box">
+                                <img src="img/holst1.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="box b2">
+                            <div class="img-box">
+                                <img src="img/holst2.jpg" alt="" />
+                            </div>
+                            <div class="img-box">
+                                <img src="img/holst3.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="box b3">
+                            <div class="img-box">
+                                <img src="img/holst4.jpg" alt="" />
+                            </div>
+                            <div class="img-box">
+                                <img src="img/holst5.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="box b4">
+                            <div class="img-box">
+                                <img src="img/holst6.jpg" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- collaj section -->
+    <section id="collaj" class="gallery_section layout_padding-top">
+        <div class="container">
+            <div class="heading_container">
+                <h1 class="section-title">
+                    Коллажи
+                </h1>
+            </div>
+        </div>
+        <div class="gallery_container">
+            <div class="container">
+                <div class="gallery_box">
+                    <div class="box b1">
+                        <div class="img-box">
+                            <img src="img/collaj.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="box b2">
+                        <div class="img-box">
+                            <img src="img/collaj2.jpeg" alt="" />
+                        </div>
+                        <div class="img-box">
+                            <img src="img/collaj3.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="box b3">
+                        <div class="img-box">
+                            <img src="img/collaj4.jpg" alt="" />
+                        </div>
+                        <div class="img-box">
+                            <img src="img/collaj5.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="box b4">
+                        <div class="img-box">
+                            <img src="img/collaj6.jpg" alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- end collaj section -->
 
     <!-- Home -->
     <section id="album">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.main_info2')</h1>
             <div class="about-content">
-                <img src="img/album.jpg" alt="" class="about-pic">
+                <img src="img/album.jpg" alt="" class="about-pic-serv">
                 <div class="about-text">
                     <p>
                         @lang('main.serv_access')
@@ -338,7 +370,7 @@
         $(".gallery").magnificPopup({
             delegate: 'a',
             type: 'image',
-            gallery:{
+            gallery: {
                 enabled: true
             }
         });

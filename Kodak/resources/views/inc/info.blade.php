@@ -4,7 +4,7 @@
         <h1 class="section-title">@lang('main.info')</h1>
         <div class="about-content">
             <img src="img/pic.png" alt="" class="about-pic">
-            <div class="about-text">
+            <div class="about-text-main">
                 <h2>Palitra Kodak</h2>
                 <p>@lang('main.info_')</p>
             </div>

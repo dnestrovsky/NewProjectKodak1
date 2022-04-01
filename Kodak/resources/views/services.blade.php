@@ -2,6 +2,7 @@
 
 
 @section('title-block', 'Kodak ― Услуги')
+@section('description-block', 'Список предоставляемых нами услуг')
 
 @section('content')
     <!-- Services -->

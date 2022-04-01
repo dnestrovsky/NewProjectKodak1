@@ -2,6 +2,7 @@
 
 
 @section('title-block', 'Kodak ― Сувениры')
+@section('description-block', 'Лист возможных сувениров, которые вы можете заказать у нас')
 
 @section('content')
     <!-- Works -->

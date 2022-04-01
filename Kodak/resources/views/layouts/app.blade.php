@@ -7,7 +7,7 @@
     <meta name="description"
         content="Palitra-Kodak - предоставляем фотоуслуги в городе Floresti уже на протяжении больше 10-ти лет">
     <meta name="keywords"
-        content="Palitra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги, город флорешть, печать фото, фото, фото на документы, фотосалон">
+        content="Palitra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги, город флорешть, floresti, печать фото, фото, фото на документы, фотосалон, фотосалон рядом, фотосалон фото, адрес фотосалон">
     <meta name="author" content="Palitra-Kodak">
     <meta name="copyright" content="Palitra-Kodak">
     <title>@yield('title-block')</title>
@@ -23,6 +23,20 @@
     <link type="image/png" sizes="96x96" rel="icon" href="/favicon-96x96.png">
     <link type="image/png" sizes="120x120" rel="icon" href="/favicon-120x120.png">
     <link type="image/png" sizes="192x192" rel="icon" href="/favicon-192x192.png">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF84QL8CB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-ZFF84QL8CB');
+    </script>
+
 </head>
 
 

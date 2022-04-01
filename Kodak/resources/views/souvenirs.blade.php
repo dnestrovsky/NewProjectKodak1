@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 
-@section('title-block', 'Сувениры')
+@section('title-block', 'Kodak ― Сувениры')
 
 @section('content')
     <!-- Works -->
@@ -9,14 +9,14 @@
         <div class="inner-width">
             <h1 class="section-title">@lang('main.suvenir')</h1>
             <div class="works">
-                @foreach($data as $souvenir)
-                <a href="{{ route('souvenir-data1', $souvenir->id) }}" class="work">
-                    <img src="{{Storage::url($souvenir->image)}}" alt="">
-                    <div class="info">
-                        <h3>{{$souvenir->__('name')}}</h3>
-                        <div class="cat">@lang('main.souv_info')</div>
-                    </div>
-                </a>
+                @foreach ($data as $souvenir)
+                    <a href="{{ route('souvenir-data1', $souvenir->id) }}" class="work">
+                        <img src="{{ Storage::url($souvenir->image) }}" alt="">
+                        <div class="info">
+                            <h3>{{ $souvenir->__('name') }}</h3>
+                            <div class="cat">@lang('main.souv_info')</div>
+                        </div>
+                    </a>
                 @endforeach
             </div>
         </div>

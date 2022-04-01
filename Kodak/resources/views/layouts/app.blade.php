@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Palitra-Kodak - предоставляем фотоуслуги в городе Floresti уже на протяжении больше 10-ти лет">
+    <meta name="description" content="@yield('description-block')">
     <meta name="keywords"
         content="Palitra-Kodak, kodak, Kodak, home, печать фотографий, фотоуслуги, город флорешть, floresti, печать фото, фото, фото на документы, фотосалон, фотосалон рядом, фотосалон фото, адрес фотосалон">
     <meta name="author" content="Palitra-Kodak">

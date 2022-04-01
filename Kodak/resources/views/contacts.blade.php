@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 
-@section('title-block','Kodak ― Связь с нами')
+@section('title-block', 'Kodak ― Связь с нами')
+@section('description-block', 'Все возможные контакты, которые предоставят связь с нами')
 
 @section('content')
 
@@ -27,7 +28,7 @@
                     Флорешть, str. 31 august 1989 26/a
                 </div>
             </div>
-            
+
         </div>
     </section>
 

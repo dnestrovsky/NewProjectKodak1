@@ -2,26 +2,15 @@
 /*!*******************************!*\
   !*** ./resources/js/admin.js ***!
   \*******************************/
-var body = document.querySelector('body'),
-    sidebar = body.querySelector('nav'),
-    toggle = body.querySelector(".toggle"),
-    searchBtn = body.querySelector(".search-box"),
-    modeSwitch = body.querySelector(".toggle-switch"),
-    modeText = body.querySelector(".mode-text");
-toggle.addEventListener("click", function () {
-  sidebar.classList.toggle("close");
-});
-searchBtn.addEventListener("click", function () {
-  sidebar.classList.remove("close");
-});
-modeSwitch.addEventListener("click", function () {
-  body.classList.toggle("dark");
+var sidebar = document.querySelector(".sidebar");
+var sidebarBtn = document.querySelector(".sidebarBtn");
 
-  if (body.classList.contains("dark")) {
-    modeText.innerText = "Light режим";
-  } else {
-    modeText.innerText = "Dark режим";
-  }
-});
+sidebarBtn.onclick = function () {
+  sidebar.classList.toggle("active");
+
+  if (sidebar.classList.contains("active")) {
+    sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+  } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+};
 /******/ })()
 ;

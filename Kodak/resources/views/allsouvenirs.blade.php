@@ -4,34 +4,46 @@
 
 
 @section('content')
-            <div class="container">
-                  <div class="buttons">
-                    <a href = "{{route('souvenirs.create')}}" > Добавить</a>
-                </div>
 
-                <div class="containersouv">
-                    @foreach($souvenirs as $souvenir)
-                        <div class="pricing-table table3">
-                            <div class="pricing-header">
-                                <div class="titlesouv">{{$souvenir->name}}</div>
-                            </div>
-                            <ul class="pricing-list">
-                                <li><strong>Обновлено</strong></li>
-                                <div class="border"></div>
-                                <li>{{$souvenir->updated_at}}</li>
-                            </ul>
-                            <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
-                                <a href="{{ route('souvenirs.show', $souvenir) }}">Просмотреть</a>
-                                <a href="{{ route('images.create', $souvenir) }}">Добавить пример</a>
-                                <a href="{{ route('souvenirs.edit', $souvenir) }}">Редактировать</a>
-                                @csrf
-                                @method('DELETE')
-                                <input type="submit" value="Удалить"></form>
-                        </div>
-                    @endforeach
-                </div>
-
-
-                <div>{{$souvenirs->links('default')}}</div>
+    <div class="sales-boxes">
+        <div class="recent-sales box">
+            <div class="title">Сувениры</div>
+            <div class="table-wrapper">
+                <table class="fl-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Название</th>
+                            <th>Дата обновления</th>
+                            <th>Действие</th>
+                            <th>Действие</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($souvenirs as $souvenir)
+                            <tr>
+                                <td>{{ $souvenir->id }}</td>
+                                <td><a href="{{ route('souvenirs.show', $souvenir) }}">{{ $souvenir->name }}</a></td>
+                                <td>{{ date('d F Y H:i:s', strtotime($souvenir->updated_at)) }}</td>
+                                <td><a href="{{ route('souvenirs.edit', $souvenir) }}">Редактор</a></td>
+                                <td><a href="{{ route('images.create', $souvenir) }}">Добавить фото</a></td>
+                                <td>
+                                    <form action="{{ route('souvenirs.destroy', $souvenir) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input type="submit" value="Удалить">
+                                    </form>
+                                </td>
+                            </tr>
+                        @endforeach
+                    <tbody>
+                </table>
             </div>
-@endsection
+            <div class="button">
+                <a href="{{ route('souvenirs.create') }}">Добавить</a>
+            </div>
+        </div>
+
+
+    @endsection

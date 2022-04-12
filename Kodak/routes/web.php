@@ -47,6 +47,7 @@ Route::get('/messages/{id}/delete', [ContactController::class, 'deleteMessage'])
 Route::get('/messages/{id}', [ContactController::class, 'showmessage'])->middleware(['auth']) -> name('messages-data-one');
 Route::get('/messages', [ContactController::class, 'allData'])->middleware(['auth']) -> name('messages-data');
 Route::get('/dashboard', [ContactController::class, 'messagesAdmin']) ->middleware(['auth']) -> name('messages-data-dashboard');
+Route::get('/dashboard', [SouvenirController::class, 'indexAdmin']) ->middleware(['auth']) -> name('souvenir-data-dashboard');
 
 
 

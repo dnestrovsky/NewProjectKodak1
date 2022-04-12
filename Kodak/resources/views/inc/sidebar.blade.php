@@ -1,81 +1,45 @@
-<!-- Navbar -->
-<nav class="sidebar close">
-    <header>
-        <div class="image-text">
-            <span class="image">
-                <img src="/img/logo.png" alt="">
-            </span>
-
-            <div class="text logo-text">
-                <span class="name">Palitra-Kodak</span>
-                <span class="profession">PhotoStudio</span>
-            </div>
-        </div>
-
-        <i class='bx bx-chevron-right toggle'></i>
-    </header>
-
-    <div class="menu-bar">
-        <div class="menu">
-
-            <li class="search-box">
-                <i class='bx bx-search icon'></i>
-                <input type="text" placeholder="Поиск...">
-            </li>
-
-            <ul class="menu-links">
-                <li class="nav-link">
-                    <a href="/dashboard">
-                        <i class='bx bx-home-alt icon'></i>
-                        <span class="text nav-text">Главная</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="{{ route('souvenirs.index') }}">
-                        <i class='bx bx-bar-chart-alt-2 icon'></i>
-                        <span class="text nav-text">Сувениры</span>
-                    </a>
-                </li>
-
-                <li class="nav-link">
-                    <a href="{{ route('home') }}">
-                        <i class='bx bx-bell icon'></i>
-                        <span class="text nav-text">Вернуться на сайт</span>
-                    </a>
-                </li>
-
-            </ul>
-        </div>
-
-        <div class="bottom-content">
-            <li class="">
-                @if (Route::has('login'))
-                    @auth
-                        <form method="POST" action="{{ route('logout') }}">
-                            @csrf
-                            <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                                <i class='bx bx-log-out icon'></i>
-                                <span class="text nav-text">Выйти</span>
-                        </form>
-                    @endauth
-                @endif
-                </a>
-            </li>
-
-            <li class="mode">
-                <div class="sun-moon">
-                    <i class='bx bx-moon icon moon'></i>
-                    <i class='bx bx-sun icon sun'></i>
-                </div>
-                <span class="mode-text text">Dark режим</span>
-
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
-
-        </div>
+<div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bxl-c-plus-plus'></i>
+        <span class="logo_name">Kodak</span>
     </div>
-
-</nav>
+    <ul class="nav-links">
+        <li>
+            <a href="/dashboard" class="active">
+                <i class='bx bx-grid-alt'></i>
+                <span class="links_name">Главная страница</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('souvenirs.index') }}">
+                <i class='bx bx-box'></i>
+                <span class="links_name">Продукты</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class='bx bx-pie-chart-alt-2'></i>
+                <span class="links_name">Аналитика</span>
+            </a>
+        </li>
+        <li>
+            <a href="{{ route('home') }}">
+                <i class='bx bx-message'></i>
+                <span class="links_name">Сообщения</span>
+            </a>
+        </li>
+        <li class="log_out">
+            @if (Route::has('login'))
+                @auth
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
+                            <i class='bx bx-log-out'></i>
+                            <span class="links_name">Выйти</span>
+                        </a>
+                    </form>
+                @endauth
+            @endif
+        </li>
+    </ul>
+</div>

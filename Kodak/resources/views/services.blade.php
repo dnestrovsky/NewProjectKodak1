@@ -268,6 +268,11 @@
 
                 </div>
             </div>
+            <div class="video-box">
+                <video preload="auto" autoplay="autoplay" loop="loop" muted="" playsinline="playsinline">
+                    <source src="/video/videoplayback.mp4" type="video/mp4">
+                </video>
+            </div>
 
         </div>
 

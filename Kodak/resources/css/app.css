@@ -854,6 +854,10 @@ footer {
         max-width: 600px;
     }
 
+    .video-box {
+        width: 100%;
+    }
+
     .right-col {
         text-align: center;
         width: 100%;

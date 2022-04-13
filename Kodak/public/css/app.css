@@ -739,13 +739,18 @@ footer {
     align-items: center;
     justify-content: center;
 }
+.video-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 960px) {
     .footer-container {
         max-width: 600px;
     }
 
     .video-box {
-        width: 100%;
+        display: none;
     }
 
     .right-col {

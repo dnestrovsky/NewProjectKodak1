@@ -1,11 +1,11 @@
 <div class="sidebar">
     <div class="logo-details">
-        <i class='bx bxl-c-plus-plus'></i>
+        <i class='bx bx-trim'></i>
         <span class="logo_name">Kodak</span>
     </div>
     <ul class="nav-links">
         <li>
-            <a href="/dashboard" class="active">
+            <a href="/dashboard">
                 <i class='bx bx-grid-alt'></i>
                 <span class="links_name">Главная страница</span>
             </a>

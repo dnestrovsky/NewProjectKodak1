@@ -36,6 +36,7 @@
         gtag('config', 'G-ZFF84QL8CB');
     </script>
 
+    
 </head>
 
 
@@ -80,6 +81,7 @@
     <script src="{{ mix('/js/app.js') }}"></script>
     <script src="{{ mix('/js/gallery.js') }}"></script>
 
+   
 </body>
 
 </html>

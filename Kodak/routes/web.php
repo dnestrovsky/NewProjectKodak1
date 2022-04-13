@@ -40,6 +40,8 @@ Route::get('/addimage/{id}', [ImageController::class, 'create']) -> name('images
 
 Route::post('/addimage', [ImageController::class, 'store']) -> name('images.store');
 
+Route::delete('/deleteimage/{image}', [ImageController::class, 'destroy']) -> name('images.destroy');
+
 
 Route::resource('souvenirs', SouvenirController::class)->middleware(['auth']);
 

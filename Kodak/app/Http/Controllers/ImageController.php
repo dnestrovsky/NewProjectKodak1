@@ -103,6 +103,7 @@ class ImageController extends Controller
      */
     public function destroy(Image $image)
     {
-        //
+        $image->delete();
+        return redirect()->route('souvenirs.index');
     }
 }

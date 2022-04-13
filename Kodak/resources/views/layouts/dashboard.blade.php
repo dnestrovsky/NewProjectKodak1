@@ -31,6 +31,7 @@
     <script type='text/javascript'
         src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script type='text/javascript' src="{{ mix('/js/admin.js') }}"></script>
+    <script type='text/javascript' src="{{ mix('/js/gallery.js') }}"></script>
 
 </body>
 

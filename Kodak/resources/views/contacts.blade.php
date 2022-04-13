@@ -30,6 +30,11 @@
             </div>
 
         </div>
+        <div class="map">
+            <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A3072969d27cf0140776cd65ccf4da041d5fdd341a441a7cce0f027ecdafed32f&amp;source=constructor"
+                width="1063" height="583" frameborder="0"></iframe>
+        </div>
     </section>
 
 

@@ -34,6 +34,7 @@ jQuery(document).ready(function () {
 
   jQuery('.grafik-test div[data-day="' + weekday + '"]').addClass("today"); //Добавляем класс
 });
+document.tidioChatLang = document.querySelector('html').getAttribute('lang');
 
 /***/ }),
 

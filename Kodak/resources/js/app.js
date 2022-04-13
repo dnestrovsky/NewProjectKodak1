@@ -25,3 +25,6 @@ jQuery(document).ready(function () {
     var weekday = weekdays[date.getDay()]; //Получаем номер текущего день
     jQuery('.grafik-test div[data-day="' + weekday + '"]').addClass("today"); //Добавляем класс
 });
+
+
+document.tidioChatLang = document.querySelector('html').getAttribute('lang');

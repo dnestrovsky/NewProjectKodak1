@@ -124,11 +124,11 @@
                     <div class="gallery">
 
                         <div class="image">
-                            <img src="img/2.jpg" alt="">
+                            <img src="img/1.jpg" alt="">
                         </div>
 
                         <div class="image">
-                            <img src="img/1.jpg" alt="">
+                            <img src="img/2.jpg" alt="">
                         </div>
 
                     </div>

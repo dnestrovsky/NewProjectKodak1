@@ -717,52 +717,6 @@ section.dark5 {
     height: 100px;
 }
 
-.contact-form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    height: 50px;
-    margin: 10px 0;
-    background-color: #353b48;
-    border: none;
-    outline: none;
-    padding: 20px;
-    border-radius: 4px;
-    color: #fff;
-}
-
-.nameZone,
-.emailZone {
-    max-width: calc(50% - 10px);
-}
-
-.messageZone {
-    min-height: 200px;
-    resize: none;
-}
-
-.contact-form .btn {
-    width: 180px;
-    background-color: transparent;
-    color: white;
-    font-size: 16px;
-    border: 2px solid white;
-    padding: 0;
-    margin-left: auto;
-    cursor: pointer;
-    transition: 0.3s linear;
-}
-
-.contact-form .btn:hover {
-    background-color: gold;
-    color: #fff;
-}
-
 footer {
     padding: 5px 0;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -849,7 +803,7 @@ footer {
     justify-content: center;
 }
 
-.video-box{
+.video-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -947,12 +901,6 @@ footer {
 }
 .icons a.telegram i {
     color: #27b2e9;
-}
-.icons a.git i {
-    color: #333;
-}
-.icons a.yt i {
-    color: #ff0000;
 }
 
 @media screen and (max-width: 980px) {
@@ -1126,11 +1074,6 @@ footer {
     .work {
         width: 100%;
     }
-
-    .nameZone,
-    .emailZone {
-        max-width: 100%;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1165,11 +1108,6 @@ footer {
 
     .work {
         width: 100%;
-    }
-
-    .nameZone,
-    .emailZone {
-        max-width: 100%;
     }
 }
 
@@ -1234,33 +1172,6 @@ footer {
     .gallery-section .image {
         flex: 100%;
     }
-}
-
-.alert {
-    font-family: "Rubik One", sans-serif;
-    color: #ffffff;
-    display: table;
-    margin: 20px auto;
-    font-size: 17px;
-    text-align: center;
-}
-
-.alert ul {
-    text-align: left;
-}
-
-.zebra {
-    list-style: none;
-    border-left: 10px solid #211e1e;
-    padding: 0;
-}
-
-.zebra li {
-    padding: 10px;
-}
-
-.alert li {
-    margin: 5px;
 }
 
 .transform-border {

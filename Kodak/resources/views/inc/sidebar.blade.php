@@ -25,18 +25,19 @@
         <li>
             <a href="{{ route('home') }}">
                 <i class='bx bx-message'></i>
-                <span class="links_name">Сообщения</span>
+                <span class="links_name">Вернуться на сайт</span>
             </a>
         </li>
         <li class="log_out">
             @if (Route::has('login'))
                 @auth
-                    <form method="POST" action="{{ route('logout') }}">
+                    <a href="route('logout')"
+                        onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class='bx bx-log-out'></i>
+                        <span class="links_name">Выйти</span>
+                    </a>
+                    <form id="logout-form" method="POST" action="{{ route('logout') }}" style="display: none;">
                         @csrf
-                        <a href="route('logout')" onclick="event.preventDefault(); this.closest('form').submit();">
-                            <i class='bx bx-log-out'></i>
-                            <span class="links_name">Выйти</span>
-                        </a>
                     </form>
                 @endauth
             @endif

@@ -2,8 +2,7 @@
 
 
 @section('title-block', 'Kodak ― Главная страница')
-@section('description-block', 'Palitra-Kodak - предоставляем фотоуслуги в городе Floresti уже на протяжении больше 10-ти
-    лет')
+@section('description-block', 'Печать фотографий, фотосувениров, производство интерьерной и полиграфической продукции в городе Флорешть.')
 
 @section('content')
     <!-- Home -->

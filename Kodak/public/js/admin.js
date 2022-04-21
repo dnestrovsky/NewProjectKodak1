@@ -1,1 +1,17 @@
-(()=>{var e=document.querySelector(".sidebar"),t=document.querySelector(".sidebarBtn");t.onclick=function(){e.classList.toggle("active"),e.classList.contains("active")?t.classList.replace("bx-menu","bx-menu-alt-right"):t.classList.replace("bx-menu-alt-right","bx-menu")}})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!*******************************!*\
+  !*** ./resources/js/admin.js ***!
+  \*******************************/
+var sidebar = document.querySelector(".sidebar");
+var sidebarBtn = document.querySelector(".sidebarBtn");
+
+sidebarBtn.onclick = function () {
+  sidebar.classList.toggle("active");
+
+  if (sidebar.classList.contains("active")) {
+    sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+  } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+};
+/******/ })()
+;

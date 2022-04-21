@@ -1,1 +1,45 @@
-(()=>{function e(e,r){(null==r||r>e.length)&&(r=e.length);for(var t=0,n=new Array(r);t<r;t++)n[t]=e[t];return n}var r,t=document.querySelector("body"),n=document.querySelector(".lightBox"),o=document.querySelectorAll(".gImg"),l=n.querySelector(".showImg img"),i=n.querySelector(".close"),c=function(r,t){var n="undefined"!=typeof Symbol&&r[Symbol.iterator]||r["@@iterator"];if(!n){if(Array.isArray(r)||(n=function(r,t){if(!r)return;if("string"==typeof r)return e(r,t);var n=Object.prototype.toString.call(r).slice(8,-1);"Object"===n&&r.constructor&&(n=r.constructor.name);if("Map"===n||"Set"===n)return Array.from(r);if("Arguments"===n||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n))return e(r,t)}(r))||t&&r&&"number"==typeof r.length){n&&(r=n);var o=0,l=function(){};return{s:l,n:function(){return o>=r.length?{done:!0}:{done:!1,value:r[o++]}},e:function(e){throw e},f:l}}throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")}var i,c=!0,u=!1;return{s:function(){n=n.call(r)},n:function(){var e=n.next();return c=e.done,e},e:function(e){u=!0,i=e},f:function(){try{c||null==n.return||n.return()}finally{if(u)throw i}}}}(o);try{var u=function(){var e=r.value;e.addEventListener("click",(function(){l.src=e.src,n.style.display="block",t.style.overflow="hidden",i.onclick=function(){n.style.display="none",t.style.overflow="visible"}}))};for(c.s();!(r=c.n()).done;)u()}catch(e){c.e(e)}finally{c.f()}})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!*********************************!*\
+  !*** ./resources/js/gallery.js ***!
+  \*********************************/
+function _createForOfIteratorHelper(o, allowArrayLike) { var it = typeof Symbol !== "undefined" && o[Symbol.iterator] || o["@@iterator"]; if (!it) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = it.call(o); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+var body = document.querySelector("body"),
+    lightBox = document.querySelector(".lightBox"),
+    img = document.querySelectorAll(".gImg"),
+    showImg = lightBox.querySelector(".showImg img"),
+    close = lightBox.querySelector(".close");
+
+var _iterator = _createForOfIteratorHelper(img),
+    _step;
+
+try {
+  var _loop = function _loop() {
+    var image = _step.value;
+    image.addEventListener("click", function () {
+      showImg.src = image.src;
+      lightBox.style.display = "block";
+      body.style.overflow = "hidden";
+
+      close.onclick = function () {
+        lightBox.style.display = "none";
+        body.style.overflow = "visible";
+      };
+    });
+  };
+
+  for (_iterator.s(); !(_step = _iterator.n()).done;) {
+    _loop();
+  }
+} catch (err) {
+  _iterator.e(err);
+} finally {
+  _iterator.f();
+}
+/******/ })()
+;

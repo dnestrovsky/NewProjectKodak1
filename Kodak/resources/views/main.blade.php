@@ -16,8 +16,7 @@
                     <h2 class="red">Palitra</h2>
                     <h3>Kodak</h3>
                     <p>
-                        Реставрация фото. Фото на документы. Цифровая печать фото. Ретушь
-                        фото. Печать на кружках и тарелках. Пазлы. Печать на холсте
+                        @lang('main.main_info')
                     </p>
                     <div class="middle-main">
                         <a class="btn-main" href="viber://chat?number=37367358811">

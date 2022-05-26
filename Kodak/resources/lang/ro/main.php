@@ -50,5 +50,6 @@ return [
     'serv_access' => 'În magazinul nostru  puteți alege și cumpăra diferite accesorii pentru fotografii. Avem la o mare alegere albume, rame foto și carduri de memorie de orice capacitate!',
     'info_' => 'Magazinul nostru oferă servicii de fotografie în orașul Florești ',
     'souv_info' => 'Suveniruri pentru memorie ',
+    'main_info' => 'Restaurare foto. Fotografii pentru documente. Imprimare foto digitală. Retușare foto. Imprimarea pe cani și plăci. Puzzle-uri. Imprimare pe panza',
 
 ];

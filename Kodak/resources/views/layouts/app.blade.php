@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/5aabe6e46e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     <link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
@@ -22,6 +23,12 @@
     <link type="image/png" sizes="96x96" rel="icon" href="/favicon-96x96.png">
     <link type="image/png" sizes="120x120" rel="icon" href="/favicon-120x120.png">
     <link type="image/png" sizes="192x192" rel="icon" href="/favicon-192x192.png">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" defer>
+    </script>
+    <script src="{{ mix('/js/app.js') }}" defer></script>
+    <script src="{{ mix('/js/gallery.js') }}" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFF84QL8CB"></script>
@@ -36,7 +43,7 @@
         gtag('config', 'G-ZFF84QL8CB');
     </script>
 
-    
+
 </head>
 
 
@@ -74,14 +81,9 @@
     <script src="//code.tidio.co/nekdv3kjblhff9vhxm8re80mpgxvwatn.js" async></script>
 
     <!-- Go Top BTN -->
-    <button class="goTop fas fa-arrow-up"></button>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-    <script src="{{ mix('/js/app.js') }}"></script>
-    <script src="{{ mix('/js/gallery.js') }}"></script>
-
-   
+    <div class="gotopbtn">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 </body>
 
 </html>

@@ -15,6 +15,7 @@ return [
     'main_info1' => 'Foto pentru documente',
     'main_info2' => 'Albume și rame foto',
     'main_info3' => 'Restaurare foto',
+    'main_info8' => 'Imprimarea pe suveniruri',
     'liber' => 'Zi libera',
     'grafic_0' => 'Luni',
     'grafic_1' => 'Marți',

@@ -2,38 +2,98 @@
 
 
 @section('title-block', 'Kodak ― Главная страница')
-@section('description-block', 'Печать фотографий, фотосувениров, производство интерьерной и полиграфической продукции в городе Флорешть.')
+@section('description-block',
+    'Печать фотографий, фотосувениров, производство интерьерной и полиграфической продукции в
+    городе Флорешть.',)
 
 @section('content')
     <!-- Home -->
     <section id="home">
         <div class="inner-width">
-            <div class="content">
-                @include('inc.messages')
-                <h1> </h1>
-
-                <div class="icons">
-                    <a href="viber://chat?number=37367358811" class="viber"><i class="fab fa-viber"></i></a>
-                    <a href="whatsapp://send?phone=37367358811" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://telegram.me/palitra_kodak" class="telegram"><i class="fab fa-telegram"></i></a>
+            <div class="landing-con-left">
+                <div class="landing-con-container">
+                    <h3>Фотосалон</h3>
+                    <h2 class="red">Palitra</h2>
+                    <h3>Kodak</h3>
+                    <p>
+                        Реставрация фото. Фото на документы. Цифровая печать фото. Ретушь
+                        фото. Печать на кружках и тарелках. Пазлы. Печать на холсте
+                    </p>
+                    <div class="middle-main">
+                        <a class="btn-main" href="viber://chat?number=37367358811">
+                            <i class="fa-brands fa-viber"></i>
+                        </a>
+                        <a class="btn-main" href="whatsapp://send?phone=37367358811">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a class="btn-main" href="https://telegram.me/palitra_kodak">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a class="btn-main" href="https://www.facebook.com/palitra.kodak">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                    <div class="buttons">
+                        <a href="{{ route('contact') }}">@lang('main.cont')</a>
+                        <a href="#orele">@lang('main.grafic')</a>
+                    </div>
                 </div>
+            </div>
 
-                <div class="buttons">
-                    <a href="{{ route('contact') }}">@lang('main.cont')</a>
-                    <a href="#about">@lang('main.info')</a>
-                    <a href="#orele">@lang('main.grafic')</a>
-                </div>
+            <div class="landing-con-right">
+                <div class="landing-img-hero" style="
+                            background: url(img/1581509785_IMG_1317043-removebg-preview.png)
+                              no-repeat center;
+                            background-size: contain;
+                          "></div>
             </div>
         </div>
     </section>
 
-    @include('inc.info')
+    <!-- About -->
+    <section id="about">
+        <div class="inner-width">
+            <h1 class="section-title">@lang('main.info')</h1>
+            <div class="services-about">
+                <div class="service-about">
+                    <i class="icon fas fa-paint-brush"></i>
+                    <h4>@lang('main.serv_collaj1')</h4>
+                </div>
 
-    <!-- Education -->
+                <div class="service-about">
+                    <i class="icon fas fa-images"></i>
+                    <h4>@lang('main.serv_photo_dig')</h4>
+                </div>
+
+                <div class="service-about">
+                    <i class="icon fas fa-panorama"></i>
+                    <h4>@lang('main.serv_holst')</h4>
+                </div>
+
+                <div class="service-about">
+                    <i class="icon fas fa-clone"></i>
+                    <h4>@lang('main.main_info8')</h4>
+                </div>
+
+                <div class="service-about">
+                    <i class="icon fas fa-user"></i>
+                    <h4>@lang('main.main_info1')</h4>
+                </div>
+
+                <div class="service-about">
+                    <i class="icon fas fa-image"></i>
+                    <h4>@lang('main.main_info3')</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+
+    <!-- Orele -->
     <section id="orele">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.grafic')</h1>
-            <div class="grafik-test">
+            <div class="grafik">
                 <div data-day="1">
                     <h3>@lang('main.grafic_0')</h3><span>
                         <h4>@lang('main.liber')</h4>
@@ -71,6 +131,5 @@
                 </div>
             </div>
         </div>
-    </section>
     </section>
 @endsection

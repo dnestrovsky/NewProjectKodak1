@@ -6,9 +6,9 @@
 
 @section('content')
     <!-- Services -->
-    <section id="services" class="dark1">
+    <section id="services">
         <div class="inner-width">
-            <h1 class="section-title">@lang('main.servicii')</h1>
+            <h1 class="section-title">Услуги</h1>
             <div class="services">
                 <div class="service">
                     <a href="#rest">
@@ -66,11 +66,9 @@
         <div class="inner-width">
             <h1 class="section-title">@lang('main.main_info1')</h1>
             <div class="about-content">
-                <img src="img/documente.jpg" alt="" class="about-pic-serv">
+                <img src="img/documente.jpg" alt="" class="about-pic-serv" />
                 <div class="about-text">
-                    <p>
-                        Возможные размеры
-                    </p>
+                    <p>Возможные размеры</p>
                     <div class="skills">
                         <div class="skill">
                             <div class="skill-info">
@@ -102,19 +100,15 @@
                             </div>
                             <div class="skill-bar html"></div>
                         </div>
-
                     </div>
-                    <p>
-                        @lang('main.serv_doc')
-                    </p>
+                    <p>@lang('main.serv_doc')</p>
                 </div>
             </div>
         </div>
     </section>
 
-
     <!-- Rest -->
-    <section id="rest" class="dark3">
+    <section id="rest">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.main_info3')</h1>
             <div class="gallery-section">
@@ -122,39 +116,36 @@
                     <h1>@lang('main.serv_exemplu')</h1>
                     <div class="border"></div>
                     <div class="gallery">
-
                         <div class="image">
-                            <img src="img/1.jpg" alt="">
+                            <img src="img/1.jpg" alt="" />
                         </div>
 
                         <div class="image">
-                            <img src="img/2.jpg" alt="">
+                            <img src="img/2.jpg" alt="" />
                         </div>
-
                     </div>
                     <div class="border"></div>
                     <div class="gallery">
-
                         <div class="image">
-                            <img src="img/3.jpg" alt="">
+                            <img src="img/3.jpg" alt="" />
                         </div>
 
                         <div class="image">
-                            <img src="img/4.jpg" alt="">
+                            <img src="img/4.jpg" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    {{-- end Rest section --}}
+    <!-- Rest -->
 
-    <!-- Home -->
+    <!-- Photo_dig -->
     <section id="photo">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.serv_photo_dig')</h1>
             <div class="about-content">
-                <img src="img/photo_dig.jpg" alt="" class="about-pic-serv">
+                <img src="img/photo_dig.jpg" alt="" class="about-pic-serv" />
                 <div class="about-text">
                     <div class="skills">
                         <div class="skill">
@@ -196,18 +187,16 @@
                             </div>
                             <div class="skill-bar html"></div>
                         </div>
-
                     </div>
-                    <p>
-                        @lang('main.serv_foto')
-                    </p>
+                    <p>@lang('main.serv_foto')</p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Photo_dig -->
 
     <!-- Home -->
-    <section id="holst" class="dark3">
+    <section id="holst">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.serv_holst')</h1>
             <div class="about-content">
@@ -260,56 +249,52 @@
                             </div>
                             <div class="skill-bar html"></div>
                         </div>
-
                     </div>
-                    <p>
-                        @lang('main.serv_holsts')
-                    </p>
-
+                    <p>@lang('main.serv_holsts')</p>
                 </div>
             </div>
-            <div class="video-box">
-                <video preload="auto" autoplay="autoplay" loop="loop" muted="" playsinline="playsinline">
-                    <source src="/video/video.mp4" type="video/mp4">
-                </video>
+
+            <div class="frame">
+                <div class="frame__content">
+                    <video class="frame-media" src="video/video.mp4" autoplay loop muted></video>
+                </div>
             </div>
 
-        </div>
-
-        <section class="gallery_section layout_padding-top">
-            <div class="gallery_container">
-                <div class="container">
-                    <div class="gallery_box">
-                        <div class="box b1">
-                            <div class="img-box">
-                                <img src="img/holst1.jpg" alt="" />
+            <div class="gallery_section layout_padding-top">
+                <div class="gallery_container">
+                    <div class="container">
+                        <div class="gallery_box">
+                            <div class="box b1">
+                                <div class="img-box">
+                                    <img src="img/holst1.jpg" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="box b2">
-                            <div class="img-box">
-                                <img src="img/holst2.jpg" alt="" />
+                            <div class="box b2">
+                                <div class="img-box">
+                                    <img src="img/holst2.jpg" alt="" />
+                                </div>
+                                <div class="img-box">
+                                    <img src="img/holst3.jpg" alt="" />
+                                </div>
                             </div>
-                            <div class="img-box">
-                                <img src="img/holst3.jpg" alt="" />
+                            <div class="box b3">
+                                <div class="img-box">
+                                    <img src="img/holst4.jpg" alt="" />
+                                </div>
+                                <div class="img-box">
+                                    <img src="img/holst5.jpg" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="box b3">
-                            <div class="img-box">
-                                <img src="img/holst4.jpg" alt="" />
-                            </div>
-                            <div class="img-box">
-                                <img src="img/holst5.jpg" alt="" />
-                            </div>
-                        </div>
-                        <div class="box b4">
-                            <div class="img-box">
-                                <img src="img/holst6.jpg" alt="" />
+                            <div class="box b4">
+                                <div class="img-box">
+                                    <img src="img/holst6.jpg" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
 
     </section>
 
@@ -317,9 +302,7 @@
     <section id="collaj" class="gallery_section layout_padding-top">
         <div class="container">
             <div class="heading_container">
-                <h1 class="section-title">
-                    Коллажи
-                </h1>
+                <h1 class="section-title">Коллажи</h1>
             </div>
         </div>
         <div class="gallery_container">
@@ -357,29 +340,18 @@
     </section>
     <!-- end collaj section -->
 
-    <!-- Home -->
+    <!-- Album -->
     <section id="album">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.main_info2')</h1>
             <div class="about-content">
-                <img src="img/album.jpg" alt="" class="about-pic-serv">
+                <img src="img/album.jpg" alt="" class="about-pic-serv" />
                 <div class="about-text">
-                    <p>
-                        @lang('main.serv_access')
-                    </p>
+                    <p>@lang('main.serv_access')</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <script>
-        $(".gallery").magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {
-                enabled: true
-            }
-        });
-    </script>
+    <!-- Album -->
 
 @endsection

@@ -5,7 +5,7 @@
 
 @section('content')
 
-    <section id="works" class="dark1">
+    <section id="works">
         <div class="inner-width">
             <!-- Name -->
             <h2 class="section-title">{{ $souvenir->__('name') }}</h2>
@@ -32,7 +32,7 @@
                 </div>
                 <div class="showImg">
                     <div class="image">
-                        <img src="images/img1.jpg" alt="">
+                        <img src="" alt="">
                     </div>
                 </div>
             </div>

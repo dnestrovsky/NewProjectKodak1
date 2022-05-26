@@ -1,7 +1,8 @@
 <!-- Navbar -->
 <nav class="navbar">
     <div class="inner-width">
-        <a href="{{route('home')}}" class="logo" style="background-image: url(../img/white-logo.png); background-size: contain;"></a>
+        <a href="{{ route('home') }}" class="logo"
+            style="background-image: url(../img/logo.png); background-size: contain"></a>
         <button class="menu-toggler">
             <span></span>
             <span></span>

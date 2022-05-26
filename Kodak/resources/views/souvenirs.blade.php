@@ -6,7 +6,7 @@
 
 @section('content')
     <!-- Works -->
-    <section id="works" class="dark1">
+    <section id="works">
         <div class="inner-width">
             <h1 class="section-title">@lang('main.suvenir')</h1>
             <div class="works">

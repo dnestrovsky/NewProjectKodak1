@@ -107,7 +107,6 @@ section {
     position: relative;
     transition: 0.3s linear;
     border-radius: 5%;
-    border: solid white;
 }
 .navbar-menu a {
     margin-left: 10px;
@@ -139,7 +138,7 @@ section {
 }
 
 .sticky .menu-toggler span {
-    background-color: #000000;
+    background-color: #0e0c0c;
 }
 
 #home {

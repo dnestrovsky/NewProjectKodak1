@@ -6,13 +6,13 @@ $(document).ready(function () {
             $(".navbar").removeClass("sticky");
         }
     });
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 150) $(".gotopbtn").addClass("active");
-        else $(".gotopbtn").removeClass("active");
-    });
-    $(".gotopbtn").click(function () {
-        $("html, body").animate({ scrollTop: 0 }, 800);
-    });
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 150) $(".gotopbtn").addClass("active");
+    //     else $(".gotopbtn").removeClass("active");
+    // });
+    // $(".gotopbtn").click(function () {
+    //     $("html, body").animate({ scrollTop: 0 }, 800);
+    // });
 
     $(".menu-toggler").click(function () {
         $(this).toggleClass("active");

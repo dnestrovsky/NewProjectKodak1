@@ -80,10 +80,10 @@
 
     <script src="//code.tidio.co/nekdv3kjblhff9vhxm8re80mpgxvwatn.js" async></script>
 
-    {{-- <!-- Go Top BTN -->
+    <!-- Go Top BTN -->
     <div class="gotopbtn">
         <i class="fas fa-arrow-up"></i>
-    </div> --}}
+    </div>
 </body>
 
 </html>

@@ -167,18 +167,20 @@ section {
 
 .landing-con-container p {
     color: #ffffff70;
-    font-size: calc(var(--sizeindex) * 0.9);
+    font-size: calc(var(--sizeindex) * 1.1);
     font-weight: 900;
     line-height: 1.2;
 }
 
 .landing-con-left h3 {
     font-size: calc(var(--sizeindex) * 2.1);
+    margin-top: 5px;
 }
 
 .landing-con-left h2 {
     color: #db0d0d;
     font-size: calc(var(--sizeindex) * 2.9);
+    margin-top: 5px;
 }
 
 .landing-con-left .red {

@@ -25,10 +25,6 @@ Route::middleware(['set_locale']) -> group(function () {
 
 
 });
-
-Route::get('/Luiza', function () {
-    return view('index');
-})->name('luiza');
 Route::get('locale/{locale}', [ContactController::class, 'changeLocale']) -> name('locale');
 
 Route::get('/dashboard/addsouvenir', function () {
